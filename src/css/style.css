@@ -1,0 +1,1931 @@
+@font-face {
+font-family: 'Acumin Pro';
+font-style: normal;
+font-weight: normal;
+src: local('Acumin Pro'), url('../font/Acumin-RPro.woff') format('woff');
+}
+@font-face {
+font-family: 'Acumin Pro Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Acumin Pro Italic'), url('../font/Acumin-ItPro.woff') format('woff');
+}
+@font-face {
+font-family: 'Acumin Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Acumin Pro Bold'), url('../font/Acumin-BdPro.woff') format('woff');
+}
+@font-face {
+font-family: 'Acumin Pro Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Acumin Pro Bold Italic'), url('../font/Acumin-BdItPro.woff') format('woff');
+}
+
+body{font-family: 'Neue Haas Grotesk Display Pro'; margin:0px; padding:0px; color:#000;}
+.sticky {position: -webkit-sticky; position: sticky; top: 0;}
+ul{margin:0px; padding:0px; list-style:none;}
+.img-responsive{width:100%;}
+ul.grt-menu li.grt-dropdown ul.grt-dropdown-list li a img{margin: 2px 9px 0px 0px; float: left;}
+.container{width:1273px; margin:0 auto;}
+.discover-list{margin:58px auto 16px; height: auto; overflow: hidden;}
+.grt-menu .profile-img{width:25px; height:25px; float: left; margin: 0px 5px 0px 0px; border-radius: 50%; overflow: hidden;}
+.gray-bg{background-color:#f0f0f0;}
+header .grt-menu li a{font-family: 'Neue Haas Grotesk Display Pro';font-size:12px; line-height:15px; font-weight:normal; display: inline-block; color:#fff !important;	position:relative; text-decoration: none; letter-spacing: 1.5px; text-transform:capitalize;}
+header .grt-menu li a:hover{color:#55a242 !important;}
+.sm-filter{display:none;}
+#boxes{height: 0;}
+header ul.grt-menu li:first-child{margin-right:0px;}
+header ul.grt-menu li {display: inline-block; margin:0;	padding:0;-webkit-transition: all ease 0.8s;-moz-transition: all ease 0.8s;	transition: all ease 0.8s;margin-left: 71px; background: #231f20;}
+header ul.grt-menu li:last-child{margin-right:0px;}
+.discover-list h1:first-child{font-size:127px; font-family: 'Acumin Pro Bold'; line-height: 152px; letter-spacing: -0.042px; color: #231f20; margin: 0px 0px 0px; float: left;}
+row{display:block;}
+.bg-gray{background-color:#f0f0f0; height: auto; overflow: hidden;}
+.events-list-sm a{text-decoration:none; margin: 16px 64px 16px 0px; float: left; color: #a0a0a0; font-size: 16px; line-height: 24px; font-weight: normal;}
+/*******Home page**********/
+.home-full-view{height: 100vh; background-image:url(../images/deborah-diem-533620-unsplash@3x.png); position: relative; background-position: center; background-repeat: no-repeat; background-size: cover;}	
+.home-caption {position: absolute; left: 0; right:0; top: 205px; text-align: left; color: #fff; width: 1165px;}
+.home-caption h1{font-size:72px; line-height:86px; letter-spacing:-1px; font-weight: bold; margin: 0px 0px 0px -5px; font-family: 'Acumin Pro'; }
+.home-caption .tag-line{margin: 18px 0px 0px; float: left; font-size: 24px; line-height: 29px; font-family: 'Acumin Pro'; }
+.home-full-view .home-filter .container{margin:0px; width: auto;}
+.home-full-view .home-filter {float: left; margin: 34px 0px 0px; clear: both; background-color:#fff; border-radius: 10px; padding: 55px 54px 55px 158px; width: 81.7%;}
+.home-full-view .home-filter .origin, .destination, .bedroom, .bathroom, .price-range{float:left; width: 167px;}
+<!--.home-full-view .location-filter h4{font-family: 'Neue Haas Grotesk Display Pro';}-->
+.home-full-view .home-filter .bathroom select{width: 39px; margin: 0 0px 0px 11%;}
+.home-full-view .home-filter .bedroom select{width:76px;}
+.home-full-view div h4{margin: 0px 0px 8px 0px !important;}
+.home-full-view .home-filter select{font-size:16px; line-height:24px; margin: 0px 0px 4px -4px;}
+.home-full-view .home-filter .price-range h3{color: #231f20; font-size:16px; line-height:24px; margin: 0px 0px 16px;}
+.home-full-view .location-filter select{width: 143px;}
+.home-full-view .location-filter select option:hover{}
+.home-full-view .feild-sm{font-size:12px; line-height:15px; color:#bebebe; letter-spacing:0.05px; text-transform:uppercase; display: block;}
+.home-full-view .location-filter .find-src input{background-color: #7649a6; float: right; margin: 36px 0px 0px; border-radius: 50%; width: 41px; height: 40px; background-image:url(../images/go.png); background-repeat:no-repeat; border: 0px; background-position: center; cursor: pointer;}
+/*******Home page**********/
+/********Application page starts******/
+.application-area .card .card-body.mb-4{width:887px; float:left; padding-top: 69px;}
+.application-area .card .card-body.mb-4 form .prevBtn{position: absolute; top: 88px; left: -24px; width: 48px; height: 48px; border-radius: 50px; border: 0px;}
+.application-area{background-image:url(../images/deborah-diem-533620-unsplash@3x.png); background-repeat:no-repeat; background-position: center; background-size: cover; position: relative; height: 100vh;}
+.app-area{width:1360px; margin: 0 auto; height: auto;  position: absolute; left: 0; right: 0;bottom: 0;}
+.app-area .back-sm{display:none;}
+.app-img{width:473px; float:right; position:relative; margin: 0px 0px -6px;}
+.app-img .list-close{position: absolute; top: 32px; right: 32px; background-color: #7649a6;color: #fff; font-size: 11px;font-weight: normal;text-align: center;padding: 4px 7px; border-radius: 50%; cursor: pointer;}
+.steps-form {display: table; width: 100%; position: relative;}
+.steps-form .steps-row {display: table-row; text-align: center;}
+.steps-form .steps-row:before {top: 19px; bottom: 0; position: absolute; content: " "; width: 76%; height: 1px; background-color: #ccc; margin: 0 auto; left: 0; right: 0;}
+.application-area .card form{width: 52%; margin: 56px auto 0px; text-align: center;}
+.application-area .card form h3{margin: 0px 0px 48px; font-size: 24px; line-height: 24px;}
+.application-area .card .form-group.md-form button{width: 384px; border:0px; padding:12px; border-radius: 10px; margin: 0px 0px 16px !important; background-color: #fcfcfc !important; color: #231f20; font-family: 'Neue Haas Grotesk Display Pro'; font-size: 16px; line-height: 24px;-webkit-box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);-webkit-transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; transition:color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;}
+.application-area .card .form-group.md-form button:hover{background-color:#231f20 !important; color:#fff;}
+.steps-form .steps-row .steps-step {display: inline-block; text-align: center;position: relative; width: 132px;}
+.steps-form .steps-row .steps-step p {font-size: 16px; line-height: 24px; margin: 19px 0px 0px; font-weight: 300;}
+.steps-form .steps-row .steps-step button[disabled] {opacity: 1 !important;filter: alpha(opacity=100) !important;}
+.steps-form .steps-row .steps-step .btn-circle {text-decoration: none; text-align: center; padding: 10px 16px; font-size: 12px; line-height: 1.428571429; border-radius:50%; margin-top: 0; }
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}
+@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}
+.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+/********Application page ends******/
+.location-filter .container{width: 96%; margin: 32px auto 0px auto; height: auto;overflow: hidden; padding-bottom: 13px;}
+.location-filter .location-filter-sm{display:none;}
+.location-filter .location, .beds, .bath, .price{width:218px; float:left;}
+.location-filter div h4{color:#bebebe; font-size:14px; line-height:18px; margin: 0px 0px 11px 0px; font-weight: normal;}
+.location-filter .range-sm{display:none;}
+.location-filter div select{text-transform: capitalize; background-image:url(../images/arrow-down.png); background-repeat:no-repeat; background-position: center right; position:relative; width: 108px; font-size: 17px; line-height: 21px; font-weight: 600; border: 0px; -webkit-appearance: none; -moz-appearance: none; appearance: none; margin: 0px 0px 0px -4px;}
+.location-filter .tags span{background-color:#191919; color:#fff; font-size: 14px; line-height: 19px; padding: 1px 10px 2px; border-radius: 11px; float: left; margin: 0px 15px 15px 0px; font-weight: normal; width: 54px; text-align:center;}
+.update-filter{display:none;}
+.location-filter .tags h4{float:left;}
+.location-filter .tags{position:relative; width:320px; float:right;}
+.location-filter .tags div{float:right; margin: -27px 0px 0px 53px;}
+/********Price ragne ends******/
+/********Location Map******/
+.location-map{margin: 0px 0px 39px 0px;}
+.view-map-sm{display:none;}
+/********Location Map******/
+/***Appartment list****/
+[slider] {position: relative; height: 14px;  border-radius: 10px; text-align: left; margin: 0px 0 10px 0;}
+[slider] > div {position: absolute; left: 13px; right: 15px; height: 14px;}
+[slider] > div > [inverse-left] {position: absolute; left: 0; height: 7px; border-radius: 10px; background-color: #CCC; margin: 0 7px;}
+[slider] > div > [inverse-right] {position: absolute; right: 0; height: 7px; border-radius: 10px; background-color: #CCC; margin: 0 7px;}
+[slider] > div > [range] {position: absolute; left: 0; height: 7px; border-radius: 14px; background-color: #7649a6;}
+[slider] > div > [thumb] {position: absolute; top: -7px; z-index: 2; height: 19px; width: 19px; text-align: left; margin-left: -11px; cursor: pointer; border: 2px solid #7649a6; background-color: #FFF; border-radius: 50%; outline: none;}
+[slider] > input[type=range] {position: absolute; pointer-events: none; -webkit-appearance: none; z-index: 3; height: 14px; top: -2px; width: 100%; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter: alpha(opacity=0); -moz-opacity: 0; -khtml-opacity: 0; opacity: 0;}
+div[slider] > input[type=range]::-ms-track {-webkit-appearance: none; background: transparent; color: transparent;}
+div[slider] > input[type=range]::-moz-range-track {-moz-appearance: none; background: transparent; color: transparent;}
+div[slider] > input[type=range]:focus::-webkit-slider-runnable-track {background: transparent; border: transparent;}
+div[slider] > input[type=range]:focus {outline: none;}
+div[slider] > input[type=range]::-ms-thumb {pointer-events: all; width: 28px; height: 28px; border-radius: 0px; border: 0 none; background: red;}
+div[slider] > input[type=range]::-moz-range-thumb {pointer-events: all; width: 28px; height: 28px; border-radius: 0px; border: 0 none; background: red;}
+div[slider] > input[type=range]::-webkit-slider-thumb {pointer-events: all; width: 28px; height: 28px; border-radius: 0px; border: 0 none; background: red; -webkit-appearance: none;}
+div[slider] > input[type=range]::-ms-fill-lower {background: transparent; border: 0 none;}
+div[slider] > input[type=range]::-ms-fill-upper {background: transparent; border: 0 none;}
+div[slider] > input[type=range]::-ms-tooltip {display: none;}
+[slider] > div > [sign] {opacity: 1; position: absolute; margin-left: -7px; top: 13px; z-index:3; color: #000; width: auto; height: auto; border-radius: 28px; -webkit-border-radius: 28px; align-items: center; -webkit-justify-content: center; justify-content: center; text-align: center;}
+[slider] > div > [sign] > span {font-size: 12px; font-weight: 700;  line-height: 28px;}
+/*[slider]:hover > div > [sign] {opacity: 1;}*/
+.house-list .apartment{width:403px; float:left; margin:0px 30px 34px 0px; }
+.house-list .slider{box-shadow:0px 7px 30px -14px rgba(0,0,0,25); position:relative;}
+.house-list .apartment:nth-child(3n) {margin-right: 0;}
+.load-more{text-align: center; width: 100%; display: inline-block; height: auto; overflow: hidden; font-size: 12px; text-decoration: none; line-height: 15px; text-transform: uppercase; letter-spacing: 0.5px;
+margin: 48px auto 184px; clear: both;}
+.load-more a{text-decoration:none; color: #7649a6;}
+.house-list .slides li{width:auto !important;}
+.house-list .list-tag{position: absolute; left: 15.43px; top: 15.43px;  background-color: #000; color: #fff; font-size: 9px; padding: 5px 12px; line-height: 8px; font-weight: normal; border-radius: 6px;}
+.house-list .list-close{position: absolute; right: 11px; top: 9px; font-size: 10px; font-weight: normal; background-color: #7649a6; color: #fff; padding: 1px 4px; text-align: center; border-radius: 50%; cursor:pointer;}
+.custom-navigation a img{background-color: #fff; padding: 4px; border-radius: 50%; margin-left: 3px;}
+.apartment-details .row{height:auto; overflow:hidden;}
+.apartment-details .row:nth-child(2){font-size: 14px; line-height: 24px; padding-left: 6px; color: #231f20; margin-top: 7px;}
+.apartment-details .row:nth-child(2) span{margin-right: 24px; float:left;}
+.apartment-details .row:nth-child(2) span img{margin: 15px 10px 0px 0px; float: left; width:17px;}
+.apartment-details .apprtment-name{font-family: 'Acumin Pro Bold'; font-size: 20px; line-height: 25px; color: #231f20; float: left; margin: 0px 0px 0px 4px;}
+.apartment-details .apprtment-cost{font-family: 'Acumin Pro Bold'; float:right; font-size:20px; line-height:25px; color:#7649a6;}
+.apartment-details .apprtment-cost-sm{display:none;}
+.house-list .flexslider{position:relative;}
+.flex-direction-nav{position: absolute; width:44px; height: 18px; right: 4%; bottom: 15px;}
+/***Appartment list****/
+/******list-detail******/
+.detail-pr-list .location-slider{display:none;}
+.list-detail{margin-top: 24px; height: auto; overflow: hidden;}
+.list-detail a{text-decoration:none; font-size:10px; line-height:14px; color:#7649a6; float:left;}
+.pre-page{float: left;}
+.detail-pr-list .detail{float: left; width:auto;}
+.detail-pr-list{height: auto; overflow: hidden; margin: 30px 0px 0px;}
+.pre-page img{margin-right:8px;}
+.detail-pr-list .detail .row h3{margin:0px 39.7px 0px 0px; float:left; font-size:24px; line-height:24px; color:#231f20;}
+.slider-sm-view{display:none;}
+.detail-pr-list .detail .row .tag{background-color:#191919; color:#fff; font-size:12px; line-height:15px; padding: 2px 13px; border-radius: 10px; margin-right: 13px;}
+.liv-tour-sm .sm-live-info{display:none;}
+.month-cost-sm{display:none;}
+.detail-pr-list .price{float:right; width: auto; font-size: 48px; line-height: 60px; letter-spacing: 0.5px;}
+.detail-pr-list .row:nth-child(2){float: left; margin: 24px 0px 56px;}
+.detail-pr-list .row:nth-child(2) span{margin-right:82px; font-size: 16px; line-height: 24px; color: #231f20;}
+.detail-pr-list .detail .sm-show img{display:none;}
+.location-slider{height:auto; overflow:hidden; margin: 0px 0px 37px;}
+.location-slider .custom-navigation{width: 115px; right: 18px; bottom: 17px;}
+.location-slider .apartment{float: left; width:1260px; width: 66.2%;}
+.location-slider .flexslider{margin:0px;}
+.location-slider .map-sm{float: right; /*width: 643px;*/ width: 33.8%;}
+.location-slider .custom-navigation a img{padding:11px; margin-left: 18px; background-color: #f0f0f0;}
+.detail-pr-description{clear:both;}
+.detail-pr-description .detail-description{float: left; width: 70%;}
+.detail-pr-description .detail-description h3{margin: 0px 0px 16px; font-family: 'Acumin Pro'; font-size: 24px; line-height: 29px; color: #7649a6;}
+.detail-pr-description .detail-description p{font-size:16px; line-height:24px; color:#a4a4a4; font-weight: 300; width: 81%; margin:0px;}
+.detail-pr-description .live-tour-sm{float:right; width: 283px; padding: 26px 22px; box-shadow: 0px 0px 57px 0px #ccc;}
+.detail-pr-description .rental-facts{margin: 56px 0px;height: auto; overflow: hidden;}
+.detail-pr-description .rental-facts h4{font-size:24px; line-height:24px; color:#7649a6; font-family: 'Acumin Pro Bold'; font-weight: 500; margin:0px;}
+.detail-pr-description .house-type{width: 149px; float: left;}
+.house-type .img-head{width: 100%; margin: 18px 0px 17px; display: block; float:left;}
+.house-type .img-head img{float: left;}
+.detail-pr-description .rental-facts h5{margin: 0px 0px 0px 10px; font-size: 16px; line-height: 24px; color: #231f20; font-weight: 500; float:left;}
+.rental-facts span:nth-child(2){font-size: 16px; line-height: 24px; font-weight: 300;}
+.building-detail h5{margin: 21px 0px 13px !important; width: 100%;}
+.building-detail .house-type ul{float:left;}
+.house-type ul li{font-size: 16px; line-height: 24px; font-weight: 300; color: #a0a0a0; margin: 0px 0px 8px;}
+.delete-list{display:none;}
+.detail-pr-description .cs-img{width:121px; float: left;}
+.live-tour-sm .cs-img img{box-shadow: 0px 5px 4px rgba(0,0,0,0.6);}
+.detail-pr-description .live-tour-sm h3{font-family: 'Acumin Pro Bold'; font-size:24px; line-height:29px; float: left; width: 100%; margin:16px 0px 0px;}
+.live-tour-sm .cs-contact h6{font-size:12px; line-height:15px; color:#a0a0a0; margin:0px; letter-spacing: 0.5px; font-weight: 500;}
+.live-tour-sm .cs-contact{clear: both; float: left; margin: 0px 0px 12px;}
+.live-tour-sm .cs-contact span{float:left;}
+.live-tour-sm .cs-contact p{color: #231f20; text-decoration: none; font-size: 12px; line-height: 15px; float: left; margin: 0px;}
+.live-tour-sm a{text-transform: capitalize; background-color: #7648a6; border-radius: 5px; float: left; width: 100%; text-align: center; color: #fff; text-decoration: none; padding: 14px 0px; font-size: 12px; line-height: 15px; letter-spacing: 0.5px; margin: 12px 0px 0px;}
+.live-tour-sm a:hover{background-color:#55a242;}
+/******list-detail******/
+/******Upcoming Tours******/
+.sm-model-img{width:486px;}
+.sm-model-img #dialog{width:100% !important;}
+.sm-model-img .window-img{position: relative; overflow: hidden; margin: 0px 0px 31px 0px;}
+.sm-model-img .window-img:after{position:absolute; content:''; bottom: 0; left: 0; box-shadow: 20px -17px 50px 30px #000; width: 100%;}
+.sm-model-img .row-top{ bottom: 49px; left: 21px; position: absolute; z-index: 99;}
+.sm-model-img .row-top .apprtment-name {font-size: 19px !important; line-height: 29px !important;}
+.sm-model-img .row-bottom{ bottom: 18px; left: 29px; position: absolute; z-index: 99;}
+.sm-model-img .row-bottom span img{width: 19px; margin: 0px 5px 0px 0px;}
+.sm-model-img .window-img .img-responsive{display: block;}
+.sm-model-img .window-img .row span{color:#fff; margin: 0px 5px -4px 0px;}
+.sm-model-img .window{border-radius:0px !important; padding: 0px !important;}
+.sm-model-img .appoint-schd{display: block; font-size: 12px; line-height: 14px; margin-bottom: 19px;}
+.sm-model-img .f-date{font-size: 24px; line-height: 29px; display: block; color: #7649a6; margin-bottom: 26px;}
+.sm-model-img .agent-changes{font-size: 16px; line-height: 24px; color: #231f20; margin-bottom: 15px; display: block;}
+.sm-model-img .contact-details-sm{position: relative; width: 83.6%; margin: 0 auto; height: auto; overflow: hidden; box-shadow:0px 10px 10px #ccc; padding: 27px 25px;}
+.sm-model-img .contact-img{width:87px; float:left; margin: 0px 42px 0px 10px;}
+.sm-model-img .contact-rght-detail{float:left; text-align: left;}
+.sm-model-img .contact-rght-detail h5{font-size: 24px; line-height: 29px; margin: 0px; font-weight:bold; color: #231f20; font-family: 'Acumin Pro';}
+.sm-model-img .phone-detail{font-size: 12px; line-height: 15px; display: block; margin: 3px 0px 10px 0px; color: #231f20;}
+.sm-model-img .email-detail{font-size: 12px; line-height: 15px; display: block; color: #231f20;}
+.sm-model-img .confirm{margin: 35px 0px; color:#fff; font-size:14px; line-height:18px; letter-spacing:0.05px; padding:11px 84px; background-color: #7649a6; display: inline-block; text-decoration: none; border-radius: 5px; margin-top: 35px;}
+.sm-model-img .chat-icon{position: absolute; top: 29px; right: 25px; cursor: pointer;}
+.show-join{display:none; text-transform: uppercase;}
+live-tour-list{height: auto; overflow: hidden;}
+.upcoming-tours{margin: 58px auto 16px; height: auto; overflow: hidden;}
+.upcoming-tours h1:first-child{font-size:127px; font-family: 'Acumin Pro Bold'; line-height: 152px; letter-spacing: -0.042px; color: #231f20; margin: 0px 0px 0px; float: left;}
+.live-tour-list{margin: 70px auto 0px; height:auto; overflow:hidden;}
+.live-tour-list .apartment{width:100%; float:left; margin:0px 0px 148px 0px; position: relative;}
+.live-tour-list .apartment-details{margin-top: 55px;}
+.live-tour-list .tours-appointment-rgt{width:408px;  position:absolute; top: 0; right: 0;}
+.change-appointment a{float: right; clear: both; font-size: 10px; line-height: 14px; text-decoration: none; text-transform: uppercase; color: #231f20;}
+.change-appointment a:hover{color:#7649a6;}
+.live-tour-list .live-tours-appointment{background-color:#231f20; margin: 84px 0 0; border-radius: 10px; color: #fff; padding: 36px 39px;}
+.live-tour-list .live-tours-appointment.join br{display:none;}
+.live-tour-list .live-tours-appointment.join h3{font-family: 'Acumin Pro Bold'; font-weight:normal; text-transform: capitalize; font-size: 36px; line-height: 48px; margin: 0px;}
+.live-tour-list .live-tours-appointment h3{font-family: 'Acumin Pro Bold'; font-weight:normal; text-transform: capitalize; font-size: 48px; line-height: 60px; margin: 0px;}
+.live-tours-appointment hr{border: 0; height: 1px; background-color: #fff; margin: 27px 0px 15px;}
+.live-tours-appointment h5{margin: 0px; font-size: 27px; font-weight: normal; line-height: 41px;}
+.live-tours-appointment .date{margin: 0px; font-size: 27px; font-weight: normal; line-height: 41px; text-transform: uppercase; display: block;}
+.live-tours-appointment a:last-child{color: #231f20; font-size: 16px; line-height: 24px; background-color: #f0f0f0; clear: both; text-decoration: none; padding: 12px 60px; display: inline-block; border-radius: 5px; margin: 26px 0px 26px;}
+.tours-appointment-rgt .sm-ap{display:none;}
+.live-tours-appointment a:last-child:hover{background-color:#7649a6; color:#fff;}
+.live-tour-list .apartment .slider-md{width:1059px;}
+.live-tour-list .slider{position:relative;}
+.live-tour-list .apartment:hover .slider{box-shadow:0px 7px 30px -14px rgba(0,0,0,25); }
+.live-tour-list .apartment:nth-child(3n) {margin-right: 0;}
+.load-more{text-align: center; width: 100%; display: inline-block; height: auto; overflow: hidden; font-size: 12px; text-decoration: none; line-height: 15px; text-transform: uppercase; letter-spacing: 0.5px;
+margin: 48px auto 184px; clear: both;}
+.live-tour-list .slides li{width:auto !important;}
+.live-tour-list .list-tag{position: absolute; left: 40px; top: 40px;  background-color: #000; color: #fff; font-size: 16px; padding: 10px 35px; line-height: 21px; font-weight: normal; border-radius: 16px;}
+.live-tour-list .custom-navigation a img {background-color: #fff; padding: 11px; border-radius: 50%; margin-left: 18px; width:13px;}
+.live-tour-list .custom-navigation{bottom: 23px; right: 23px;}
+.live-tour-list .custom-navigation{width:109px;}
+.live-tour-list .apartment-details .row:nth-child(2) span img{width: 45px; margin: 3px 28px 0px 0px;}
+.live-tour-list .apartment-details .apprtment-name{font-size: 54px; line-height: 65px; margin: 0px;}
+.live-tour-list .apartment-details .apprtment-cost {font-size: 54px; line-height: 65px;}
+.live-tour-list .apartment-details .row:nth-child(2){padding:0px;}
+.apartment-details .row:nth-child(2) span {font-size: 16px; line-height: 46px;}
+.live-tour-list .flex-direction-nav a{}
+.live-tour-list .flex-direction-nav{position: absolute;height: 90px; right:0px; bottom: 0px; width:116px}
+.live-tour-list .flexslider:hover .flex-direction-nav .flex-prev {opacity: 0; right: 79px; padding: 11px 10px; bottom: 28px;}
+.live-tour-list .flexslider:hover .flex-direction-nav .flex-prev:hover {opacity: 0;}
+.live-tour-list .flexslider:hover .flex-direction-nav .flex-next {opacity: 0; right: 24px; padding: 11px 10px; bottom: 28px;}
+.live-tour-list .flexslider:hover .flex-direction-nav .flex-next:hover {opacity: 0;}
+.live-tour-list .apartment-details .row{width:100%;}
+/******Upcoming Tours******/
+/******Live Tours******/
+.live-tour .live-tour {text-align: center; display: inline-block; height: auto; width: 100%; margin: 18px 0px 0px;}
+.live-tour h2{font-size:72px; line-height:86px; margin:0px; text-align: center; clear: both;}
+.tour-video{width:100%; height:948px; background-color:#a0a0a0; margin:24px 0px 62px;}
+#mask {position:absolute; left:0; top:0; z-index:9999; background-color: rgba(0,0,0,0.2); display:none;}  
+#boxes .window {position:absolute; left:0; top:0; width:440px; height:200px; display:none; z-index:999999; padding:20px; border-radius: 10px; text-align: center;}
+.window h3{display: inline-block; font-size: 24px; line-height: 29px; margin: 60px 0px 10px 0px; font-weight: normal;}
+#boxes #dialog {position:relative; width:536px; height:auto; padding:0px 0px 61px 0px; background-color:#fff;top: 144.5px; left: 683.5px; display: block; }
+.maintext{text-align: center; text-decoration: none;}
+#lorem{width: 61%; margin: 0 auto;}
+#lorem p{margin:0px 0px 32px; font-size: 16px; line-height: 24px; font-weight: 300;}
+#popupfoot{text-transform:capitalize; font-size: 12px; line-height: 15px;}
+#popupfoot .share{text-decoration: none; display: block; text-align: center; padding: 14px; width: 179px; border-radius: 5px; margin: 0px auto 16px; background-color: #7649a6; color: #ffff;}
+#popupfoot .share:hover{background-color:#231f20;}
+#popupfoot .next-time{text-decoration:none;color: #231f20;}
+#popupfoot .next-time:hover{color:#7649a6;}
+#boxes .window{199.5px; left: 551.5px; display: none;}
+#mask{opacity: 0.9;display: block;}
+.window .close{position: absolute; top: 16px; right: 16px; color: #fff; background-color: #7649a6; padding: 3px 6px; font-weight: 100; border-radius: 50px; font-size: 12px; box-shadow: 0px 2px 6px #c2c2c2;}
+.share-info a{font-size: 14px; background-color: #55a242; line-height: 18px;}
+.share-info a span{position:relative;}
+.share-info a span:before{position:absolute;top: 0px; left: 12px; content:''; display: block; width: 6px; height: 13px; border: solid #fff; border-top-width:medium; border-right-width: medium; border-bottom-width: medium;
+border-left-width: medium; border-width: 0 2px 2px 0; transform: rotate(45deg);}
+.share-info a:hover{background-color:#7648a6;}
+/******Live Tours******/
+/********Login page*******/
+.login-nav{display:none;}
+.login-sec .grt-menu-logo{margin: 35px 0px 0px 55px; height: auto; overflow: hidden;}
+.login-sec{width: 100%; height: auto; overflow: hidden;}
+.login-sec .login-lft-sec{float:left; width:888px; background-image:url(../images/login-bg.png); background-repeat:no-repeat; height: 100vh; position: relative; background-position: center top;}
+.login-sec .login-txt{position:absolute; top: 35%; left: 18.5%; color:#fff;}
+.login-sec .login-lft-sec h2{margin:0px; font-size:72px; line-height:86px; letter-spacing:-1px; font-family: 'Acumin Pro';}
+.login-sec .login-lft-sec h5{font-size:16px; line-height:24px; width: 56%; margin:22px 0px 0px; font-weight:normal; word-spacing:1px; letter-spacing:.5px;}
+.login-rgt-sec .social-media-login{position:absolute; top:38vh;}
+.login-rgt-sec h3{margin:0px 0px 33px 0px; font-size:24px; line-height:29px; color:#231f20; font-family: 'Acumin Pro'; font-weight:bold;}
+.login-rgt-sec {width: 360px; float: left; margin-left: 128px; position:relative; height: auto;}
+.login-rgt-sec .facebook-login{font-size: 14px; line-height: 26px; margin-right: 43px; float:left;}
+.login-rgt-sec .fa-facebook-official{font-size: 24px; margin: 0px 10px 0px 0px; float:left; color: #000;}
+.login-rgt-sec .facebook-login a{text-decoration:none; color:#a4a4a4;}
+.login-rgt-sec .google-login{font-size: 14px; line-height: 26px;}
+.login-rgt-sec .google-login a{text-decoration:none; color:#a4a4a4;}
+.login-rgt-sec .fa-google{font-size: 19px; margin: 0px 10px 0px 0px; float:left; color:#fff; background-color: #000; padding: 3px 4px; border-radius: 50%;}
+.login-rgt-sec .or{position:relative; display: block; text-align: center; margin: 18px auto; font-size: 14px; line-height: 15px; color: #a4a4a4; width: 100%; float: left;}
+.login-rgt-sec .or:after{position:absolute; content:''; top:8px; left:0px; height:1px; width:120px; background-color:#a0a0a0;}
+.login-rgt-sec .or:before{position:absolute; content:''; top:8px; right:0px; height:1px; width:120px; background-color:#a0a0a0;}
+.login-rgt-sec form input{width: 322px; margin: 0px 0px 25px 0px; border: 1px solid #a0a0a0; border-radius: 3px; padding: 10px 18px; color: #a0a0a0; font-weight: 500;}
+.login-rgt-sec .sign-in-check input{width:auto; margin:0px 10px 0px 0px}
+.login-rgt-sec .sign-in-check a{float:right; font-size: 13px; line-height: 27px; text-decoration: none; color: #a4a4a4;}
+.login-rgt-sec form input[type=submit]{text-align:center; background-color:#3f0069; font-size:13px; line-height:13px; color: #fff; font-weight: bold; width: 100%; border: 0px; padding: 10px 14px 12px 14px; margin: 48px 0px 0px; cursor: pointer;}
+.login-rgt-sec form input[type=submit]:hover{background-color:#231f20;}
+.sign-in-check span{font-size: 13px; line-height: 28px; color: #a4a4a4;}
+/* The label-box */
+.check-label {position: relative; padding-left: 24px; margin-bottom: 12px; cursor: pointer; font-size: 13px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+/* Hide the browser's default checkbox */
+.check-label input {position: absolute;opacity: 0; cursor: pointer; height: 0; width: 0;}
+/* Create a custom checkbox */
+.checkmark {position: absolute;top: 0;left: 0;height: 15px; width: 15px; background-color: transparent; border: 1px solid #707070; border-radius: 2px;}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {content: ""; position: absolute; display: none;}
+/* Show the checkmark when checked */
+.check-label input:checked ~ .checkmark:after {display: block;}
+/* Style the checkmark/indicator */
+.check-label .checkmark:after {left: 4.5px; top: 1px; width: 4px; height: 9px; border: solid #707070; border-width: 0 2px 2px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg);transform: rotate(45deg);}
+/********Login page*******/
+/****Forget Password****/
+.forget-password p{font-size:13px; line-height:14px; margin:9px 0px 31px;}
+.forget-password input[type="submit"]{margin: 10px 0px 0px !important;}
+.forget-password h3{margin:0px;}
+/****Forget Password****/
+/****My Profile****/
+.profile-img-lft{width:744px; float:left;}
+.profile-img-lft img{float:left;}
+.profile-info-rgt{float:left; margin: 85px 0px 0px 142px;}
+.profile-info-rgt .change-profile a{font-size:12px; line-height:15px; letter-spacing:0.05px; color:#7649a6; text-decoration: none;}
+.profile-info-rgt .edit-sm-icon{display:none;}
+.profile-info-rgt h2{font-size:72px; line-height:86px; letter-spacing:-1px; color:#231f20; margin:15px 0px 15px -7px; font-family: 'Acumin Pro';}
+.profile-info-rgt .profile-img{display: inline-block; width: 100%; margin-bottom:18px;}
+.profile-info-rgt .profile-img input{font-size: 0px; position: absolute; left: 0; height: 153px; width: 100%; opacity: 0; cursor: pointer;}
+.profile-info-rgt .profile-img span{width:153px; float:left; position: relative; text-align: center; cursor:pointer;}
+.profile-info-rgt .profile-img span p{margin: 0px; position: absolute; top: 47%; font-size: 11px; line-height: 12px; left: 0; right: 0; color: #231f20; text-transform: uppercase;}
+.profile-info-rgt .profile-img span img{box-shadow: 0px 6px 4px rgba(0,0,0,0.25);}
+.edit-img .profile-img span img{opacity: .4; box-shadow: none; float: left;}
+.profile-info-rgt .profile-name label{font-size:12px; line-height:15px; color:#7649a6; text-transform: capitalize; letter-spacing: 0.05px; width:100%; display: block;}
+.profile-info-rgt .profile-name h4{font-size: 16px; line-height: 24px; color: #231f20; font-weight: normal; margin: 6px 0px 0px;}
+.profile-info-rgt .profile-phone{margin:20px 0px; display: block;}
+.profile-info-rgt .profile-phone label{font-size:12px; line-height:15px; color:#7649a6; text-transform: capitalize; letter-spacing: 0.05px; display: block;}
+.profile-info-rgt .profile-phone h4{font-size: 16px; line-height: 24px; color: #231f20; font-weight: normal; margin: 6px 0px 0px;}
+.profile-info-rgt .profile-contact{display: block;}
+.profile-info-rgt .profile-contact label{font-size:12px; line-height:15px; color:#7649a6; text-transform: capitalize; letter-spacing: 0.05px; display: block;}
+.profile-info-rgt .profile-contact h4{font-size: 16px; line-height: 24px; color: #231f20; font-weight: normal; margin: 6px 0px 0px;}
+.profile-info-rgt .business-name{display:none;}
+.profile-info-rgt .profile-log input[type=submit]{font-size: 12px; line-height: 15px; letter-spacing: 0.05px; color: #231f20; text-decoration: none; padding: 13px 67px; float: left; background-color: #fcfcfc; box-shadow: 1px 9px 23px -1px #ccc; margin: 45px 0px; border-radius: 3px; border: 0px; font-weight: bold; cursor:pointer;}
+.profile-info-rgt .profile-log input[type=submit]:hover{background-color:#231f20; color:#fff;}
+/****My Profile****/
+/****Profile Edit****/
+.profile-edit .profile-phone span{font-size:12px; line-height:15px; color:#7649a6; text-transform: capitalize; letter-spacing: 0.05px;}	
+.profile-edit .profile-name input{width: 138px; border: 0; border-bottom: 1px solid #a0a0a0; padding: 9px 0px; font-size: 16px; line-height: 24px; color: #a0a0a0;}
+.profile-edit .profile-phone input{width: 234px; border: 0; border-bottom: 1px solid #a0a0a0; padding: 9px 0px; font-size: 16px; line-height: 24px; color: #a0a0a0;}
+.profile-edit .profile-contact input{width: 234px; border: 0; border-bottom: 1px solid #a0a0a0; padding: 9px 0px; font-size: 16px; line-height: 24px; color: #a0a0a0;}
+/****Profile Edit****/
+/****Completed Tours****/
+.completed-tours .live-tours-appointment{padding:0px; overflow: hidden;}
+.completed-tours .agent-detail{padding:36px 37px 0px 36px;}
+.completed-tours .tours-appointment-rgt h3{font-family: 'Acumin Pro'; font-size: 24px; line-height: 48px;}
+.completed-tours .agent-detail{height: auto; overflow: hidden; margin: 0px 0px 44px 0px;}
+.completed-tours .agent-detail-info{height: auto; overflow: hidden; margin: 24px 0px 0px;}
+.completed-tours .agent-info span{word-wrap: break-word;}
+.completed-tours .tours-appointment-rgt h3 span{font-weight: bold; border-bottom: 1px solid #ffff; padding-bottom: 6px;}
+.completed-tours .agent-detail h5{font-size: 16px; line-height: 24px; margin: 0px 0px 14px 0px;}
+.completed-tours .agent-detail .agent-img{float: left; width: 121px; margin: 0px 22px 0px 0px;}
+.completed-tours .agent-detail .agent-img img{float: left;}
+.completed-tours .agent-detail .agent-info{float: left; width: 57%;}
+.completed-tours .agent-detail .agent-info h4{margin: 1px 0px 0px; float: left; width: 100%; font-size: 24px; line-height: 29px; font-family: 'Acumin Pro';}
+.completed-tours .agent-detail .agent-info span{float:left; width:100%; font-size: 12px; line-height: 15px; letter-spacing: 0.05px;}
+.completed-tours .agent-info{margin: 0px 0px 12px 0px;}
+.completed-tours .footer-info{clear: both; background-color: #161616; padding: 17px 21px; height: auto; overflow: hidden;}
+.completed-tours .footer-info p{margin:0px; float: left; font-size: 16px; line-height: 24px;width: 45%; position: absolute;}
+.completed-tours .footer-info a{margin:0px; float: right; padding: 11px 33px;}
+.completed-tours .footer-info .sucess-info span{position:relative;}
+.completed-tours .footer-info .sucess-info span:before{position:absolute;top: 0px; left: 12px; content:''; display: block; width: 6px; height: 13px; border: solid #fff; border-top-width:medium; border-right-width: medium; border-bottom-width: medium; border-left-width: medium; border-width: 0 2px 2px 0; transform: rotate(45deg);}
+.completed-tours .footer-info .sucess-info{background-color: #55a242; color: #fff; padding: 11px 37px 11px 18px;}
+/****Completed Tours****/
+/****Upcoming No Result****/
+.no-result{position:relative; text-align: center; margin:317px auto 598px;}
+.no-result span h4{margin:0px 0px 25px 0px; font-size:24px; line-height:24px; color: #231f20;}
+.no-result span p{margin:0px; font-size:16px; color:#231f20}
+/****Upcoming No Result****/
+/****reschedule****/
+.reschedule-apoint .change-appointment{float:right;}
+.reschedule-apoint .change-appointment a{float:left; clear: none; margin-left: 36px;}
+.reschedule-tour-pop{width:972px !important;} 
+.reschedule-tour-pop #dialog{width:972px !important; border-radius: 0px; padding: 0px !important;}
+.reschedule-tour-pop .event-info{width:486px; float:left; display: inline-block;}
+.reschedule-tour-pop .event-calender{width:486px; display: inline-block;}
+.reschedule-tour-pop #boxes #dialog{padding:0px;}
+.reschedule-tour-pop .window-img{margin:0px;}
+.reschedule-tour-pop .reschedule-tour-info{background-color: #231f20; text-align: left; padding: 51px 32px 95px 51px; height: auto; overflow: hidden;}
+.reschedule-tour-info h4{color:#fff; font-size:24px; line-height:29px; font-family: 'Acumin Pro'; margin:0px 0px 7px 0px;}
+.reschedule-tour-pop .reschedule-tour-info p{margin: 0px; font-size: 14px; line-height: 18px; color: #a0a0a0; font-weight: normal; word-spacing: 1px; letter-spacing: 0.05px; }
+.reschedule-tour-pop .sch-time{float: left; width: 100%; margin: 0px 0px 9px 0px;}
+.reschedule-tour-pop .sch-time img {float: left; margin-right: 14px;}
+.reschedule-tour-pop .sch-date img {float: left; margin-right: 14px; margin-bottom: 27px;}
+.reschedule-tour-pop .sch-date p{width: 90%;}
+.reschedule-tour-pop .re-tour-info{margin:32px 0px 0px;}
+.reschedule-tour-pop .confirm-next img{width: 12px; float: right; padding: 9px; background-color: #fff; border-radius: 50%; margin: 18px 0px 0px; display: none;}
+.reschedule-tour-pop .event-calender .event-cal{padding:34px 45px 29px; height: auto; overflow: hidden; min-height: 571px;}
+.reschedule-tour-pop .event-calender h4{margin: 0px; font-size: 29px; line-height: 35px; margin: 10px 0px 40px 0px; font-family: 'Acumin Pro';}
+.reschedule-tour-pop .calendar-header{background: transparent !important; color: #202224 !important;}
+.reschedule-tour-pop .confirm-date img{padding: 12px; background-color: #7649a6; float: right; border-radius: 50%; cursor: pointer; margin: 7px 0px 0px;}
+.reschedule-tour-pop .event-time input{padding: 17px; border: 1px solid #a0a0a0; width: 204px; text-align: center; font-weight: bold; font-size: 19px; line-height: 29px;}
+.reschedule-tour-pop .event-time{margin: 57px 0px 0px;}
+.reschedule-tour-pop .event-time label{float: left; margin: 17px 0px 0px; color:#a0a0a0;}
+/****reschedule****/
+/******Calender CSS********/
+.calendar {display: table; width: 100%; font-family: 'Nunito Sans', sans-serif;}
+.calendar calender-header {cursor: default; height: 40px; position: relative; font-weight: bold; float: right; width: 100%;} 
+.calendar calender-header span{display: inline-block; line-height: 27px;}
+.calendar calender-header .button {width: 25px; text-align: center; position: absolute; cursor: pointer;} 
+.calendar calender-header .left.button {right:46px; background: #f0f0f0 !important;} 
+.calendar calender-header .right.button {right:0; top:0; background: #f0f0f0 !important;} 
+.calendar calender-header .header-label {letter-spacing: 1px; width: 100%; text-align: left; cursor: pointer; float: left;}
+.calendar table {background:#fff; border-collapse: collapse;} 
+.calendar table td {color:#a0a0a0; width:48px; height:48px; line-height:30px; text-align:center; cursor:default;} 
+.calendar thead th {height:26px; line-height: 26px; text-transform:uppercase; font-size:90%; color:#202224; text-align: left;} 
+.calendar thead th:not(:last-child) {border-right:1px solid #fff;}
+.calendar .calendar-frame table{width: 100%;} 
+.calendar .calendar-frame tbody td.today {background: #3f0069; color: #fff; border-radius: 27%;} 
+.calendar .calendar-frame tbody td:not(.disabled).selected {background:#eee; color:#555; border-radius: 27%;}
+.calendar .calendar-frame tbody td:not(.disabled):hover {color: #fff; background:#555; cursor: pointer;border-radius:27%;}
+/******Calender CSS********/
+.re-confirm-tour{overflow:hidden; border-radius:0px !important; padding: 0px 0px 35px !important;}
+.re-confirm-tour .tour-time h2{font-size: 48px; line-height: 60px; text-align: center; margin: 12px 0px 38px; font-family: 'Acumin Pro bold'; font-weight: normal; font-style: normal;}
+.re-confirm-tour .tour-time .sep{margin: 0px 39px;}
+.re-confirm-tour .tour-date{font-size: 24px; line-height: 29px; color: #7649a6; margin: 29px 0px 0px; display: block;}
+.re-confirm-tour hr{border: 0; height: 1px; background: #f0f0f0; margin: 28px auto 0px; width: 398px;}
+.re-confirm-tour .sm-model-img{width:100%;}
+.re-confirm-tour .tour-con-info{width: 50%; margin: 0 auto; height: auto; overflow: hidden;}
+.re-confirm-tour .tour-con-info .span-img{width:55px; float:left; border-radius:50%; overflow:hidden; margin: 0px 12px 0px 0px;}
+.re-confirm-tour .live-tour-info h4{font-size: 19px; line-height: 26px; float: left; margin: 0px; font-weight: normal;}
+.re-confirm-tour .tour-con-info .span-img img{display: block;}
+.re-confirm-tour .cs-name{float: left; font-size: 12px; line-height: 15px; color: #748aa1;}
+.re-confirm-tour #popupfoot{clear: both;}
+/****Footer Starts****/
+.chat-contacts{float:left; background-color:#fff; width: 395px; padding: 38px 0px 0px 0px; height: 100vh; overflow-y: scroll;}
+.message-display{float:left; background-color:#f5f6fa; width: 1409px; height: 100vh; padding-top: 90px; padding-right: 49px;}
+.message-head h3{margin:0px; float:left; font-size: 36px; line-height: 48px; color: #31394D; letter-spacing: 0.05px;}
+.message-head .refresh{float:right; background-color:#fff; color:#b8c5d3; padding: 9px 13px; border-radius: 5px; box-shadow: 0px 1px 4px #e5e9f2; cursor:pointer;}
+.message-head .message-info{height: auto; overflow: hidden; padding: 0px 22px 31px 42px;}
+.message-head .chat-image{width: 40px; height: 40px; float: left; border-radius: 50%; overflow: hidden; margin-right: 10px;}
+.message-head .chat-info{float:left; width: 263px;}
+.message-head .chat-info h3{font-size:16px; line-height:23px; color:#313940; font-family: 'Roboto', sans-serif; font-weight: normal; margin: 0px 0px 2px;}
+.chat-info .pr-name{font-size: 10px; line-height: 10px; color: #748aa1; float: left; margin-right: 18px;}
+.chat-info .chat-time{font-size: 10px; line-height: 10px; color: #748aa1; float: left; margin-right: 18px;}
+.chat-info p{float: left; font-size: 12px; line-height: 16px; color: #748aa1; margin: 12px 0px 0px; width: 90%;}
+.chat-contacts .message-head ul{height: auto; overflow: hidden;}
+.chat-contacts .message-head ul li{height: auto; overflow: hidden; padding: 29px 0px 41px 42px; border-top: 1px solid #ebedf4; cursor:pointer;}
+.chat-contacts .message-head ul li:hover{background-color:#f5f6fa;}
+.chat-contacts .message-head ul li:last-child{border-bottom: 1px solid #ebedf4;}
+.chat-contacts .message-head ul li.active{background-color:#f5f6fa;}
+.replies .name-msg{float:left; font-size: 24px; line-height: 29px;}
+.message-display{padding-left:50px;}
+.message-display .person-img{width: 50px; height: 50px; float: left; border-radius:50%; overflow:hidden; margin-right: 20px;}
+.message-chat{float:left;}
+.message-body{padding: 90px 0px; height: auto; overflow: hidden;}
+.message-tooltip {position: relative; display: inline-block; float: left; margin: 0px 8px; width:100%;}
+.message-tooltip .tooltiptext {width: auto; background-color: #29cb97; color: #fff; text-align: left; border-radius: 5px; padding: 12px 9px 12px 14px; font-size: 16px; line-height: 24px; font-weight: 300; z-index: 1; top: 100%; left: 50%; float:left;}
+#frame {width: 100%; height: 100vh;}
+#frame .content .message-input .wrap button:hover {background: #435f7a;}
+#frame .content .message-input .wrap button:focus {outline: none;}
+.chat-address .chat-sm-img{width:87px; float: left; margin: 0px 42px 0px 25px;}
+.chat-address .chat-sm-img img{float: left;} 
+.chat-address{float: left; width: 374px; position:relative;  padding: 20px 0px;}
+.sm-msg-info{float:left; width: 51%;}
+.sm-msg-info .phone-info{width: 100%; display: inline-block; text-align: left; font-size: 12px; line-height: 15px; font-weight: 500; margin: 4px 0px 8px;}
+.sm-msg-info .email-info{width: 100%; display: inline-block; text-align: left; font-size: 12px; line-height: 15px; font-weight: 500;}
+/************listing**************/
+.new-list{margin:60px auto 0px; height:auto; overflow:hidden;}
+.new-listing-section label{font-size:12px; line-height:15px;}
+.new-listing-section {height: auto; overflow: hidden;}
+.new-listing-section h1 {float: left; margin: 0; color: #231f20; font-size: 72px; line-height:86px; font-family: 'Acumin Pro';letter-spacing: -1px; }
+.new-listing-section .row-head{height: auto; overflow: hidden;}
+.new-listing-section .row-head a {float: right; font-size: 12px; line-height: 15px; color: #fe3131; border: 1px solid #ff3131; border-radius: 5px; padding: 14px 92px; cursor:pointer;}
+.new-listing-section .row-head a:hover{background-color:#ff3131; color:#fff;}
+.new-listing-Form-section {width: 100%; margin: 70px 0 0 0;height: auto; overflow: hidden;}
+.new-listing-form-bg {width: 48.4%;float: left;margin: 0 40px 0 0;padding: 0;}
+.new-listing-form-bg:last-child { margin-right:0px;}
+.new-listing-form-bg h2 {float: left; margin: 0 0 32px 0; width: 100%; font-size: 25px; line-height:25px; color: #231f20;}
+.form-field-address {width: 100%;float: left;margin: 0 0 25px 0;padding: 0;}
+.form-field-address label {width: 100%; float: left; font-weight: 400; font-size: 12px; line-height:15px; color:#231f20;} 
+.new-listing-section .type-input {width: 100%; float: left; font-size: 16px; line-height:24px; color: #a0a0a0; border:0px; border-bottom:1px solid #231f20;}
+.form-field-city {width: 238px;float: left;margin: 0 44px 0 0;padding: 0;}
+.form-field-state {width: 190px;float: left;margin: 0 44px 0 0;padding: 0;}
+.form-field-zip {width: 100px;float: left;margin: 0;padding: 0;}
+.form-field-state .type-select {width: 100%;float: left; border-bottom: 1px solid #231f20 !important;border: 0px; color: #a0a0a0; padding: 1px 0px;}
+.form-field-state  .type-select option:hover {background-color: #774aa6;line-height: 25px;height: 25px;padding-top: 10px;color: #fff;}
+.form-field-bedroom {width: 44%;float: left;margin: 0 70px 0 0;padding: 0;}
+.form-field-bedroom label {width: 44%;float: left;margin: 0;padding: 0;font-weight: 400;font-size: 12px; line-height:15px; color: #a0a0a0;}
+.form-field-Bathroom label{color: #a0a0a0;}
+.form-field-bedroom {width: 44%; float: left; margin: 0 70px 0 0; padding: 0;}
+.new-listing-section input{}
+.new-listing-form-bg select {width: 140px; float: right; border: 0px; font-size: 16px; color: #231f20; line-height:24px; -moz-appearance: none;-webkit-appearance: none; background-image:url(../images/arrow-down.png);
+background-repeat:no-repeat; background-position:center right;}
+.form-field-Bathroom {width: 44%;float: left;margin: 0;padding: 0;}
+.form-field-Bathroom .type-select {width: 55px;-moz-appearance: none;-webkit-appearance: none;}
+.form-field-Bathroom  .type-select option:hover {background-color: #774aa6;line-height: 25px;height: 25px;padding-top: 10px;color: #fff;}
+.form-field-size {width: 100%;float: left;margin: 38px 0 0px 0;padding: 0;}
+.form-field-price {width: 100%;float: left;margin: 25px 0 0px 0;padding: 0;}
+.images-section-bg {width: 100%;float: left;margin: 55px 0 0 0;padding: 0;}
+.images-section-bg h2 {float: left;margin: 0;padding: 0;font-size: 24px; line-height:24px;color: #231f20;}
+.images-section-bg a {float: right;margin: 5px 0 0 0;padding: 0;font-size: 13px;text-decoration: none; color:#774aa6;}
+facts-and-features-section-bg input{}
+.facts-and-features-section-bg {width: 100%;float: left;margin: 35px 0 0 0;padding: 0;}
+.facts-and-features-section-bg h2{float: left;margin: 0 0 32px 0;padding: 0;width: 100%;font-size: 24px; line-height:24px; color: #231f20;}
+.facts-and-features-form-field {width: 184px;float: left;margin: 0 30px 0 0;}
+.facts-and-features-form-field:last-child { margin-right:0px;}
+.facts-and-features-form-field select {width: 100%;float: left; border-bottom: 1px solid #413e3e !important;border: 0px; font-size: 16px; line-height:24px; color: #7649a6;-moz-appearance: none;-webkit-appearance: none;}
+.new option{height:25px; line-height: 25px;}
+.facts-and-features-form-field{position:relative;}
+.facts-and-features-section-bg select{position:absolute; display:block;}
+.facts-and-features-section-bg option:hover {position:absolute; background-color: #e3d8ef; color: #231f20; line-height: 25px; height: 25px;}
+.facts-and-features-form-field .type-select option:hover {background-color: #774aa6;/* color: #000; */line-height: 25px;height: 25px;padding-top: 10px;color: #fff;}
+.facts-and-features-form-field .type-select option {background: #fff;line-height: 25px;}
+.facts-and-features-form-field .type-input {width: 100%;float: left; padding: 0;font-size: 15px;color: #282526;}
+.label-text {display: block;position: relative;padding-left: 24px;margin-bottom: 0px;cursor: pointer;font-size: 17px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.facts-and-features-section-bg select:after {content: " "; display: inline-block; width: 24px; height: 24px;background: blue;}
+.facts-and-features-section-bg select:before{border-right: 2px solid; content: '';  display: block; height: 11px; margin-top: -8px; position: absolute; -moz-transform: rotate(135deg); -o-transform: rotate(135deg);   -webkit-transform: rotate(135deg); transform: rotate(135deg); right: 8px; top: 50%; width: 0;}
+.Facilities-data .label-text input {position: absolute; opacity: 0; cursor: pointer;height: 0;width: 0;}
+.Facilities-data .label-text:hover input ~ .checkmark {background-color: #ccc;}
+.Facilities-data .label-text input:checked ~ .checkmark {background-color: #7649a6;}
+.checkmark:after {content: ""; position: absolute; display: none;}
+.building-details{height: auto; overflow: hidden; display: inline-block;}
+/****Footer Ends****/
+/****Footer Starts****/
+footer{background-color:#231f20; clear:both; color:#fff; font-size: 10px; line-height: 14px; font-weight: 500; height: auto; overflow: hidden;padding: 22px 0px 20px;}
+.copyright{float:left;}
+footer ul{float:right;}
+footer ul li{display: inline;}
+footer ul li a{color: #fff; margin-left: 48px; text-decoration:none;}
+/****Footer Ends****/
+/*******Media Query Starts*******/
+@media screen and (min-width:1401px) and (max-width:1500px){
+.login-sec .login-lft-sec{width:50%;}
+.login-sec .login-lft-sec h2{font-size: 62px; line-height: 76px;}
+.login-rgt-sec .social-media-login{top:37vh;}
+.live-tour .tour-video{height:700px;}
+.live-tour .tour-video iframe{height:700px;}
+}
+@media screen and (min-width:1301px) and (max-width:1400px){
+.app-area{width: 90%; margin: 0px auto;}
+.application-area .card .card-body.mb-4{width: 70%;}
+.application-area .card .app-img{width: 30%;}
+.login-sec .login-lft-sec{width:50%;}
+.login-sec .login-lft-sec h2{font-size: 62px; line-height: 76px;}
+.login-rgt-sec .social-media-login{top: 37vh;}
+.live-tour .tour-video{height:580px;}
+.live-tour .tour-video iframe{height:580px;}
+}
+@media screen and (min-width:1200px) and (max-width:1300px){
+.house-list .apartment {width: 47%; margin: 0px 6% 34px 0px;}
+.house-list .apartment:nth-child(2n) {margin-right: 0px !important;}
+.house-list .apartment:nth-child(3n) {margin-right: 6%;}
+.app-area{width: 90%; margin: 0px auto;}
+.application-area .card .card-body.mb-4{width: 70%;}
+.application-area .card .app-img{width: 30%;}
+.steps-form .steps-row .steps-step{width: 123px;}
+.application-area .card form{margin:27px auto 0px}
+.live-tour-list .apartment .slider-md{width: 86.4%;}
+.live-tour-list .tours-appointment-rgt {width: 32%;}
+.profile-img-lft {width: 50%;}
+.profile-info-rgt .profile-log input[type=submit]{margin:30px;}
+.completed-tours .tours-appointment-rgt h3{font-size: 22px; line-height: 26px;}
+.completed-tours .agent-detail .agent-img{width: 106px; margin: 0px 16px 0px 0px;}
+.login-sec .login-lft-sec{width:50%;}
+.login-sec .login-lft-sec h2{font-size: 62px; line-height: 76px;}
+.login-rgt-sec .social-media-login{top: 36vh;}
+.login-sec .login-txt{left: 8.5%;}
+.live-tour .tour-video{height:580px;}
+.live-tour .tour-video iframe{height:580px;}
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+.house-list .apartment {width: 47%; margin: 0px 6% 34px 0px;}
+.house-list .apartment:nth-child(2n) {margin-right: 0px !important;}
+.house-list .apartment:nth-child(3n) {margin-right: 6%;}
+.app-area{width: 90%; margin: 0px auto;}
+.steps-form .steps-row .steps-step p{margin: 6px 0px 0px;}
+.steps-form .steps-row::before {width: 542px;}
+.application-area .card .card-body.mb-4{width: 70%; padding-top: 31px;}
+.application-area .card .app-img{width: 30%;}
+.steps-form .steps-row .steps-step{width: 100px;}
+.application-area .card form{margin:15px auto 0px; width: 70%;}
+.application-area .card form h3{margin: 0px 0px 20px;}
+.detail-pr-description .detail-description{width: 64%;}
+.detail-pr-description .detail-description p{width: 100%;}
+.detail-pr-description .live-tour-sm{width: 27%;}
+.live-tour-list .apartment .slider-md{width: 86.4%;}
+.live-tour-list .tours-appointment-rgt {width: 41%;}
+.profile-img-lft {width: 50%;}
+.profile-info-rgt .profile-log input[type=submit]{margin:29px;}
+.profile-info-rgt{margin: 1% 0px 0px 11%;}
+.profile-info-rgt h2 {font-size: 60px; line-height: 60px; margin: 8px 0px 8px -7px;}
+.profile-edit{margin: 1% 0px 0px 11%;}
+.completed-tours .tours-appointment-rgt h3{font-size: 22px; line-height: 26px;}
+.completed-tours .agent-detail .agent-img{width: 106px; margin: 0px 16px 0px 0px;}
+.login-sec .login-lft-sec{width:50%;}
+.login-sec .login-lft-sec h2{font-size: 52px; line-height: 68px;}
+.login-rgt-sec .social-media-login{top: 37vh;}
+.login-sec .login-txt{left: 8.5%;}
+.login-rgt-sec{margin-left: 88px;}
+.login-sec .login-lft-sec h5{width: 87%; margin: 6px 0px 0px;}
+.live-tour .tour-video{height:520px;}
+.live-tour .tour-video iframe{height:520px;}
+}
+@media screen and (min-width:1024px) and (max-width:1300px){
+.location-filter .location, .beds, .bath, .price {width: 16%;}
+.location-filter .tags{float:left;}
+}
+@media screen and (min-width:992px) and (max-width:1023px){
+.location-filter .location, .beds, .bath, .price {width: 149px; }
+.location-filter .tags{float:left;}
+}
+@media screen and (min-width:768px) and (max-width:991px){
+.location-filter .location, .beds, .bath, .price {width: 25%; margin: 0px 0px 31px;}
+.location-filter .tags{float:left;}
+.location-filter .tags div{margin:0px;}
+.house-list .apartment {width: 47%; margin: 0px 6% 34px 0px;}
+.house-list .apartment:nth-child(2n) {margin-right: 0px !important;}
+.house-list .apartment:nth-child(3n) {margin-right: 6%;}
+.apartment-details .row:nth-child(2) span{margin-right: 18px;}
+.app-area{width: 90%; margin: 0px auto;}
+.steps-form .steps-row .steps-step p{margin: 6px 0px 0px;}
+.steps-form .steps-row::before {width: 543px;}
+.application-area .card .card-body.mb-4{width: 100%; padding-top: 31px;}
+.application-area .card .app-img{display:none;}
+.steps-form .steps-row .steps-step{width: 100px;}
+.application-area .card form{margin:15px auto 0px; width: 70%;}
+.application-area .card form h3{margin: 0px 0px 20px;}
+.detail-pr-description .detail-description{width: 64%;}
+.detail-pr-description .detail-description p{width: 100%;}
+.detail-pr-description .live-tour-sm{width: 27%;}
+.detail-pr-list{width:98% !important;}
+.location-slider .custom-navigation a img {padding: 6px; margin-left: 5px; width: 10px;}
+.location-slider .custom-navigation{width: auto; bottom: 7px; right: 14px;}
+.detail-pr-list .price{font-size: 38px; line-height: 39px;}
+.detail-pr-list .row:nth-child(2) {float: left; margin: 18px 0px 28px;}
+.detail-pr-description .rental-facts {margin: 33px 0px;}
+.live-tour-list .apartment .slider-md{width: 86.4%;}
+.live-tour-list .tours-appointment-rgt {width: 41%;}
+.live-tour-list .apartment-details .apprtment-name {font-size: 38px; line-height: 41px;}
+.live-tour-list .apartment-details .apprtment-cost {font-size: 38px; line-height: 39px;}
+.live-tour-list .apartment-details {margin-top: 36px;}
+.live-tour-list .apartment-details .row:nth-child(2) span img {width: 27px; margin: 9px 11px 0px 0px;}
+.live-tour-list .apartment {width: 100%; float: left; margin: 0px 0px 32px 0px;}
+.live-tour-list {margin: 44px auto 0px;}
+.live-tour-list .live-tours-appointment{padding: 23px 21px;}
+.live-tour-list .live-tours-appointment h3{font-size: 32px; line-height: 38px;}
+.live-tours-appointment hr{margin: 12px 0px;}
+.live-tours-appointment a:last-child{padding: 9px 55px; margin: 16px 0px 10px;}
+.live-tours-appointment .date{line-height: 33px;}
+.live-tour-list .list-tag{left: 18px; top: 18px; font-size: 14px; padding: 7px 25px;}
+.profile-img-lft {width: 50%;}
+.profile-info-rgt .profile-log input[type=submit]{margin:11px 0px;}
+.profile-info-rgt .profile-img{margin-bottom: 8px;}
+.profile-info-rgt{margin: 1% 0px 0px 9%;}
+.profile-info-rgt h2 {font-size: 45px; line-height: 45px; margin: 8px 0px 8px -7px;}
+.profile-info-rgt .profile-img span {width: 110px;}
+.edit-img .profile-img span {overflow:hidden;}
+.profile-info-rgt .profile-phone {margin: 6px 0px;}
+.reschedule-tour-pop{width:95% !important;}
+.reschedule-tour-pop .reschedule-tour-info{padding: 6% 2% 17% 6%;}
+.reschedule-tour-pop .event-calender .event-cal {padding: 3% 4%; min-height: 560px; background-color: #fff;}
+.reschedule-tour-pop #dialog{width:100% !important; background-color: #231f20 !important;}
+.reschedule-tour-pop .event-info{width:50%;}
+.reschedule-tour-pop .event-calender{width:50%;}
+.reschedule-tour-pop .sm-model-img{width:100%;}
+.reschedule-tour-pop .event-time {margin: 2% 0px 0px;}
+.reschedule-tour-pop .event-time input {padding: 10px; width: 132px;}
+.reschedule-tour-pop .event-calender h4 {font-size: 23px; line-height: 40px; margin: 27px 0px 29px 0px;}
+.completed-tours .tours-appointment-rgt h3{font-size: 20px; line-height: 12px;}
+.completed-tours .agent-detail .agent-img{width: 106px; margin: 0px 16px 0px 0px;}
+.completed-tours .tours-appointment-rgt {width: 52%;}
+.completed-tours .live-tours-appointment {padding: 23px 21px !important;}
+.completed-tours .agent-detail{padding: 22px 15px;}
+.completed-tours .footer-info{padding: 17px;}
+.completed-tours .live-tours-appointment a:last-child {padding: 9px 21px; margin: 6px 0px 10px;}
+.completed-tours .agent-detail{margin: 0px 0px 14px 0px;}
+.login-sec .login-lft-sec{width:48%;}
+.login-sec .login-lft-sec h2{font-size: 42px; line-height: 45px;}
+.login-rgt-sec .social-media-login{top: 36vh; width:100%;}
+.login-sec .login-txt{left: 8.5%;}
+.login-rgt-sec{margin-left: 5%; width:42%;}
+.login-sec .login-lft-sec h5{width: 87%; margin: 6px 0px 0px;}
+.login-rgt-sec form input{width: 272px;}
+.login-rgt-sec form input[type="submit"]{width: 310px;}
+.login-rgt-sec .social-media-login form input{width:100%; box-sizing: border-box;}
+.login-rgt-sec .google-login{float:right;}
+.login-rgt-sec .facebook-login {font-size: 13px; margin-right: 12px;}
+.live-tour .tour-video{height:500px;}
+.live-tour .tour-video iframe{height:500px;}
+}
+@media screen and (min-width:768px) and (max-width:1300px){
+.container {width: 93%;}
+.discover-list h1:first-child{font-size: 87px; line-height: 108px;}
+.discover-list {margin: 31px auto 16px;}
+.location-filter .container{width:100%;}
+.upcoming-tours h1:first-child {font-size: 87px;line-height: 108px;}
+.upcoming-tours{margin: 31px auto 16px;}
+}
+@media screen and (min-width:640px) and (max-width:767px){
+.grt-mobile-button .line1, .grt-mobile-button .line2, .grt-mobile-button .line3 {width:100%; height: 3px; margin: 4px 0;}
+.discover-list h1:first-child{font-size: 87px; line-height: 108px;}
+.discover-list {margin: 31px auto 16px;}
+.location-filter .container{width:100%;}
+.location-filter .location, .beds, .bath{width: 33%; margin: 0px 0px 31px; text-align:left;}
+.location-filter .price{width: 49%;}
+.location-filter .tags{float:left; width:49%;}
+.location-filter .tags span{ display: inline-block; margin: 0px 2% 15px;}
+.update-filter{display:none !important;}
+.location-filter .tags div{margin:0px; text-align: center;}
+.house-list .apartment {width: 47%; margin: 0px 6% 34px 0px;}
+.house-list .apartment:nth-child(2n) {margin-right: 0px !important;}
+.house-list .apartment:nth-child(3n) {margin-right: 6%;}
+.apartment-details .row:nth-child(2) span{font-size: 14px; margin-right: 12px; line-height: 34px;}
+.apartment-details .row:nth-child(2) span img{margin: 10px 4px 0px 0px;}
+.apartment-details .row:nth-child(2){padding-left: 0px; margin-top:0px;}
+.apartment-details .apprtment-name{font-size: 17px; margin: 0px;}
+.apartment-details .apprtment-cost{font-size: 17px;}
+header .grt-dropdown-list{width:100%;}
+header ul.grt-menu li{width:100%;}
+header grt-dropdown-list li a{padding:0px;}
+ul.grt-menu li.grt-dropdown.active-dropdown:hover{color:#fff;}
+ul.grt-menu li.grt-dropdown ul.grt-dropdown-list li a{font-size: 12px; padding: 6px 10px !important;}
+.app-area{width: 90%; margin: 0px auto;}
+.steps-form .steps-row .steps-step p{margin: 6px 0px 0px;}
+.steps-form .steps-row::before {width: 495px;}
+.application-area .card .card-body.mb-4{width: 100%; padding-top: 31px;}
+.application-area .card .app-img{display:none;}
+.steps-form .steps-row .steps-step{width: 89px;}
+.application-area .card form{margin:15px auto 0px; width: 70%;}
+.application-area .card form h3{margin: 0px 0px 20px;}
+.detail-pr-description .detail-description{width: 64%;}
+.detail-pr-description .detail-description p{width: 100%;}
+.detail-pr-description .live-tour-sm{width: 27%;}
+.detail-pr-list{width:98% !important;}
+.location-slider .custom-navigation a img {padding: 6px; margin-left: 5px; width: 10px;}
+.location-slider .custom-navigation{width: auto; bottom: 7px; right: 14px;}
+.detail-pr-list .price{font-size: 33px; line-height: 39px;}
+.detail-pr-list .row:nth-child(2) {float: left; margin: 13px 0px;}
+.detail-pr-description .rental-facts {margin: 21px 0px;}
+.detail-pr-description .detail-description h3{font-size: 21px; margin: 0px 0px 5px;}
+.detail-pr-description .detail-description p{font-size: 15px; line-height: 22px;}
+.detail-pr-description .rental-facts h4 {font-size: 21px; line-height: 24px;}
+.building-detail h5 {margin: 6px 0px !important;}
+.house-type ul li{margin: 0px 0px 5px;}
+.house-type .img-head{margin: 13px 0px;}
+.detail-pr-list .detail .row h3{margin:0px 15px 11px 0px;}
+.detail-pr-list .row:nth-child(2) span {margin-right: 47px;}
+.live-tour-list .apartment .slider-md{width: 100%;}
+.live-tour-list .tours-appointment-rgt {width: 47%;}
+.live-tour-list .apartment-details .apprtment-name {font-size: 31px; line-height: 34px;}
+.live-tour-list .apartment-details .apprtment-cost {font-size: 33px; line-height: 34px;}
+.live-tour-list .apartment-details {margin-top: 36px;}
+.live-tour-list .apartment-details .row:nth-child(2) span img {width: 21px; margin: 7px 11px 0px 0px;}
+.live-tour-list .apartment {width: 100%; float: left; margin: 0px 0px 32px 0px;}
+.live-tour-list {margin: 44px auto 0px;}
+.live-tour-list .live-tours-appointment{padding: 15px 13px; margin:12px 12px 0px 0px;}
+.live-tour-list .change-appointment h3{font-size: 28px; line-height: 31px;}
+.live-tour-list .live-tours-appointment h3{font-size: 28px !important; line-height: 31px !important;}
+.hide-join{display:none;}
+.show-join{display:block;}
+.live-tours-appointment hr{margin: 12px 0px;}
+.live-tours-appointment a:last-child{padding: 6px 43px; margin: 14px 0px 4px;}
+.live-tours-appointment .date{line-height: 33px; font-size: 24px;}
+.live-tour-list .list-tag{left: 18px; top: 18px; font-size: 14px; padding: 7px 25px;}
+.live-tour-list .apartment-details{line-height: 34px;}
+.upcoming-tours h1:first-child{font-size: 87px; line-height: 108px;}
+.upcoming-tours {margin: 31px auto 16px;}
+.live-tour-list .flexslider .slides img {height: 256px !important;}
+.live-tour-list .custom-navigation{display:none;}
+.live-tours-appointment h5{font-size: 24px; line-height: 30px;}
+/*.tours-appointment-rgt a{display:none;}*/
+.tours-appointment-rgt .sm-ap{/*display:block;*/ position: absolute; right: 21px; top: 18px; cursor: pointer;}
+.sm-model-img .row-bottom{left: 22px;}
+.profile-img-lft {width: 50%;}
+.profile-info-rgt .profile-log input[type=submit]{margin:11px 0px;}
+.profile-info-rgt .profile-img{margin-bottom: 3px;}
+.profile-info-rgt{margin: 1% 0px 0px 9%;}
+.profile-info-rgt h2 {font-size: 29px; line-height: 31px; margin: 6px 0px 6px -2px;}
+.profile-info-rgt .profile-img span {width: 88px;}
+.edit-img .profile-img span {overflow:hidden;}
+.profile-info-rgt .profile-phone {margin: 6px 0px;}
+.profile-info-rgt .profile-name h4 {font-size: 14px; line-height: 17px; margin: 2px 0px 0px;}
+.profile-info-rgt .profile-phone h4 {font-size: 14px; line-height: 17px; margin: 2px 0px 0px;}
+.profile-info-rgt .profile-contact h4 {font-size: 14px; line-height: 17px; margin: 2px 0px 0px;}
+.profile-edit .profile-name input{padding: 4px 0px;}
+.profile-edit .profile-phone input{padding: 4px 0px;}
+.profile-edit .profile-contact input{padding: 4px 0px;}
+.reschedule-tour-pop{width:95% !important;}
+.reschedule-tour-pop .reschedule-tour-info{padding: 6% 2%;}
+.reschedule-tour-info h4{font-size: 21px; line-height: 24px;}
+.reschedule-tour-pop .event-calender .event-cal {padding: 3% 4%; min-height: 500px; background-color: #fff;}
+.reschedule-tour-pop #dialog{width:100% !important; background-color: #231f20 !important;}
+.reschedule-tour-pop .event-info{width:50%;}
+.reschedule-tour-pop .event-calender{width:50%;}
+.reschedule-tour-pop .sm-model-img{width:100%;}
+.reschedule-tour-pop .event-time {margin: 2% 0px 0px;}
+.reschedule-tour-pop .sm-model-img .row-bottom {left: 8px; bottom: 7px;}
+.reschedule-tour-pop .sm-model-img .row-top {bottom: 39px; left: 9px; position: absolute; z-index: 99;}
+.reschedule-tour-pop .event-time input {padding: 10px; width: 132px;}
+.reschedule-tour-pop .event-calender h4 {font-size: 23px; line-height: 24px; margin: 37px 0px 29px 0px;}
+.reschedule-tour-pop .calendar table td{width: 38px; height: 38px;}
+.no-result {margin: 200px auto;}
+.completed-tours .tours-appointment-rgt h3{font-size: 19px !important; line-height: 12px !important;}
+.completed-tours .agent-detail .agent-img{width: 102px; margin: 2px 16px 0px 0px;}
+.completed-tours .tours-appointment-rgt {width: 58%;}
+.completed-tours .live-tours-appointment {padding: 9px 3px 0px !important;}
+.completed-tours .agent-detail{padding: 22px 15px;}
+.completed-tours .footer-info{padding: 4px 8px;}
+.completed-tours .live-tours-appointment a:last-child {padding: 4px 29px 3px 21px; margin: 6px 0px 10px;}
+.completed-tours .agent-detail{margin: 0px; padding: 9px;}
+.completed-tours .agent-detail-info{margin: 13px 0px 0px;}
+.completed-tours .footer-info p{font-size: 13px; line-height: 17px; width:43%;}
+.completed-tours .footer-info .sucess-info span::before{left: 10px;}
+.completed-tours .agent-detail h5{margin: 0px 0px 4px 0px; font-size: 15px; line-height: 19px;}
+.completed-tours .agent-info {margin: 0px 0px 8px 0px;}
+.login-sec .login-lft-sec{width:48%;}
+.login-sec .login-lft-sec h2{font-size: 30px; line-height: 40px;}
+.login-rgt-sec .social-media-login{top: 36vh; width:100%;}
+.login-sec .login-txt{left: 8.5%;}
+.login-rgt-sec{margin-left: 5%; width:42%;}
+.login-sec .login-lft-sec h5{width: 87%; margin: 6px 0px 0px; font-size: 14px; line-height: 19px;}
+.login-rgt-sec form input{width: 232px; margin: 0px 0px 8px 0px;}
+.login-rgt-sec form input[type="submit"]{width: 270px;}
+.login-rgt-sec .social-media-login form input{width:100%; box-sizing: border-box;}
+.login-rgt-sec .facebook-login {font-size: 12px; margin-right: 7px;}
+.login-rgt-sec .google-login{font-size: 12px; margin-right: 0px; float:right;}
+.login-rgt-sec .fa-facebook-official {font-size: 19px; margin: 3px 4px 0px 0px;}
+.login-rgt-sec .fa-google {font-size: 14px; margin: 3px 4px 0px 0px; padding: 3px 4px 3px;}
+.login-rgt-sec .or::before{width: 98px;}
+.login-rgt-sec .or::after{width: 98px;}
+.login-rgt-sec h3 {margin: 0px 0px 16px 0px;}
+.login-rgt-sec form input[type="submit"] {margin: 29px 0px 0px;}
+.live-tour .tour-video{height:480px;}
+.live-tour .tour-video iframe{height:480px;}
+.live-tour h2 {font-size: 55px; line-height: 75px;}
+.tours-appointment-rgt .change-appointment a{display:block;}
+.tours-appointment-rgt .change-appointment {position: absolute; right: 0; bottom: -33px;}
+}
+@media screen and (min-width:640px) and (max-width:1023px){
+.discover-list h1:first-child{font-size: 87px; line-height: 108px;}
+.discover-list {margin: 31px auto 16px;}
+}
+@media screen and (min-width:480px) and (max-width:639px){
+.discover-list h1:first-child{font-size: 66px; line-height: 69px;}
+.discover-list {margin: 29px auto 13px;}
+.events-list-sm a {margin: 16px 44px 16px 0px;}
+.location-filter .container{width:100%;}
+.location-filter .location, .beds, .bath{width: 50%; margin: 0px 0px 31px; text-align: left;}
+.location-filter .price{width: 49%;}
+.location-filter .tags{float:left;}
+.location-filter .tags span{float:none;  text-align: center; display: inline-block; margin: 0px 2% 15px;}
+.update-filter{display:none !important;}
+.location-filter .tags div{margin:0px;}
+.house-list .apartment {width: 100%; margin: 0px 0px 34px;}
+header ul.grt-menu li{width:100%;}
+header grt-dropdown-list li a{padding:0px;}
+ul.grt-menu li.grt-dropdown.active-dropdown:hover{color:#fff;}
+ul.grt-menu li.grt-dropdown ul.grt-dropdown-list li a{font-size: 12px; padding: 6px 10px !important;}
+.app-area{width: 90%; margin: 0px auto;}
+.steps-form .steps-row .steps-step p{margin: 6px 0px 0px; font-size: 13px;}
+.steps-form .steps-row::before {width: 386px;}
+.application-area .card .card-body.mb-4{width: 100%; padding-top: 31px;}
+.application-area .card .app-img{display:none;}
+.steps-form .steps-row .steps-step{width: 67px;}
+.application-area .card form{margin:15px auto 0px; width: 70%;}
+.application-area .card form h3{margin: 0px 0px 20px;}
+.application-area .card .form-group.md-form button{width:100%;}
+.application-area .card .card-body.mb-4 form .prevBtn{width: 38px; height: 38px; top: 94px;}
+.detail-pr-description .detail-description{width: 52%;}
+.detail-pr-description .detail-description p{width: 100%;}
+.detail-pr-description .live-tour-sm{width: 31%; text-align: center; padding: 15px;}
+.detail-pr-description .cs-img {width: 107px; margin: 0 auto; display: block; float:none;}
+.live-tour-sm .cs-contact p{float:none;}
+.live-tour-sm .cs-contact{width: 100%; display: block;}
+.detail-pr-list{width:98% !important;}
+.location-slider .custom-navigation a img {padding: 6px; margin-left: 5px; width: 10px;}
+.location-slider .custom-navigation{width: auto; bottom: 7px; right: 14px;}
+.detail-pr-list .price{font-size: 26px; line-height: 26px; float:right; margin: 0px 0px 17px;}
+.detail-pr-list .row:nth-child(2) {float: left; margin: 6px 0px;}
+.detail-pr-list .detail .row .tag{font-size: 11px;}
+.detail-pr-description .rental-facts {margin: 21px 0px;}
+.detail-pr-description .detail-description h3{font-size: 21px; margin: 0px 0px 5px;}
+.detail-pr-description .detail-description p{font-size: 15px; line-height: 22px;}
+.detail-pr-description .rental-facts h4 {font-size: 18px; line-height: 19px;}
+.building-detail h5 {margin: 6px 0px !important;}
+.house-type ul li{margin: 0px 0px 5px;}
+.house-type .img-head{margin: 13px 0px;}
+.detail-pr-list .detail .row h3{margin:0px 15px 0px 0px; font-size: 22px;}
+.detail-pr-list .row:nth-child(2) span {margin-right: 19px; font-size: 14px; line-height: 14px;}
+.detail-pr-description .house-type {width: 112px;}
+.upcoming-tours h1:first-child {font-size: 66px; line-height: 69px;}
+.upcoming-tours {margin: 29px auto 13px;}
+.live-tour-list .apartment .slider-md{width: 100%;}
+.live-tour-list .tours-appointment-rgt {width: 56%;}
+.live-tour-list .apartment-details .apprtment-name {font-size: 27px; line-height: 28px;}
+.live-tour-list .apartment-details .apprtment-cost {font-size: 27px; line-height: 28px;}
+.live-tour-list .apartment-details {margin-top: 36px; line-height: 34px;}
+.live-tour-list .apartment-details .row:nth-child(2) span img {width: 21px; margin: 4px 7px 0px 0px;}
+.live-tour-list .apartment {width: 100%; float: left; margin: 0px 0px 32px 0px;}
+.live-tour-list {margin: 44px auto 0px;}
+.live-tour-list .live-tours-appointment{padding: 15px 13px; margin:21px 12px 0px 0px;}
+.live-tour-list .change-appointment h3{font-size: 28px; line-height: 31px;}
+.live-tour-list .live-tours-appointment h3{font-size: 24px !important; line-height: 26px !important;}
+.hide-join{display:none;}
+.show-join{display:block;}
+.live-tours-appointment hr{margin: 12px 0px;}
+.live-tours-appointment a:last-child{padding: 6px 43px; margin: 14px 0px 4px;}
+.live-tours-appointment .date{font-size: 24px; line-height: 30px; }
+.apartment-details .row:nth-child(2) span {font-size: 16px; line-height: 27px;}
+.apartment-details .row:nth-child(2) span img {margin: 5px 10px 0px 0px;}
+.live-tour-list .list-tag{left: 10px; top: 10px; font-size: 12px; padding: 4px 16px;}
+.upcoming-tours {margin: 31px auto 16px;}
+.live-tour-list .flexslider .slides img {height: 256px !important;}
+.live-tour-list .custom-navigation{display:none;}
+.live-tours-appointment h5{font-size: 24px; line-height: 26px;}
+.tours-appointment-rgt a{display:none;}
+.tours-appointment-rgt .sm-ap{display:block; position: absolute; right: 25px; top: 28px; cursor: pointer;}
+.sm-model-img {width: 80%;}
+#boxes #dialog{width:83%;}
+.profile-img-lft {display:none;}
+.profile-info-rgt {width:auto;}
+.profile-info-rgt .profile-log input[type=submit]{margin:30px 0px 50px;}
+.profile-info-rgt .profile-img{margin-bottom: 3px;}
+.profile-info-rgt{margin: 5% 0px 0px 9%;}
+.profile-info-rgt h2 {font-size: 48px; line-height: 58px; margin: 6px 0px 6px -2px;}
+.profile-info-rgt .profile-img span {width: 153px;}
+.edit-img .profile-img span {overflow:hidden;}
+.profile-info-rgt .profile-phone {margin: 20px 0px;}
+.profile-info-rgt .profile-name h4 {font-size: 14px; line-height: 21px; margin: 7px 0px 0px;}
+.profile-info-rgt .profile-phone h4 {font-size: 14px; line-height: 21px; margin: 7px 0px 0px;}
+.profile-info-rgt .profile-contact h4 {font-size: 14px; line-height: 21px; margin: 7px 0px 0px;}
+.profile-edit .profile-name input{padding: 4px 0px;}
+.profile-edit .profile-phone input{padding: 4px 0px;}
+.profile-edit .profile-contact input{padding: 4px 0px;}
+.reschedule-tour-pop{width:97% !important;}
+/*.reschedule-tour-pop .confirm-next img {display:block;}*/
+.reschedule-tour-pop .reschedule-tour-info{padding: 6% 2%;}
+.reschedule-tour-info h4{font-size: 17px; line-height: 24px;}
+.reschedule-tour-pop .event-calender .event-cal {padding: 3% 4%; min-height: auto; background-color: #fff;}
+.reschedule-tour-pop #dialog{width:100% !important; background-color: #231f20 !important;}
+.reschedule-tour-pop .event-info{width:50%;}
+.reschedule-tour-pop .event-calender{width:50%; }
+.reschedule-tour-pop .sm-model-img{width:100%;}
+.reschedule-tour-pop .event-time {margin: 2% 0px 0px;}
+.reschedule-tour-pop .sm-model-img .row-bottom {left: 8px; bottom: 7px;}
+.reschedule-tour-pop .sm-model-img .row-top {bottom: 23px; left: 1px; position: absolute; z-index: 99;}
+.reschedule-tour-pop .event-calender h4 {font-size: 18px; line-height: 24px; margin: 37px 0px 20px 0px;}
+.reschedule-tour-pop .calendar table td{width: 26px; height: 26px;}
+.reschedule-tour-pop .event-time input {padding: 10px; width: 80%; margin: 2px 0px 6px;}
+.reschedule-tour-pop .event-time label {margin: 13px 0px; float: none; display: block;}
+.reschedule-tour-pop .sm-model-img .row-bottom {left: 4px; bottom:4px;}
+.reschedule-tour-pop .confirm-date img{float:none;}
+.reschedule-tour-pop .sm-model-img .row-bottom span img {width: 15px; margin: 0px 3px -3px 0px;}
+.reschedule-tour-pop .sm-model-img .window-img .row .apprtment-name {font-size: 12px !important;}
+.reschedule-tour-pop .sm-model-img .window-img .row span {font-size:12px;}
+.re-confirm-tour .tour-con-info .span-img {width: 48px; margin: 0px 9px 0px 0px;}
+.re-confirm-tour .tour-con-info {width: 50%;}
+.re-confirm-tour .live-tour-info h4 {font-size: 15px; line-height: 19px; margin: 6px 0px 0px;}
+.re-confirm-tour .tour-date{font-size: 20px; margin: 14px 0px 0px;}
+.re-confirm-tour .tour-time h2{font-size: 39px;}
+.re-confirm-tour .tour-time .sep {margin: 0px 6px;}
+.re-confirm-tour .tour-time h2{margin: 14px 0px 10px; line-height:40px; font-size:32px;}
+.no-result {margin: 200px auto;}
+.completed-tours .tours-appointment-rgt h3{font-size: 19px !important; line-height: 12px !important;}
+.completed-tours .agent-detail .agent-img{width: 102px; margin: 2px 16px 0px 0px;}
+.completed-tours .tours-appointment-rgt {width: 72%;}
+.completed-tours .live-tours-appointment {padding: 9px 3px 0px !important; margin: 10px 12px 0px 0px;}
+.completed-tours .agent-detail{padding: 22px 15px;}
+.completed-tours .footer-info{padding: 4px 8px;}
+.completed-tours .live-tours-appointment a:last-child {padding: 4px 29px 3px 21px; margin: 6px 0px 10px;}
+.completed-tours .agent-detail{margin: 0px; padding: 9px;}
+.completed-tours .agent-detail-info{margin: 13px 0px 0px;}
+.completed-tours .footer-info p{font-size: 13px; line-height: 17px; width:43%;}
+.completed-tours .footer-info .sucess-info span::before{left: 10px;}
+.completed-tours .agent-detail h5{margin: 0px 0px 4px 0px; font-size: 15px; line-height: 19px;}
+.completed-tours .agent-info {margin: 0px 0px 8px 0px;}
+.login-nav{display:block;}
+.login-sec .login-lft-sec{display:none;}
+.login-sec .login-lft-sec h2{font-size: 30px; line-height: 40px;}
+.login-rgt-sec .social-media-login{top: 23vh; width:100%;}
+.login-sec .login-txt{left: 8.5%;}
+.login-rgt-sec{margin:0 auto !important; width:60%; height:100vh; float:none;}
+.login-sec .login-lft-sec h5{width: 87%; margin: 6px 0px 0px; font-size: 14px; line-height: 19px;}
+.login-rgt-sec form input{width: 232px; margin: 0px 0px 8px 0px;}
+.login-rgt-sec form input[type="submit"]{width: 270px;}
+.login-rgt-sec .social-login form input{width:100%; padding: 10px 13px; box-sizing: border-box;}
+.login-rgt-sec .facebook-login {font-size: 12px; margin-right: 26px;}
+.login-rgt-sec .google-login{font-size: 12px; margin-right: 0px;}
+.login-rgt-sec .fa-facebook-official {font-size: 19px; margin: 3px 4px 0px 0px;}
+.login-rgt-sec .fa-google {font-size: 14px; margin: 3px 4px 0px 0px; padding: 3px 4px 3px;}
+.login-rgt-sec .or::before{width: 98px;}
+.login-rgt-sec .or::after{width: 98px;}
+.login-rgt-sec h3 {margin: 0px 0px 16px 0px;}
+.login-rgt-sec form{width:100%;}
+.login-rgt-sec form input[type="submit"] {margin: 29px 0px 0px;}
+.live-tour .tour-video{height:480px; margin: 24px 0px 42px;}
+.live-tour .tour-video iframe{height:480px;}
+.live-tour h2 {font-size: 55px; line-height: 75px;}
+.liv-tour-sm .detail-pr-list .price{float:left; clear: both;}
+.tours-appointment-rgt .change-appointment a{display:block;}
+.tours-appointment-rgt .change-appointment {position: absolute; right: 0; bottom: -38px;}
+}
+@media screen and (min-width:320px) and (max-width:767px){
+header{padding:20px 0px;}
+header .container {width: 90%; padding:0px;}
+header .grt-mobile-button{/*top:2px;*/ width: 27px;}
+.grt-mobile-button .line1, .grt-mobile-button .line2, .grt-mobile-button .line3 {width:100%; height: 3px; margin: 4px 0; border-radius:4px;}
+.container{width:90%;}
+header ul.grt-menu li{padding: 12px;}
+}
+@media screen and (min-width:320px) and (max-width:479px){
+.sticky-arrow .grt-mobile-button{right:0; left:auto;}	
+.sticky-arrow .sm-filter a{position:absolute; left:0; top: 10px;}
+header ul.open-grt-menu{left: 0px; margin-left: -24px; height: 100vh; background-color: #231f20; top: 49px; width: 54%; overflow: hidden; display: inline-block;}
+header ul.grt-menu li{margin-left:0px; padding: 17px 12px 12px 9%;}
+ul.grt-menu li.grt-dropdown.active-dropdown ul.grt-dropdown-list{margin-left: -12px; position: relative; float: left;}
+ul.grt-menu li.grt-dropdown.active-dropdown{background-color:transparent;}
+header ul.grt-menu li{width:100%;}
+.grt-dropdown-list li{width:auto;}
+header grt-dropdown-list li a{padding:0px;}
+ul.grt-menu li.grt-dropdown.active-dropdown:hover{color:#fff;}
+ul.grt-menu li.grt-dropdown ul.grt-dropdown-list li a{font-size: 12px; padding: 6px 10px 6px 0px !important;}
+ul.grt-menu li.grt-dropdown ul.grt-dropdown-list li a img{float:left; margin: 0px 19px 0px 0px;}
+.house-list .list-close{padding: 4px 8px 5px; font-size: 11px;}
+header .grt-dropdown .grt-dropdown-list{}
+.grt-menu .profile-img{border: 6px solid #fff;	height:71px; width:71px;}
+.grt-mobile-button-open .line1{-webkit-transform: rotate(-45deg) translate(-6px, 2px); transform: rotate(-45deg) translate(-6px, 2px);}
+.grt-mobile-button-open .line3{-webkit-transform: rotate(45deg) translate(-6px, -3px); transform: rotate(45deg) translate(-6px, -3px);}
+.grt-mobile-button{position: absolute; top: 5px !important;}
+.discover-list{display:none;}
+.location-filter .range-sm{display:block;}
+.location-filter #slider-distance{display:none;}
+header.scrolled{box-shadow:none;}
+.events-list-sm ul{display: block; text-align: center; padding: 0;}
+.events-list-sm ul li{display: inline-block;}
+.apartment-details .row:nth-child(2){float: left; padding: 0px;}
+.apartment-details .apprtment-cost{display:none;}
+.apartment-details .apprtment-cost-sm{display:block; float: right; padding-right: 2%;}
+.apartment-details .apprtment-cost-sm .sm-price{float:left; line-height: 25px; color: #7649a6; font-size: 27px; margin: 0px 6px 0px;}
+.apartment-details .apprtment-cost-sm sub, sup{clear: both; float: left; width: 100%;}
+.apartment-details .apprtment-cost-sm sub{font-size: 10px; line-height: 10px; margin: 0px;}
+.apartment-details .apprtment-cost-sm sup{font-size: 10px; line-height: 8px; margin: 2px 0px 2px; color: #7649a6;}
+.apartment-details .apprtment-cost-sm .cost-sm{float:right;}
+.house-list{width:96%;}
+.house-list .apartment {width: 100%; margin: 0px 0px 34px;}
+.house-list .flexslider {margin: 0 0 20px;}
+.house-list .custom-navigation a img {padding: 7px;}
+.apartment-details .apprtment-name {font-size: 18px; line-height: 22px; margin: 0px;}
+.custom-navigation{bottom: 2px !important; right: 8px !important; width: 53px !important;}
+.house-list .flex-direction-nav {position: absolute; width: 44px; height: 18px; right: 12px; bottom: 9px;}
+.house-list .flex-direction-nav .flex-next {right: -1px; text-align: right; width: 20px; height: 18px; bottom: 0px;}
+.house-list .flex-direction-nav .flex-prev {width: 20px; height: 18px; bottom: 0px; left: 0px;}
+.location-filter .container{width:100%; margin: 68px auto 0px auto;}
+.location-filter{ display:none;}
+.location-map{position: relative; margin: 56px 0px 0px 0px; height: 44px;}
+.location-filter .bath{float: right;}
+.location-filter div select{border:1px solid #c4c4c4; width:100%; margin: 0px; background-position: center right 14px;}
+.location-filter .location{width:100%; margin: 33px 0px 12px;}
+.location-filter select, input{margin:0px; padding: 14px;}
+.location-filter .location select{background-position: center right 14px;}
+.location-filter .beds, .bath{width: 40%; margin: 0px 0px 12px;}
+.location-filter .price{width:100%;}
+.range-sm input{width: 33%; font-size: 17px; line-height: 21px; font-weight: 600; margin-right: 10px; border: 1px solid #c4c4c4;}
+.range-sm input:last-child{float:right; margin:0px;}
+.location-filter .tags{width: 100%; margin: 0 auto; float:right;}
+.location-filter .tags span{float:none; margin: 0px 0px 8px;  display: inline-block; border-radius: 5px; width: 12.6%; border-radius: 5px; padding: 9px 28px; background-color: #bebebe; width: 12.6%;}
+.location-filter .tags h4{display:none;}
+.update-filter{width: 100% !important; padding:0px !important; background-color:transparent !important; margin: 48px 0px 32px !important;}
+.location-filter .tags span:nth-child(3n+3) {margin: 0px 0px 5px 0px; float: right;}
+.update-filter input{text-align: center; float: none; display: inline-block; margin: 20px 0px;clear: both; background-color: #7649a6; border: 0px; border-radius: 5px;  font-family: 'Neue Haas Grotesk Display Pro'; 
+color: #fff; font-size: 14px; line-height: 18px; letter-spacing: 0.05px; cursor:pointer;}
+.location-filter .tags div{margin:35px 0px 0px; text-align: center; width: 100%; float: left;}
+.location-map .container{width:100%;}
+.view-map-sm{display:block; position:fixed; float: right; text-decoration: none; color: #fff; background-color: #7649a6; padding: 11px 18px; right: 0; border-radius: 5px 0px 0px 5px; float: right;
+z-index: 9999; top: 141px;}
+.location-filter .location-filter-sm{display:block; text-align:center;}
+.location-filter-sm input, button{border: 0px; background-color: transparent; font-size: 14px; line-height: 17px; color: #3f0069; letter-spacing: 0.05px; display: inline-block; padding: 0px; cursor: pointer;}
+.location-filter-sm input:first-child{float:left;}
+.location-filter-sm button:last-child{float:right;}
+.discover-list {margin: 31px auto 16px;}
+.location-filter div h4{margin: 0px 0px 4px 0px;}
+.bg-gray{position: fixed; width: 100%; z-index: 99;}
+header .grt-menu-logo{margin:0 auto;}
+.rgt-sm{float:left;}
+.grt-menu-row{position:relative;}
+header .grt-mobile-button{left: 0; width: 22px; top: 5px;}
+.grt-mobile-button .line1, .grt-mobile-button .line2, .grt-mobile-button .line3{height: 2px; margin: 4px 0;}
+header nav{position:inherit;}
+.sm-filter{display:block; color: #fff; font-size: 21px; cursor: pointer;}
+.map-sm{display:none; z-index: 999; position: absolute;}
+.events-list-sm a{margin:16px 0px 9px; display: block;}
+.events-list-sm li:first-child{float:left;}
+.events-list-sm li:last-child{float:right;}
+.location-filter .tags span:nth-child(3n+3) {/*background: green;*/}
+.location-filter .tags span:nth-child(3n+1) {/*background: red;*/ float:left;}
+.app-area{width: 90%; margin: 0px auto;}
+.steps-form .steps-row .steps-step p{margin: 6px 0px 0px; font-size: 13px;}
+.steps-form .steps-row::before {width: 386px;}
+.application-area .card .card-body.mb-4{width: 100%; padding-top: 31px;}
+.application-area .card .app-img{display:none;}
+.steps-form .steps-row .steps-step{width: 67px;}
+.application-area .card form{margin:15px auto 0px; width: 70%;}
+.application-area .card form h3{margin: 0px 0px 20px;}
+.application-area .card .form-group.md-form button{width:100%;}
+.steps-form{display:none;}
+.application-area .card .card-body.mb-4 form .prevBtn{position:inherit; top: 0px; left: 0px; width: auto; height: auto; padding: 11px 59px; border-radius: 5px; margin: 59px 0px 40px; font-weight: bold; font-style: normal;}
+.application-area .card .card-body.mb-4 form .prevBtn img{display:none;}
+.app-area .back-sm{display:block;}
+.detail-pr-description .detail-description{width:100%;}
+.detail-pr-description .detail-description p{width:100%;}
+.live-tour-sm{display:none;}
+.delete-list{display:block; text-align: center;}
+.delete-list a{text-decoration:none; color: #ff3131; border: 1px solid #ff3131; padding: 11px 50px; display: inline-block; margin-bottom: 85px; border-radius: 5px;}
+.detail-pr-list .location-slider{display:block;}
+.detail-pr-list .location-slider .slider{position:relative;}
+.detail-pr-list .location-slider .slider .edit-listing{position:absolute; z-index: 99; left: 9px; bottom: 7px;}
+.detail-pr-list .location-slider .slider .edit-listing a{color:#fff; padding: 11px 49px; font-size: 14px; line-height: 18px; background-color: #7649a6; border-radius:5px; letter-spacing: 0.05px;}
+.detail-pr-list .location-slider .slider .edit-listing a:hover{background-color:#231f20;}
+.list-detail{width:100%;}
+.list-detail .detail-pr-list{width:100%;}
+.list-detail .location-slider .apartment{width:100%;}
+.list-detail .flex-direction-nav{width:75px;}
+.list-detail .custom-navigation{width: 114px !important;}
+.list-detail .flex-direction-nav .flex-prev{left: -9px; width: 37px; height: 31px; bottom: -6px; }
+.list-detail .flex-direction-nav a{width: 37px; height: 37px; bottom: -10px; right: -9px !important;}
+section .hide-slid-sm{display:none;}
+.rental-facts.building-detail .house-type:last-child{width:100%;}
+.detail-pr-list .detail{width:95%; margin:0 auto; float:none; position:relative; height: auto; overflow: hidden;}
+.detail-pr-list .detail .row .tag-sm {position:absolute;} .detail-pr-list .detail .row .tag-sm .tag{border-radius:0px;}
+.detail-pr-list .row:nth-child(2){border-bottom: 1px solid #f0f0f0; width: 100%; height: auto; overflow: hidden; padding-bottom: 36px; margin: 13px 0px 30px !important;}
+.detail-pr-list .price{display:none;}
+.detail-pr-list .detail .row h3{margin: 38px 39.7px 0px 0px;}
+.detail-pr-list .detail .sm-show span{float: left; margin-right: 14px; line-height: 16px; font-size: 12px;}
+.detail-pr-list .detail .sm-show img{display:block; width: 17px; float: left; margin-right: 10px;}
+.detail-pr-description .detail-description h3 {margin: 0px 0px 9px;}
+.detail-pr-description .house-type {width: 38%;}
+.detail-pr-description{width:95%;}
+.house-type .img-head{margin: 24px 0px 21px;}
+.month-cost-sm{display:block; margin: 10px 0px 20px; position:relative;}
+.month-cost-sm .sm-price{float: left; line-height: 60px; color: #7649a6; font-size: 48px; margin: 0px 10px 0px 0px;}
+.month-cost-sm .cost-sm{float: right;}
+.month-cost-sm .cost-sm sup {font-size: 12px; line-height: 8px; margin: 15px 0px 7px; color: #7649a6; text-align: left;}
+.month-cost-sm .cost-sm sub {font-size: 14px; line-height: 17px; margin: 0px; float:left;}
+.month-cost-sm .apprtment-cost-sm{position:relative; width: 142px; margin: 0 auto; display: block; text-align: center; height: auto; overflow: hidden;}
+.month-cost-sm:after{content: ''; position: absolute; top: 29px; right: 15%; height: 1px; width: 15.3%; background-color: #f0f0f0;}
+.month-cost-sm:before{content: ''; position: absolute; top: 29px; left: 15%; height: 1px; width: 15.3%; background-color: #f0f0f0;}
+.list-detail .pre-page{display:none;}
+.upcoming-tours{display:none;} 
+.upcoming-tours h1:first-child {font-size: 66px; line-height: 69px;}
+.upcoming-tours {margin: 29px auto 13px;}
+.live-tour-list .apartment .slider-md{width: 100%;}
+.live-tour-list .tours-appointment-rgt {width: 56%;}
+.live-tour-list .apartment-details .apprtment-name {font-size: 18px; line-height: 21px;}
+.live-tour-list .apartment-details .apprtment-cost {font-size: 27px; line-height: 28px;}
+.live-tour-list .apartment-details {margin-top: 36px; line-height: 34px;}
+.live-tour-list .apartment-details .row:nth-child(2) span img {width: 15px; margin: 5px 7px 0px 0px;}
+.live-tour-list .apartment {width: 100%; float: left; margin: 0px 0px 32px 0px;}
+.live-tour-list {margin: 88px auto 0px;}
+.live-tour-list .live-tours-appointment{padding: 15px; margin:12px 12px 0px 0px; height:202px;}
+.live-tour-list .change-appointment h3{font-size: 28px; line-height: 31px;}
+.live-tour-list .live-tours-appointment h3{font-size: 16px !important; line-height: 19px !important;}
+.live-tour-list .live-tours-appointment.join br{display:block;}
+.hide-join{display:none;}
+.show-join{display:block;}
+.live-tours-appointment hr{margin: 12px 0px;}
+.live-tours-appointment a:last-child{font-size: 13px; padding: 6px 37px; margin: 14px 0px 4px; text-align:center;}
+.live-tours-appointment .date{font-size: 17px; line-height: 24px; }
+.apartment-details .row:nth-child(2) span {margin-right: 9px; line-height: 24px; font-size: 14px;}
+.apartment-details .row:nth-child(2) span img {margin: 5px 10px 0px 0px;}
+.live-tour-list .list-tag{left: 10px; top: 10px; font-size: 12px; padding: 4px 16px;}
+.upcoming-tours {margin: 31px auto 16px;}
+.live-tour-list .flexslider .slides img {height: 256px !important;}
+.live-tour-list .custom-navigation{display:none;}
+.live-tours-appointment h5{font-size: 17px; line-height: 24px;}
+.tours-appointment-rgt a{display:none;}
+.tours-appointment-rgt .sm-ap{display:block; position: absolute; right: 25px; top: 28px; cursor: pointer;}
+.sm-model-img {width: 80%;}
+#boxes #dialog{width:83%;}
+.profile-img-lft {display:none;}
+.profile-info-rgt {width:100%;}
+.profile-info-rgt .change-profile{display:none;}
+.profile-info-rgt .edit-sm-icon{display:block; float: right; margin: 13px 0px; cursor: pointer;}
+.profile-info-rgt .profile-log input[type=submit]{margin:36px 0px;}
+.profile-info-rgt .profile-img{margin-bottom: 31px;}
+.profile-info-rgt{margin: 5% 0px 0px 9%; width: 80%;}
+.profile-info-rgt h2 {font-size: 48px; line-height: 58px; margin: 6px 0px 23px -2px;}
+.profile-info-rgt .profile-img span {width: 153px;}
+.edit-img .profile-img span {overflow:hidden;}
+.profile-info-rgt .profile-phone {margin: 20px 0px;}
+.profile-info-rgt .profile-name h4 {font-size: 14px; line-height: 21px; margin: 7px 0px 0px;}
+.profile-info-rgt .profile-phone h4 {font-size: 14px; line-height: 21px; margin: 7px 0px 0px;}
+.profile-info-rgt .profile-contact h4 {font-size: 14px; line-height: 21px; margin: 7px 0px 0px;}
+.profile-info-rgt .business-name{display:block; margin: 20px 0px 0px;}
+.business-name span{font-size: 12px; line-height: 15px; color: #7649a6; text-transform: capitalize; letter-spacing: 0.05px; display: block;}
+.profile-info-rgt .business-name h4 {font-size: 16px; line-height: 24px; color: #231f20; font-weight: normal; margin: 6px 0px 0px;}
+.profile-info-rgt .business-name input {width: 234px; border: 0;  border-bottom: 1px solid #a0a0a0; padding: 9px 0px; font-size: 16px; line-height: 24px; color: #a0a0a0;}
+.profile-info-rgt .business-name label {font-size: 12px; line-height: 15px; color: #7649a6; text-transform: capitalize; letter-spacing: 0.05px; display: block;}
+.reschedule-tour-pop{width:97% !important;}
+.reschedule-tour-pop .confirm-next img {display:block;}
+.reschedule-tour-pop .reschedule-tour-info{padding: 6% 2%;}
+.reschedule-tour-info h4{font-size: 17px; line-height: 24px;}
+.reschedule-tour-pop .event-calender .event-cal {padding: 3% 4%; min-height: 522px; background-color: #fff; }
+.reschedule-tour-pop #dialog{width:100% !important; background-color: #231f20 !important;}
+.reschedule-tour-pop .event-info{width:100%;}
+.reschedule-tour-pop .event-calender{display:none; width:100%; position:absolute; z-index: 99;}
+.reschedule-tour-pop .sm-model-img{width:100%;}
+.reschedule-tour-pop .event-time {margin: 38px 0px 31px;}
+.reschedule-tour-pop .sm-model-img .row-bottom {left: 8px; bottom: 7px;}
+.reschedule-tour-pop .sm-model-img .row-top {bottom: 23px; left: 9px; position: absolute; z-index: 99;}
+.reschedule-tour-pop .event-calender h4 {font-size: 18px; line-height: 24px; margin: 37px 0px 20px 0px;}
+.reschedule-tour-pop .calendar table td{width: 26px; height: 26px;}
+.reschedule-tour-pop .event-time input {padding: 10px; width: 147px; margin:0px 12px;}
+.reschedule-tour-pop .event-time label {margin: 13px 0px; float: none;}
+.reschedule-tour-pop .sm-model-img .row-bottom {left: 9px; bottom:4px;}
+.reschedule-tour-pop .sm-model-img .row-bottom span img {width: 15px; margin: 0px 3px -3px 0px;}
+.reschedule-tour-pop .sm-model-img .window-img .row .apprtment-name {font-size: 12px !important;}
+.reschedule-tour-pop .sm-model-img .window-img .row span {font-size:12px;}
+.re-confirm-tour .tour-con-info .span-img {width: 36px; margin: 0px 4px 0px 0px;}
+.re-confirm-tour .tour-con-info {width: 161px;}
+.re-confirm-tour hr{width:86%;}
+.re-confirm-tour .live-tour-info h4 {font-size: 14px; line-height: 15px; margin: 3px 0px 1px;}
+.re-confirm-tour .tour-date{font-size: 16px; margin: 18px 0px 0px; line-height: 19px;}
+.re-confirm-tour .tour-time h2{font-size: 39px;}
+.re-confirm-tour .tour-time .sep {margin: 0px 6px;}
+.re-confirm-tour .tour-time h2{margin: 14px 0px 10px; line-height:40px; font-size:32px;}
+.re-confirm-tour .row-top .apprtment-name{font-size: 15px !important; line-height: 24px !important;}
+.re-confirm-tour .sm-model-img .row-top{bottom: 41px; left: 18px;}
+.re-confirm-tour .sm-model-img .window-img .row span img{width: 15px; margin: 3px 4px -3px 0px;}
+.re-confirm-tour .sm-model-img .row-bottom{left: 16px; font-size: 12px;}
+.re-confirm-tour #popupfoot .share{width: auto; padding: 12px 45px; display: inline-block; clear: both; margin: 22px 0px 15px;}
+.re-confirm-tour .next-time{display: block;}
+.re-confirm-tour .close {padding: 0px 5px 1.4px;}
+.re-confirm-tour .close i{font-size: 10px;}
+.no-result {margin: 200px auto;}
+.login-nav{display:block;}
+.login-sec .login-lft-sec{display:none;}
+.login-sec .login-lft-sec h2{font-size: 30px; line-height: 40px;}
+.login-rgt-sec .social-media-login{top: 26vh; width:100%;}
+.login-sec .login-txt{left: 8.5%;}
+.login-rgt-sec{width:80%; height:100vh; float: none; margin:0 auto;}
+.login-sec .login-lft-sec h5{width: 87%; margin: 6px 0px 0px; font-size: 14px; line-height: 19px;}
+.login-rgt-sec form input{ margin: 0px 0px 25px 0px;}
+.login-rgt-sec form input[type="submit"]{width: 100% !important;}
+.forget-password input{width:100% !important; box-sizing: border-box;}
+.forget-password form{float:left; width: 89%;}
+.login-rgt-sec .social-login form input{width:100%; padding: 10px 13px; box-sizing: border-box;}
+.login-rgt-sec .social-login form input[type="submit"]{ width:100%;}
+.login-rgt-sec .facebook-login {font-size: 10px; margin-right: 16px;}
+.login-rgt-sec .google-login{font-size: 10px; margin: 1px 0px 0px !important; float:right;}
+.login-rgt-sec .fa-facebook-official {font-size: 24px; margin: 1px 8px 0px 0px;}
+.login-rgt-sec .fa-google {font-size: 17px; margin: 0px 8px 0px 0px;}
+.login-rgt-sec .or::before{width: 40%;}
+.login-rgt-sec .or::after{width: 40%;}
+.login-rgt-sec h3 {margin: 0px 0px 16px 0px;}
+.login-rgt-sec form{width:100%;}
+.login-rgt-sec form input[type="submit"] {margin: 29px 0px 0px;}
+.live-tour .tour-video{width:90%; margin:0 auto; height:327px;}
+.live-tour .tour-video iframe{height:327px;}
+.live-tour h2 {font-size: 36px; line-height: 43px; margin: 0px 0px 32px;}
+.liv-tour-sm .detail{width:90%;}
+.liv-tour-sm .detail-pr-list .row h3{margin:0px;}
+.liv-tour-sm .detail-pr-list .row .tag{display:none;}
+.liv-tour-sm .sm-live-info .price{display:block; font-size: 34px; line-height: 35px; color: #7649a6;}
+.liv-tour-sm .sm-live-info{display:block; margin: 4px 0px 29px; clear: both; float: left; width:100%;}
+.liv-tour-sm .detail-pr-list .row:nth-child(2){border-bottom:0px; padding:0px !important; margin: 13px 0px 6px !important;}
+.liv-tour-sm .sm-live-info .tag{font-size: 12px; line-height: 15px; color: #fff; background-color: #191919; padding: 3px 9px; border-radius: 10px; margin: 7px 13px 0px 0px; float: left;}
+.liv-tour-sm .detail-pr-list .row:nth-child(2) span {margin-right:22px;}
+.liv-tour-sm .sm-live-info .tag:last-child{margin-right:0px;}
+.liv-tour-sm-slider .apartment{width:100%;}
+.slider-lg-view{display:none;}
+.slider-sm-view .custom-navigation {bottom: 34px !important; right: 27px !important;}
+.slider-sm-view{display:block; margin: 35px 0px 0px;}
+.slider-sm-view .flex-direction-nav{right: 38px; bottom: 48px;}
+.live-sm-detail{width:90%;}
+}
+@media screen and (max-width: 360px) {
+  #frame {
+    width: 100%;
+    height: 100vh;
+  }
+}
+#frame #sidepanel {
+  float: left;
+  min-width: 280px;
+  max-width: 340px;
+  width: 40%;
+  height: 100%;
+  background: #2c3e50;
+  color: #f5f5f5;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel {
+    width: 58px;
+    min-width: 58px;
+  }
+}
+#frame #sidepanel #profile {
+  width: 80%;
+  margin: 25px auto;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+    background: #32465a;
+  }
+}
+#frame #sidepanel #profile.expanded .wrap {
+  height: 210px;
+  line-height: initial;
+}
+#frame #sidepanel #profile.expanded .wrap p {
+  margin-top: 20px;
+}
+#frame #sidepanel #profile.expanded .wrap i.expand-button {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+#frame #sidepanel #profile .wrap {
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+  -moz-transition: 0.3s height ease;
+  -o-transition: 0.3s height ease;
+  -webkit-transition: 0.3s height ease;
+  transition: 0.3s height ease;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap {
+    height: 55px;
+  }
+}
+#frame #sidepanel #profile .wrap img {
+  width: 50px;
+  border-radius: 50%;
+  padding: 3px;
+  border: 2px solid #e74c3c;
+  height: auto;
+  float: left;
+  cursor: pointer;
+  -moz-transition: 0.3s border ease;
+  -o-transition: 0.3s border ease;
+  -webkit-transition: 0.3s border ease;
+  transition: 0.3s border ease;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap img {
+    width: 40px;
+    margin-left: 4px;
+  }
+}
+#frame #sidepanel #profile .wrap img.online {
+  border: 2px solid #2ecc71;
+}
+#frame #sidepanel #profile .wrap img.away {
+  border: 2px solid #f1c40f;
+}
+#frame #sidepanel #profile .wrap img.busy {
+  border: 2px solid #e74c3c;
+}
+#frame #sidepanel #profile .wrap img.offline {
+  border: 2px solid #95a5a6;
+}
+#frame #sidepanel #profile .wrap p {
+  float: left;
+  margin-left: 15px;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap p {
+    display: none;
+  }
+}
+#frame #sidepanel #profile .wrap i.expand-button {
+  float: right;
+  margin-top: 23px;
+  font-size: 0.8em;
+  cursor: pointer;
+  color: #435f7a;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap i.expand-button {
+    display: none;
+  }
+}
+#frame #sidepanel #profile .wrap #status-options {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  width: 150px;
+  margin: 70px 0 0 0;
+  border-radius: 6px;
+  z-index: 99;
+  line-height: initial;
+  background: #435f7a;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap #status-options {
+    width: 58px;
+    margin-top: 57px;
+  }
+}
+#frame #sidepanel #profile .wrap #status-options.active {
+  opacity: 1;
+  visibility: visible;
+  margin: 75px 0 0 0;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap #status-options.active {
+    margin-top: 62px;
+  }
+}
+#frame #sidepanel #profile .wrap #status-options:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #435f7a;
+  margin: -8px 0 0 24px;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap #status-options:before {
+    margin-left: 23px;
+  }
+}
+#frame #sidepanel #profile .wrap #status-options ul {
+  overflow: hidden;
+  border-radius: 6px;
+}
+#frame #sidepanel #profile .wrap #status-options ul li {
+  padding: 15px 0 30px 18px;
+  display: block;
+  cursor: pointer;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap #status-options ul li {
+    padding: 15px 0 35px 22px;
+  }
+}
+#frame #sidepanel #profile .wrap #status-options ul li:hover {
+  background: #496886;
+}
+#frame #sidepanel #profile .wrap #status-options ul li span.status-circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px 0 0 0;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap #status-options ul li span.status-circle {
+    width: 14px;
+    height: 14px;
+  }
+}
+#frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  margin: -3px 0 0 -3px;
+  background: transparent;
+  border-radius: 50%;
+  z-index: 0;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap #status-options ul li span.status-circle:before {
+    height: 18px;
+    width: 18px;
+  }
+}
+#frame #sidepanel #profile .wrap #status-options ul li p {
+  padding-left: 12px;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #profile .wrap #status-options ul li p {
+    display: none;
+  }
+}
+#frame #sidepanel #profile .wrap #status-options ul li#status-online span.status-circle {
+  background: #2ecc71;
+}
+#frame #sidepanel #profile .wrap #status-options ul li#status-online.active span.status-circle:before {
+  border: 1px solid #2ecc71;
+}
+#frame #sidepanel #profile .wrap #status-options ul li#status-away span.status-circle {
+  background: #f1c40f;
+}
+#frame #sidepanel #profile .wrap #status-options ul li#status-away.active span.status-circle:before {
+  border: 1px solid #f1c40f;
+}
+#frame #sidepanel #profile .wrap #status-options ul li#status-busy span.status-circle {
+  background: #e74c3c;
+}
+#frame #sidepanel #profile .wrap #status-options ul li#status-busy.active span.status-circle:before {
+  border: 1px solid #e74c3c;
+}
+#frame #sidepanel #profile .wrap #status-options ul li#status-offline span.status-circle {
+  background: #95a5a6;
+}
+#frame #sidepanel #profile .wrap #status-options ul li#status-offline.active span.status-circle:before {
+  border: 1px solid #95a5a6;
+}
+#frame #sidepanel #profile .wrap #expanded {
+  padding: 100px 0 0 0;
+  display: block;
+  line-height: initial !important;
+}
+#frame #sidepanel #profile .wrap #expanded label {
+  float: left;
+  clear: both;
+  margin: 0 8px 5px 0;
+  padding: 5px 0;
+}
+#frame #sidepanel #profile .wrap #expanded input {
+  border: none;
+  margin-bottom: 6px;
+  background: #32465a;
+  border-radius: 3px;
+  color: #f5f5f5;
+  padding: 7px;
+  width: calc(100% - 43px);
+}
+#frame #sidepanel #profile .wrap #expanded input:focus {
+  outline: none;
+  background: #435f7a;
+}
+#frame #sidepanel #search {
+  border-top: 1px solid #32465a;
+  border-bottom: 1px solid #32465a;
+  font-weight: 300;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #search {
+    display: none;
+  }
+}
+#frame #sidepanel #search label {
+  position: absolute;
+  margin: 10px 0 0 20px;
+}
+#frame #sidepanel #search input {
+
+  padding: 10px 0 10px 46px;
+  width: calc(100% - 25px);
+  border: none;
+  background: #32465a;
+  color: #f5f5f5;
+}
+#frame #sidepanel #search input:focus {
+  outline: none;
+  background: #435f7a;
+}
+#frame #sidepanel #search input::-webkit-input-placeholder {
+  color: #f5f5f5;
+}
+#frame #sidepanel #search input::-moz-placeholder {
+  color: #f5f5f5;
+}
+#frame #sidepanel #search input:-ms-input-placeholder {
+  color: #f5f5f5;
+}
+#frame #sidepanel #search input:-moz-placeholder {
+  color: #f5f5f5;
+}
+#frame #sidepanel #contacts {
+  height: calc(100% - 177px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #contacts {
+    height: calc(100% - 149px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  #frame #sidepanel #contacts::-webkit-scrollbar {
+    display: none;
+  }
+}
+#frame #sidepanel #contacts.expanded {
+  height: calc(100% - 334px);
+}
+#frame #sidepanel #contacts::-webkit-scrollbar {
+  width: 8px;
+  background: #2c3e50;
+}
+#frame #sidepanel #contacts::-webkit-scrollbar-thumb {
+  background-color: #243140;
+}
+#frame #sidepanel #contacts ul li.contact {
+  position: relative;
+  padding: 10px 0 15px 0;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #contacts ul li.contact {
+    padding: 6px 0 46px 8px;
+  }
+}
+#frame #sidepanel #contacts ul li.contact:hover {
+  background: #32465a;
+}
+#frame #sidepanel #contacts ul li.contact.active {
+  background: #32465a;
+  border-right: 5px solid #435f7a;
+}
+#frame #sidepanel #contacts ul li.contact.active span.contact-status {
+  border: 2px solid #32465a !important;
+}
+#frame #sidepanel #contacts ul li.contact .wrap {
+  width: 88%;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #contacts ul li.contact .wrap {
+    width: 100%;
+  }
+}
+#frame #sidepanel #contacts ul li.contact .wrap span {
+  position: absolute;
+  left: 0;
+  margin: -2px 0 0 -2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #2c3e50;
+  background: #95a5a6;
+}
+#frame #sidepanel #contacts ul li.contact .wrap span.online {
+  background: #2ecc71;
+}
+#frame #sidepanel #contacts ul li.contact .wrap span.away {
+  background: #f1c40f;
+}
+#frame #sidepanel #contacts ul li.contact .wrap span.busy {
+  background: #e74c3c;
+}
+#frame #sidepanel #contacts ul li.contact .wrap img {
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #contacts ul li.contact .wrap img {
+    margin-right: 0px;
+  }
+}
+#frame #sidepanel #contacts ul li.contact .wrap .meta {
+  padding: 5px 0 0 0;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #contacts ul li.contact .wrap .meta {
+    display: none;
+  }
+}
+#frame #sidepanel #contacts ul li.contact .wrap .meta .name {
+  font-weight: 600;
+}
+#frame #sidepanel #contacts ul li.contact .wrap .meta .preview {
+  margin: 5px 0 0 0;
+  padding: 0 0 1px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -moz-transition: 1s all ease;
+  -o-transition: 1s all ease;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+#frame #sidepanel #contacts ul li.contact .wrap .meta .preview span {
+  position: initial;
+  border-radius: initial;
+  background: none;
+  border: none;
+  padding: 0 2px 0 0;
+  margin: 0 0 0 1px;
+  opacity: .5;
+}
+#frame #sidepanel #bottom-bar {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+#frame #sidepanel #bottom-bar button {
+  float: left;
+  border: none;
+  width: 50%;
+  padding: 10px 0;
+  background: #32465a;
+  color: #f5f5f5;
+  cursor: pointer;
+  font-size: 0.85em;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #bottom-bar button {
+    float: none;
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+#frame #sidepanel #bottom-bar button:focus {
+  outline: none;
+}
+#frame #sidepanel #bottom-bar button:nth-child(1) {
+  border-right: 1px solid #2c3e50;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #bottom-bar button:nth-child(1) {
+    border-right: none;
+    border-bottom: 1px solid #2c3e50;
+  }
+}
+#frame #sidepanel #bottom-bar button:hover {
+  background: #435f7a;
+}
+#frame #sidepanel #bottom-bar button i {
+  margin-right: 3px;
+  font-size: 1em;
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #bottom-bar button i {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 735px) {
+  #frame #sidepanel #bottom-bar button span {
+    display: none;
+  }
+}
+#frame .content {
+  float: right;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+@media screen and (max-width: 735px) {
+  #frame .content {
+    width: calc(100% - 58px);
+    min-width: 300px !important;
+  }
+}
+
+#frame .content .contact-profile {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #f5f5f5;
+  display:none;
+}
+#frame .content .contact-profile img {
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin: 9px 12px 0 9px;
+}
+#frame .content .contact-profile p {
+  float: left;
+}
+#frame .content .contact-profile .social-media {
+  float: right;
+}
+#frame .content .contact-profile .social-media i {
+  margin-left: 14px;
+  cursor: pointer;
+}
+#frame .content .contact-profile .social-media i:nth-last-child(1) {
+  margin-right: 20px;
+}
+#frame .content .contact-profile .social-media i:hover {
+  color: #435f7a;
+}
+#frame .content .messages {
+	width: 100%;
+  height: auto;
+/*  min-height: calc(100% - 93px);
+  max-height: calc(100% - 93px);
+  overflow-y: scroll;
+  overflow-x: hidden;*/
+}
+@media screen and (max-width: 735px) {
+  #frame .content .messages {
+    max-height: calc(100% - 105px);
+  }
+}
+#frame .content .messages::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+#frame .content .messages::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#frame .content .messages ul li {display: inline-block; clear: both; float: left; margin: 15px 15px 5px 15px; width: calc(100% - 25px); position:relative; line-height: 24px; font-weight: 300;}
+.sent img{position: absolute; bottom: -5px; left:0;}
+.v-chat {float: left; margin: 0px 0px 0px 89px;}
+#frame .content .messages ul li:nth-last-child(1) {
+  margin-bottom: 20px;
+}
+#frame .content .messages ul li.sent p {
+  background-color: #29cb97;
+  color: #fff;
+}
+#frame .content .messages ul li.replies .chat-img img {
+  float: right;
+ position: absolute;
+right: 0;
+bottom: -5px;
+
+}
+#frame .content .messages ul li.replies p {
+  background-color: #fff;
+  float: right;
+  color:#231f20;
+clear: both; text-align: right;
+}
+#frame .content .messages ul li .v-chat p.active{position:relative;}
+#frame .content .messages ul li .v-chat p.active:after{content: ""; position: absolute; top: 18px; right: 100%; border-width: 5px; border-style: solid; border-color: transparent #29cb97 transparent transparent ;}
+
+#frame .content .messages ul li .c-chat p.active{position:relative;}
+#frame .content .messages ul li .c-chat p.active:after{content: ""; position: absolute; top: 18px; left: 100%; border-width: 5px; border-style: solid; border-color: transparent transparent transparent #fff;}
+
+
+#frame .content .messages ul li.replies p a{color:#7649a6;}
+#frame .content .messages ul li .chat-img img {
+  width: 50px;
+  border-radius: 50%;
+  float: left;
+}
+.replies .c-chat{float: right; margin: 0px 90px 0px 0px;}
+#frame .content .messages ul li p {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  max-width: 205px;
+
+}
+@media screen and (min-width: 735px) {
+  #frame .content .messages ul li p {
+    max-width: none; margin:0px; margin: 8px 0px 0px;
+  }
+}
+#frame .content .message-input {
+  position: absolute;
+  bottom: 44px;
+  width: 100%;
+  z-index: 99; box-shadow: 0px 1px 4px rgba(53,56,63,0.1);
+border-radius: 5px;
+
+}
+#frame .content .message-input .wrap {
+  position: relative;
+}
+#frame .content .message-input .wrap input {
+
+  float: left;
+  border: none;
+  width: calc(100% - 90px);
+  padding: 11px 32px 10px 8px;
+  font-size: 0.8em;
+  color: #32465a;
+}
+@media screen and (max-width: 735px) {
+  #frame .content .message-input .wrap input {
+    padding: 15px 32px 16px 8px;
+  }
+}
+#frame .content .message-input .wrap input:focus {
+  outline: none;
+}
+#frame .content .message-input .wrap .attachment {
+  position: absolute;
+  right: 60px;
+  z-index: 4;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #435f7a;
+  opacity: .5;
+  cursor: pointer;
+}
+@media screen and (max-width: 735px) {
+  #frame .content .message-input .wrap .attachment {
+    margin-top: 17px;
+    right: 65px;
+  }
+}
+#frame .content .message-input .wrap .attachment:hover {
+  opacity: 1;
+}
+#frame .content .message-input .wrap button {
+  float: right;
+  border: none;
+  width: 50px;
+  padding: 10px 0;
+  cursor: pointer;
+  color: #7649a6;
+  background-color: #fff;
+  border-left: 1px solid #ebedf4;
+}
+@media screen and (max-width: 735px) {
+  #frame .content .message-input .wrap button {
+    padding: 16px 0;
+  }
+}
