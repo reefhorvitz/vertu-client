@@ -280,39 +280,30 @@ a.bg-light:hover, a.bg-light:focus, button.bg-light:hover, button.bg-light:focus
 	transform:scale(1.1)
 }
 .pattern-1 {
-	background:url(../img/overlays/01.png);
 	background-attachment:fixed
 }
 .pattern-2 {
-	background:url(../img/overlays/02.png);
 	background-attachment:fixed
 }
 .pattern-3 {
-	background:url(../img/overlays/03.png);
 	background-attachment:fixed
 }
 .pattern-4 {
-	background:url(../img/overlays/04.png);
 	background-attachment:fixed
 }
 .pattern-5 {
-	background:url(../img/overlays/05.png);
 	background-attachment:fixed
 }
 .pattern-6 {
-	background:url(../img/overlays/06.png);
 	background-attachment:fixed
 }
 .pattern-7 {
-	background:url(../img/overlays/07.png);
 	background-attachment:fixed
 }
 .pattern-8 {
-	background:url(../img/overlays/08.png);
 	background-attachment:fixed
 }
 .pattern-9 {
-	background:url(../img/overlays/09.png);
 	background-attachment:fixed
 }/*!
  * Waves v0.7.6
@@ -6352,12 +6343,7 @@ margin:0
 	width:20px;
 	height:20px
 }
-.carousel .carousel-control-prev-icon {
-	background-image:url(../img/svg/arrow_left.svg)
-}
-.carousel .carousel-control-next-icon {
-	background-image:url(../img/svg/arrow_right.svg)
-}
+
 .carousel .carousel-indicators li {
 width:.625rem;
 height:.625rem;
@@ -9579,12 +9565,10 @@ border:0
 .pswp__button, .pswp__button--arrow--left::before, .pswp__button--arrow--right::before {
 width:44px;
 height:44px;
-background:url(../img/lightbox/default-skin.png) 0 0 no-repeat;
 background-size:264px 88px
 }
 @media (-webkit-min-device-pixel-ratio: 1.1), (-webkit-min-device-pixel-ratio: 1.09375), (min-resolution: 105dpi), (min-resolution: 1.1dppx) {
 .pswp--svg .pswp__button, .pswp--svg .pswp__button--arrow--left::before, .pswp--svg .pswp__button--arrow--right::before {
-background-image:url(../img/lightbox/default-skin.svg)
 }
 .pswp--svg .pswp__button--arrow--left, .pswp--svg .pswp__button--arrow--right {
 background:none
@@ -9807,9 +9791,7 @@ transition:opacity .25s ease-out;
 .pswp__preloader--active {
 	opacity:1
 }
-.pswp__preloader--active .pswp__preloader__icn {
-	background:url(../img/lightbox/preloader.gif) 0 0 no-repeat
-}
+
 .pswp--css_animation .pswp__preloader--active {
 	opacity:1
 }

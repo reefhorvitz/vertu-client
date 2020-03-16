@@ -4,7 +4,7 @@
     src: local('font/Neue Haas Grotesk Display Pro 96 Black Italic'), local('NeueHaasDisplay-BlackItalic'),
         url('../font/NeueHaasDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
         url('../font/NeueHaasDisplay-BlackItalic.woff') format('woff'),
-        url('../font/NeueHaasDisplay-BlackItalic.ttf') format('truetype');
+        url('../font/neue/not in use/NeueHaasDisplay-BlackItalic.ttf') format('truetype');
 
     font-style: italic;
 }
@@ -15,7 +15,7 @@
     src: local('font/Neue Haas Grotesk Display Pro 65 Medium'), local('NeueHaasDisplay-Mediu'),
         url('../font/NeueHaasDisplay-Mediu.eot?#iefix') format('embedded-opentype'),
         url('../font/NeueHaasDisplay-Mediu.woff') format('woff'),
-        url('../font/NeueHaasDisplay-Mediu.ttf') format('truetype');
+        url('../font/neue/not in use/NeueHaasDisplay-Mediu.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -25,7 +25,7 @@
     src: local('../font/Neue Haas Grotesk Display Pro 36 Thin Italic'), local('NeueHaasDisplay-ThinItalic'),
         url('../font/NeueHaasDisplay-ThinItalic.eot?#iefix') format('embedded-opentype'),
         url('../font/NeueHaasDisplay-ThinItalic.woff') format('woff'),
-        url('../font/NeueHaasDisplay-ThinItalic.ttf') format('truetype');
+        url('../font/neue/not in use/NeueHaasDisplay-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
@@ -36,7 +36,7 @@
     src: local('../font/Neue Haas Grotesk Display Pro 45 Light'), local('NeueHaasDisplay-Light'),
         url('../font/NeueHaasDisplay-Light.eot?#iefix') format('embedded-opentype'),
         url('../font/NeueHaasDisplay-Light.woff') format('woff'),
-        url('../font/NeueHaasDisplay-Light.ttf') format('truetype');
+        url('../font/neue/not in use/NeueHaasDisplay-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }

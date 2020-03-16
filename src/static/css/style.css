@@ -276,7 +276,7 @@ margin: 48px auto 184px; clear: both;}
 #popupfoot .share:hover{background-color:#231f20;}
 #popupfoot .next-time{text-decoration:none;color: #231f20;}
 #popupfoot .next-time:hover{color:#7649a6;}
-#boxes .window{199.5px; left: 551.5px; display: none;}
+#boxes .window{left: 551.5px; display: none;}
 #mask{opacity: 0.9;display: block;}
 .window .close{position: absolute; top: 16px; right: 16px; color: #fff; background-color: #7649a6; padding: 3px 6px; font-weight: 100; border-radius: 50px; font-size: 12px; box-shadow: 0px 2px 6px #c2c2c2;}
 .share-info a{font-size: 14px; background-color: #55a242; line-height: 18px;}

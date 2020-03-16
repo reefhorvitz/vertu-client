@@ -11,7 +11,12 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/babel" src="js/grt-responsive-menu.js"></script>
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <meta name="description" content="">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -36,5 +41,55 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="../src/js/modernizr.js"></script>
+
+    <script defer src="../src/js/jquery.flexslider.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var navListItems = $('div.setup-panel div a'),
+                allWells = $('.setup-content'),
+                allNextBtn = $('.nextBtn'),
+                allPrevBtn = $('.prevBtn');
+        allWells.hide();
+        navListItems.click(function (e) {
+          e.preventDefault();
+          var $target = $($(this).attr('href')),
+                  $item = $(this);
+          if (!$item.hasClass('disabled')) {
+            navListItems.removeClass('btn-indigo').addClass('btn-default');
+            $item.addClass('btn-indigo');
+            allWells.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus();
+          }
+        });
+        allPrevBtn.click(function(){
+          var curStep = $(this).closest(".setup-content"),
+                  curStepBtn = curStep.attr("id"),
+                  prevStepSteps = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
+          prevStepSteps.removeAttr('disabled').trigger('click');
+        });
+        allNextBtn.click(function(){
+          var curStep = $(this).closest(".setup-content"),
+                  curStepBtn = curStep.attr("id"),
+                  nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+                  curInputs = curStep.find("input[type='text'],input[type='url']"),
+                  isValid = true;
+
+          $(".form-group").removeClass("has-error");
+          for(var i=0; i< curInputs.length; i++){
+            if (!curInputs[i].validity.valid){
+              isValid = false;
+              $(curInputs[i]).closest(".form-group").addClass("has-error");
+            }
+          }
+          if (isValid)
+            nextStepWizard.removeAttr('disabled').trigger('click');
+        });
+
+        $('div.setup-panel div a.btn-indigo').trigger('click');
+      });
+    </script>
   </body>
 </html>
