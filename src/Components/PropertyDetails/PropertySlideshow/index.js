@@ -1,7 +1,6 @@
 import React from 'react';
 import MapImage from '../../../static/images/map.png';
-import LeftArrow from '../../../static/images/left-arrow.png';
-import RightArrow from '../../../static/images/right-arrow.png';
+import ImageSlide from "../../ImageSlide/ImageSlide";
 
 const PropertySlideshow = ({images}) => {
     return (
@@ -10,17 +9,7 @@ const PropertySlideshow = ({images}) => {
                 <div className="apartment">
                     <div id="container" className="cf">
                         <div id="main" role="main">
-                            <section className="slider">
-                                <div className="flexslider">
-                                    <ul className="slides">
-                                        {images.map(image => <li><img src={image}/></li>)}
-                                    </ul>
-                                    <div className="custom-navigation">
-                                        <a href="#" className="flex-prev"><img src={LeftArrow} alt="left-arrow"/></a>
-                                        <a href="#" className="flex-next"><img src={RightArrow} alt="right-arrow"/></a>
-                                    </div>
-                                </div>
-                            </section>
+                           <ImageSlide images={images}/>
                         </div>
                     </div>
                 </div>
