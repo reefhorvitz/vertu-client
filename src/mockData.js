@@ -12,5 +12,14 @@ export default {
         {question:"Why are you moving?", answers:["Internship", "Reef", "Job", "House"]},
         {question:"Who are you moving with?", answers:["Bae", "Reef", "Shmul", "House"]},
         {question:"Why are you moving?", answers:["Internship", "Reef", "Job", "House"]}
+    ],
+    apartments: [
+        {images: [AppartmentImage, AppartmentImage, AppartmentImage],
+            size: 1000,
+            bedroomNum: 2,
+            bathroomNum: 2,
+            price: 199,
+            location: "Sede Warburg, Israel",
+            appointmentTime: new Date()}
     ]
 }

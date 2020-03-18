@@ -2,15 +2,15 @@ import React from 'react';
 import DiscoverMenu from "./DiscoverMenu";
 import DiscoverApartment from "./DiscoverApartment";
 
-const Discover = ({appartments}) => {
+const Discover = ({apartments}) => {
     return (
         <React.Fragment>
             <div className="upcoming-tours container">
                 <h1>Discover</h1>
-                <DiscoverMenu/>
-                <div className="container live-tour-list">
-                    {appartments.map((appartment, index) => <DiscoverApartment {...appartment} key={index}/>)}
-                </div>
+            </div>
+            <DiscoverMenu/>
+            <div className="container live-tour-list">
+                {apartments.map((apartment, index) => <DiscoverApartment {...apartment} key={index}/>)}
             </div>
         </React.Fragment>
 

@@ -1,5 +1,4 @@
-import React, {useEffect} from 'react';
-import PropertyDetails from "./Components/PropertyDetails";
+import React from 'react';
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import StyleLoader from "./Components/StyleLoader";
@@ -7,6 +6,7 @@ import StyleLoader from "./Components/StyleLoader";
 import data from './mockData';
 import Profile from './static/images/profile-img.png';
 import Application from "./Components/Application";
+import Discover from "./Components/Discover";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <StyleLoader/>
       <Header name={"reef horvitz"} sellerImage={Profile}/>
       {/*<PropertyDetails {...data}/>*/}
-      <Application {...data}/>
+      <Discover {...data}/>
       <Footer/>
       </React.Fragment>
   );

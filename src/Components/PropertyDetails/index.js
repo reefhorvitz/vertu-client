@@ -4,7 +4,8 @@ import Description from "./Description";
 import RentalSummery from "./RentalSummary";
 import PropertySlideshow from "./PropertySlideshow";
 import SellerInformation from "../SellerInformation";
-import RentalFacts from "./PropertyFeatures";
+import '../../static/css/flexslider.css';
+
 
 const PropertyDetails = ({pricePerMonth, bathroomNum, bedroomNum, size,
                         images,
