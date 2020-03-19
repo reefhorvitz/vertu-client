@@ -2,7 +2,7 @@ import React from 'react';
 import ApartmentListTitle from "../ApartmentsList/ApartmentListTitle";
 import ApartmentListMenu from "../ApartmentsList/ApartmentsListMenu";
 import ListApartment from "../ApartmentsList/ListApartment";
-import DiscoverFilters from "./DiscoverFilters";
+import DiscoverFilters from "../../Containers/Discover/DiscoverFilters";
 
 const Discover = ({apartmentsIds}) => {
     return (
