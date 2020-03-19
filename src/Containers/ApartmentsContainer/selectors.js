@@ -19,7 +19,7 @@ import {
     COOLING_DATA,
     APARTMENTS,
     TAGS,
-    TOUR_STATUS, UPCOMING
+    TOUR_STATUS, UPCOMING, COMPLETED
 } from "./consts";
 
 const _selectApartments = (state) => state.getIn([APARTMENTS_REDUCER, APARTMENTS]);
@@ -28,6 +28,11 @@ const _selectApartmentById = (apartmentId) => (state) => state.getIn([APARTMENTS
 export const getUpcomingApartmentsIds = createSelector(
     _selectApartments,
     apartments => apartments.filter(apartment => apartment.get(TOUR_STATUS) === UPCOMING).map((value, key) => key)
+);
+
+export const getCompletedApartmentsIds = createSelector(
+    _selectApartments,
+    apartments => apartments.filter(apartment => apartment.get(TOUR_STATUS) === COMPLETED).map((value, key) => key)
 );
 
 export const getApartmentsIds = createSelector(
