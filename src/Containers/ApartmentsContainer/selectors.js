@@ -30,6 +30,11 @@ export const getUpcomingApartmentsIds = createSelector(
     apartments => apartments.filter(apartment => apartment.get(TOUR_STATUS) === UPCOMING).map((value, key) => key)
 );
 
+export const getApartmentsIds = createSelector(
+    _selectApartments,
+    apartments => apartments.map((value, key) => key)
+);
+
 export const getApartmentById = (apartmentId) => createSelector(
     _selectApartmentById(apartmentId),
     apartment => apartment

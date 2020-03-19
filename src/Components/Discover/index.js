@@ -4,14 +4,15 @@ import ApartmentListMenu from "../ApartmentsList/ApartmentsListMenu";
 import ListApartment from "../ApartmentsList/ListApartment";
 import DiscoverFilters from "./DiscoverFilters";
 
-const Discover = ({apartments}) => {
+const Discover = ({apartmentsIds}) => {
     return (
         <React.Fragment>
             <ApartmentListTitle title="Discover"/>
             <ApartmentListMenu/>
             <DiscoverFilters/>
             <div className="container house-list">
-                {apartments.map((apartment, index) => <ListApartment {...apartment} key={index}/>)}
+                {apartmentsIds.valueSeq()
+                    .map((apartmentId, index) => <ListApartment propertyId={apartmentId} key={index}/>)}
             </div>
         </React.Fragment>
 

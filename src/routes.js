@@ -7,6 +7,7 @@ import PropertyDetails from "./Containers/PropertyDetails";
 import Profile from "./Containers/Profile/Profile";
 import UpcomingTours from './Containers/UpcomingTours';
 import Login from "./Components/Login";
+import Discover from "./Containers/Discover";
 
 const Routes = () => {
     return (
@@ -17,6 +18,9 @@ const Routes = () => {
                 </Route>
                 <Route path="/upcoming-tours">
                     <UpcomingTours/>
+                </Route>
+                <Route path="/discover">
+                    <Discover/>
                 </Route>
                 <Route path={"/properties/:propertyId"} component={PropertyDetails}/>
                 <Route path="/questions">
