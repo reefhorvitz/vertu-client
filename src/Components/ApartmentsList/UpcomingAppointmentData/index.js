@@ -1,6 +1,6 @@
 import React from 'react';
 import moment from 'moment';
-const AppointmentData = ({appointmentTime}) => {
+const UpcomingAppointmentData = ({appointmentTime}) => {
     const time = moment(appointmentTime);
     return (
         <div className="tours-appointment-rgt">
@@ -16,4 +16,4 @@ const AppointmentData = ({appointmentTime}) => {
 );
 };
 
-export default AppointmentData;
+export default UpcomingAppointmentData;

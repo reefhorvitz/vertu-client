@@ -3,7 +3,8 @@ import BedImage from '../../../static/images/bed.png';
 import BathImage from '../../../static/images/bath.png';
 import AreaImage from '../../../static/images/area.png';
 
-const RentalSummery = ({pricePerMonth, bedroomNum, bathroomNum, size}) => {
+const RentalSummery = ({location, tags, pricePerMonth, bedroomNum, bathroomNum, size}) => {
+    console.log(tags);
     return (
         <div className="container detail-pr-list">
             <div className="month-cost-sm">
@@ -12,14 +13,15 @@ const RentalSummery = ({pricePerMonth, bedroomNum, bathroomNum, size}) => {
             </div>
 
             <div className="detail">
-                <div className="row"><h3>57 West 9th Street #2</h3>
-                    <div className="tag-sm"><span className="tag">Family</span><span className="tag">Morning</span>
+                <div className="row"><h3>{location}</h3>
+                    <div className="tag-sm">
+                        {tags.map(tag => <span className="tag">{tag}</span>)}
                     </div>
                 </div>
                 <div className="row sm-show">
                     <span><img src={BedImage} alt="bed-icon"/> {bedroomNum} Bedroom</span>
                     <span><img src={BathImage} alt="bah-icon"/> {bathroomNum} Bathroom</span>
-                    <span><img src={AreaImage} alt="area-icon"/>{size} ft</span>
+                    <span><img src={AreaImage} alt="area-icon"/>{size}sq ft</span>
                 </div>
             </div>
             <div className="price">${pricePerMonth}/mo</div>

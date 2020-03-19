@@ -1,16 +1,17 @@
 import React from 'react';
-import DiscoverMenu from "./DiscoverMenu";
-import DiscoverApartment from "./DiscoverApartment";
+import ApartmentListTitle from "../ApartmentsList/ApartmentListTitle";
+import ApartmentListMenu from "../ApartmentsList/ApartmentsListMenu";
+import ListApartment from "../ApartmentsList/ListApartment";
+import DiscoverFilters from "./DiscoverFilters";
 
 const Discover = ({apartments}) => {
     return (
         <React.Fragment>
-            <div className="upcoming-tours container">
-                <h1>Discover</h1>
-            </div>
-            <DiscoverMenu/>
-            <div className="container live-tour-list">
-                {apartments.map((apartment, index) => <DiscoverApartment {...apartment} key={index}/>)}
+            <ApartmentListTitle title="Discover"/>
+            <ApartmentListMenu/>
+            <DiscoverFilters/>
+            <div className="container house-list">
+                {apartments.map((apartment, index) => <ListApartment {...apartment} key={index}/>)}
             </div>
         </React.Fragment>
 

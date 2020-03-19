@@ -1,0 +1,22 @@
+//REDUX OBJECTS
+export const APARTMENTS = "apartments";
+export const SELLER = "seller";
+export const IMAGES = "images";
+export const LOCATION = "location";
+export const TYPE = "type";
+export const DESCRIPTION = "description";
+export const PRICE = "price";
+export const BATHROOM_NUMBER = "bathroomNum";
+export const BEDROOM_NUMBER = "bedroomNum";
+export const SIZE = "size";
+export const OTHER_DETAILS = "otherDetails";
+export const AMENITIES = "amenities";
+export const FACILITIES = "facilities";
+export const YEAR_BUILT = "yearBuilt";
+export const PARKING_DATA = "parkingData";
+export const HEATING_DATA = "heatingData";
+export const COOLING_DATA = "coolingData";
+export const TAGS = "tags";
+export const TOUR_STATUS = "tourStatus";
+export const UPCOMING = "upcoming";
+export const COMPLETED = "COMPLETED";
