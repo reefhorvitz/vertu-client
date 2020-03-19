@@ -4,7 +4,7 @@ import CompletedAppointmentData from "../../Containers/CompletedTours/CompletedA
 
 const CompletedTourApartmentList = ({apartmentsIds}) => {
     return (
-        <ApartmentsList title={"Completed Tours"} apartmentsIds={apartmentsIds} appointmentModal={CompletedAppointmentData}/>
+        <ApartmentsList containerClass={"completed-tours"} title={"Completed Tours"} apartmentsIds={apartmentsIds} appointmentModal={CompletedAppointmentData}/>
     );
 };
 

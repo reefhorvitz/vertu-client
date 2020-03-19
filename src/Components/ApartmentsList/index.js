@@ -3,14 +3,14 @@ import ApartmentListMenu from "./ApartmentsListMenu";
 import ListApartment from "./ListApartment";
 import ApartmentListTitle from "./ApartmentListTitle";
 
-const ApartmentsList = ({title, appointmentModal, apartmentsIds}) => {
+const ApartmentsList = ({title, appointmentModal, apartmentsIds, containerClass}) => {
     return (
         <React.Fragment>
             <ApartmentListTitle title={title}/>
             <ApartmentListMenu/>
-            <div className="container live-tour-list">
+            <div className={`container live-tour-list ${containerClass}`}>
                 {apartmentsIds.valueSeq().map((apartmentId, index) => <ListApartment propertyId={apartmentId}
-                                                                          appointmentModal={appointmentModal}
+                                                                          AppointmentModal={appointmentModal}
                                                                           key={index}/>)}
             </div>
         </React.Fragment>

@@ -19,4 +19,4 @@ export const COOLING_DATA = "coolingData";
 export const TAGS = "tags";
 export const TOUR_STATUS = "tourStatus";
 export const UPCOMING = "upcoming";
-export const COMPLETED = "COMPLETED";
+export const COMPLETED = "completed";

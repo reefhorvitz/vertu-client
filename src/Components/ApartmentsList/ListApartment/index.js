@@ -2,7 +2,7 @@ import React from 'react';
 import ImageSlide from "../../../Containers/ImageSlide";
 import ApartmentDetails from "../../../Containers/ApartmentDetails";
 import {useHistory} from "react-router-dom";
-
+import '../../../static/css/style.css'
 const ListApartment = ({propertyId, AppointmentModal}) => {
     const history = useHistory();
     const redirectToProperty = () => {

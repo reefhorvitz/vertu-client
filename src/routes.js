@@ -8,6 +8,7 @@ import Profile from "./Containers/Profile/Profile";
 import UpcomingTours from './Containers/UpcomingTours';
 import Login from "./Components/Login";
 import Discover from "./Containers/Discover";
+import CompletedTourApartmentList from "./Containers/CompletedTours";
 
 const Routes = () => {
     return (
@@ -15,6 +16,9 @@ const Routes = () => {
             <Switch>
                 <Route path="/my-profile">
                     <Profile/>
+                </Route>
+                <Route path="/completed-tours">
+                    <CompletedTourApartmentList/>
                 </Route>
                 <Route path="/upcoming-tours">
                     <UpcomingTours/>

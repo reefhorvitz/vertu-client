@@ -9,3 +9,7 @@ a{
 .clickable{
     cursor: pointer;
 }
+
+.tours-appointment-rgt{
+    z-index: 100;
+}

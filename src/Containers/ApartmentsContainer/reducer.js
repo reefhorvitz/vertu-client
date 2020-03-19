@@ -25,6 +25,7 @@ const apartment = {
         image: SellerImage
     }
 };
+const completedApartment = Object.assign({}, apartment, {tourStatus: "completed"});
 const initialState = fromJS({
   apartments: {
       1: apartment,
@@ -32,7 +33,9 @@ const initialState = fromJS({
       3: apartment,
       4: apartment,
       5: apartment,
-      6: apartment
+      6: completedApartment,
+      7: completedApartment,
+      8: completedApartment,
   }
 });
 

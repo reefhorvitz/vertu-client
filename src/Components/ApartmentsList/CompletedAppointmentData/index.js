@@ -1,6 +1,7 @@
 import React from 'react';
 
-const CompletedAppointmentData = ({name, phone, email, img}) => {
+const CompletedAppointmentData = ({seller}) => {
+    const {name, email, phone, image} = seller.toJS();
     return (
         <div className="tours-appointment-rgt">
             <span className="change-appointment"><a href="#">Delete</a></span>
@@ -10,7 +11,7 @@ const CompletedAppointmentData = ({name, phone, email, img}) => {
 
                     <div className="agent-detail-info">
                         <h5>Contact Agent</h5>
-                        <span className="agent-img"><img src={img} className="img-responsive"/></span>
+                        <span className="agent-img"><img src={image} className="img-responsive"/></span>
                         <div className="agent-info">
                             <h4>{name}</h4>
                             <span className="agent-info"><span>Phone</span>{phone}</span>
