@@ -10,10 +10,10 @@ const ListApartment = ({propertyId, AppointmentModal}) => {
     };
 
     return (
-        <div className="apartment clickable" onClick={redirectToProperty}>
+        <div className="apartment">
             <div id="main" role="main" className="slider-md">
                 <ImageSlide propertyId={propertyId} ImageTag={"Apartment"}/>
-                <ApartmentDetails propertyId={propertyId}/>
+                <ApartmentDetails onContainerClick={redirectToProperty} propertyId={propertyId}/>
                 {AppointmentModal ? <AppointmentModal propertyId={propertyId}/> : ''}
                 </div>
             </div>

@@ -3,9 +3,9 @@ import BedImage from '../../../static/images/bed.png';
 import BathImage from '../../../static/images/bath.png';
 import ArenaImage from '../../../static/images/area.png';
 
-const ApartmentDetails = ({location, price, bedroomNum, bathroomNum, size}) => {
+const ApartmentDetails = ({location, price, bedroomNum, bathroomNum, size, onContainerClick}) => {
     return (
-        <div className="apartment-details">
+        <div className="apartment-details clickable" onClick={onContainerClick}>
             <div className="row"><span className="apprtment-name">{location}</span>
                 <span className="apprtment-cost">${price}/mo</span>
             </div>

@@ -1,6 +1,4 @@
 import React from 'react';
-import LeftArrow from '../../static/images/left-arrow.png';
-import RightArrow from '../../static/images/right-arrow.png';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "react-responsive-carousel";
 
