@@ -6,6 +6,7 @@ export default function getApartmentsByIds(apartmentsIds) {
       node {
         id
         size
+        description
         price
         yearBuilt
          seller {

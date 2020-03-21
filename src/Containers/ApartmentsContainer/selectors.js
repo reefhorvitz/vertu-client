@@ -81,7 +81,7 @@ export const getApartmentLocationById = (apartmentId) => createSelector(
 
 export const gerApartmentLocationStringById = (apartmentId) => createSelector(
     getApartmentLocationById(apartmentId),
-    ({city, country, address}) => city && country && address && `${address}, ${city}, ${country}`
+    ({city, country, address} = {}) => city && country && address && `${address}, ${city}, ${country}`
 )
 
 export const getApartmentTypeById = (apartmentId) => createSelector(

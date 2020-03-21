@@ -5,6 +5,7 @@ export default `
       node {
         id
         size
+        description
         price
          location {
           addressOne
