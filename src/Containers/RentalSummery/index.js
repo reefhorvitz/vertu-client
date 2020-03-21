@@ -1,15 +1,16 @@
 import {connect} from 'react-redux';
 import RentalSummery from "../../Components/PropertyDetails/RentalSummary";
 import {
+    gerApartmentLocationStringById,
     getApartmentBathroomNumberById,
-    getApartmentBedroomNumberById, getApartmentLocationById,
+    getApartmentBedroomNumberById,
     getApartmentPriceById, getApartmentSizeById, getApartmentTagsById
 } from "../ApartmentsContainer/selectors";
 
 const mapStateToProps = (state, ownProps) => {
     const {propertyId} = ownProps;
     return {
-        location: getApartmentLocationById(propertyId)(state),
+        location: gerApartmentLocationStringById(propertyId)(state),
         tags: getApartmentTagsById(propertyId)(state),
         pricePerMonth: getApartmentPriceById(propertyId)(state),
         bedroomNum: getApartmentBedroomNumberById(propertyId)(state),

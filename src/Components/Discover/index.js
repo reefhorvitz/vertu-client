@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import ApartmentListTitle from "../ApartmentsList/ApartmentListTitle";
 import ApartmentListMenu from "../ApartmentsList/ApartmentsListMenu";
 import ListApartment from "../ApartmentsList/ListApartment";
 import DiscoverFilters from "../../Containers/Discover/DiscoverFilters";
 
-const Discover = ({apartmentsIds}) => {
+const Discover = ({loadApartments, apartmentsIds}) => {
+    useEffect(() => {
+       loadApartments()
+    }, []);
     return (
         <React.Fragment>
             <ApartmentListTitle title="Discover"/>

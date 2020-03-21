@@ -1,5 +1,6 @@
 import {connect} from 'react-redux';
 import PropertyDetails from "../../Components/PropertyDetails";
+import {loadApartmentsByIds} from "../ApartmentsContainer/actions";
 
 const mapStateToProps = (state, ownProps) => {
     return {
@@ -8,4 +9,11 @@ const mapStateToProps = (state, ownProps) => {
     };
 };
 
-export default connect(mapStateToProps, null)(PropertyDetails);
+const mapDispatchToProps = (dispatch, ownProps) => {
+    const {propertyId} = ownProps;
+    return {
+        loadApartmentData: () => dispatch(loadApartmentsByIds([[propertyId]]))
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(PropertyDetails);

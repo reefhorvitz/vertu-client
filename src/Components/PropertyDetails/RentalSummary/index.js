@@ -3,7 +3,7 @@ import BedImage from '../../../static/images/bed.png';
 import BathImage from '../../../static/images/bath.png';
 import AreaImage from '../../../static/images/area.png';
 
-const RentalSummery = ({location, tags, pricePerMonth, bedroomNum, bathroomNum, size}) => {
+const RentalSummery = ({location, tags = [], pricePerMonth, bedroomNum, bathroomNum, size}) => {
     return (
         <div className="container detail-pr-list">
             <div className="month-cost-sm">

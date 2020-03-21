@@ -19,8 +19,9 @@ import {
     COOLING_DATA,
     APARTMENTS,
     TAGS,
-    TOUR_STATUS, UPCOMING, COMPLETED
+    TOUR_STATUS, UPCOMING, COMPLETED, CITY, NAME, COUNTRY, ADDRESS
 } from "./consts";
+import {EMAIL, FIRST_NAME, LAST_NAME, PHONE, PROFILE} from "../AuthContainer/consts";
 
 const _selectApartments = (state) => state.getIn([APARTMENTS_REDUCER, APARTMENTS]);
 const _selectApartmentById = (apartmentId) => (state) => state.getIn([APARTMENTS_REDUCER, APARTMENTS, apartmentId.toString()]);
@@ -47,86 +48,109 @@ export const getApartmentById = (apartmentId) => createSelector(
 
 export const getApartmentSellerById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(SELLER)
+    apartment => {
+        if(apartment){
+            let seller = apartment.get(SELLER);
+            return {
+                name: `${seller.get(FIRST_NAME)} ${seller.get(LAST_NAME)}`,
+                email: seller.get(EMAIL),
+                phone: seller.get(PHONE),
+                image: seller.get(PROFILE)
+            }
+        }
+    }
 );
 
 export const getApartmentImagesById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(IMAGES)
+    apartment => apartment && apartment.get(IMAGES)
 );
 
 export const getApartmentLocationById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(LOCATION)
+    apartment => {
+        if(apartment){
+            return {
+                city: apartment.getIn([LOCATION, CITY, NAME]),
+                country: apartment.getIn([LOCATION, CITY, COUNTRY, NAME]),
+                address: apartment.getIn([LOCATION, ADDRESS])
+            }
+        }
+    }
 );
+
+export const gerApartmentLocationStringById = (apartmentId) => createSelector(
+    getApartmentLocationById(apartmentId),
+    ({city, country, address}) => city && country && address && `${address}, ${city}, ${country}`
+)
 
 export const getApartmentTypeById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(TYPE)
+    apartment => apartment && apartment.get(TYPE)
 );
 
 export const getApartmentDescriptionById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(DESCRIPTION)
+    apartment => apartment && apartment.get(DESCRIPTION)
 );
 
 export const getApartmentPriceById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(PRICE)
+    apartment => apartment && apartment.get(PRICE)
 );
 
 export const getApartmentBathroomNumberById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(BATHROOM_NUMBER)
+    apartment => apartment && apartment.get(BATHROOM_NUMBER)
 );
 
 export const getApartmentBedroomNumberById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(BEDROOM_NUMBER)
+    apartment => apartment && apartment.get(BEDROOM_NUMBER)
 );
 
 export const getApartmentSizeById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(SIZE)
+    apartment => apartment && apartment.get(SIZE)
 );
 
 export const getApartmentOtherDetailsById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(OTHER_DETAILS)
+    apartment => apartment && apartment.get(OTHER_DETAILS)
 );
 
 export const getApartmentAmenitiesById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(AMENITIES)
+    apartment => apartment && apartment.get(AMENITIES)
 );
 
 export const getApartmentFacilitiesById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(FACILITIES)
+    apartment => apartment && apartment.get(FACILITIES)
 );
 
 export const getApartmentYearBuiltById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(YEAR_BUILT)
+    apartment => apartment && apartment.get(YEAR_BUILT)
 );
 
 export const getApartmentParkingDataById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(PARKING_DATA)
+    apartment => apartment && apartment.get(PARKING_DATA)
 );
 
 export const getApartmentHeatingDataById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(HEATING_DATA)
+    apartment => apartment && apartment.get(HEATING_DATA)
 );
 
 export const getApartmentCoolingDataById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(COOLING_DATA)
+    apartment => apartment && apartment.get(COOLING_DATA)
 );
 
 export const getApartmentTagsById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
-    apartment => apartment.get(TAGS)
+    apartment => apartment && apartment.get(TAGS)
 );
 

@@ -1,7 +1,6 @@
 import React from 'react';
 
-const SellerInformation = ({seller}) => {
-    const {name, email, phone, image} = seller.toJS();
+const SellerInformation = ({name, email, phone, image} ) => {
     return (
         <div className="live-tour-sm">
             <span className="cs-img"><img src={image} alt="tour-img" className="img-responsive"/></span>

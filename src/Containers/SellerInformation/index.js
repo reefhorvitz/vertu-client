@@ -4,9 +4,7 @@ import {getApartmentSellerById} from "../ApartmentsContainer/selectors";
 
 const mapStateToProps = (state, ownProps) => {
     const {propertyId} = ownProps;
-    return {
-        seller: getApartmentSellerById(propertyId)(state)
-    };
+    return getApartmentSellerById(propertyId)(state);
 }
 
 export default connect(mapStateToProps, null)(SellerInformation);

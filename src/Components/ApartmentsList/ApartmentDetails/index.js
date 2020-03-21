@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import BedImage from '../../../static/images/bed.png';
 import BathImage from '../../../static/images/bath.png';
 import ArenaImage from '../../../static/images/area.png';

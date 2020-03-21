@@ -1,5 +1,6 @@
 //REDUX OBJECTS
-export const NAME = "name";
+export const FIRST_NAME = "firstName";
+export const LAST_NAME = "lastName";
 export const EMAIL = "email";
 export const PHONE = "phone";
-export const PROFILE = "profile";
+export const PROFILE = "image";

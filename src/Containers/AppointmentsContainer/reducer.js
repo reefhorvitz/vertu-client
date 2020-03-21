@@ -1,12 +1,12 @@
 import {fromJS} from "immutable";
 
 const initialState = fromJS({
-  appointments: [
-      {
-          apartmentId: 1,
-          time: new Date(),
-      }
-  ]
+  // appointments: [
+  //     {
+  //         apartmentId: 1,
+  //         time: new Date(),
+  //     }
+  // ]
 });
 
 export default function AppointmentsReducer(state = initialState, action) {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BuildingDetails = ({facilities, amenities, otherDetails}) => {
+const BuildingDetails = ({facilities = [], amenities = [], otherDetails = []}) => {
     return (
         <div className="rental-facts building-detail">
             <h4>Building Details</h4>

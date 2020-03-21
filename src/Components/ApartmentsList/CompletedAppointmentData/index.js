@@ -1,7 +1,6 @@
 import React from 'react';
 
-const CompletedAppointmentData = ({seller}) => {
-    const {name, email, phone, image} = seller.toJS();
+const CompletedAppointmentData = ({name, email, phone, image}) => {
     return (
         <div className="tours-appointment-rgt">
             <span className="change-appointment"><a href="#">Delete</a></span>
