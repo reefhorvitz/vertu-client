@@ -1,6 +1,6 @@
-export default `
+export default (filters) =>  `
 {
-  allProperties {
+  allProperties ${filtersToAprtmentFilterQuery(filters)}{
     edges {
       node {
         id
@@ -76,3 +76,25 @@ export default `
   }
 }
 `
+
+function filtersToAprtmentFilterQuery({city, bedroomNum, bathroomNum, price}) {
+    let filtersQuery = '';
+    if(city){
+        filtersQuery += `cityId: ${city}, `;
+    }
+    if(bedroomNum){
+        filtersQuery += `bedroomNumber: ${bedroomNum}, `;
+    }
+    if(bathroomNum){
+        filtersQuery += `bathroomNumber: ${bathroomNum}, `;
+    }
+    if(price){
+        filtersQuery += `maxPrice: ${price.max}, `;
+    }
+    if(filtersQuery){
+        return `(${filtersQuery})`;
+    }
+    else {
+        return '';
+    }
+}

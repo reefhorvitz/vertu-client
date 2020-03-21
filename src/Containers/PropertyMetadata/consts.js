@@ -6,6 +6,7 @@ export const PARKING = "parking";
 export const HEATINGS = "heating";
 export const COOLING = "cooling";
 export const TAGS = "tags";
+export const CITIES = "cities";
 
 export const PROPERTY_METADATA_TYPES = [TYPES, OTHER_DATA, AMENITIES, FACILITIES, PARKING, HEATINGS, COOLING, TAGS];
 

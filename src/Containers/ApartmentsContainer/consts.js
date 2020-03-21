@@ -22,11 +22,15 @@ export const HEATING_DATA = "heating";
 export const COOLING_DATA = "cooling";
 export const TAGS = "tags";
 export const TOUR_STATUS = "tourStatus";
-export const UPCOMING = "upcoming";
-export const COMPLETED = "completed";
+export const DISCOVER_IDS = "discoverIds";
+export const UPCOMING_IDS = "upcomingIds";
+export const COMPLETED_IDS = "completedIds";
 
 
 //ACTIONS
 export const LOAD_ALL_APARTMENTS = "LOAD_ALL_APARTMENTS";
 export const LOAD_APARTMENTS_BY_IDS = "LOAD_APARTMENTS_BY_IDS";
 export const LOAD_APARTMENTS_SUCCESS = "LOAD_APARTMENTS_SUCCESS";
+export const SET_DISCOVER_IDS = "SET_DISCOVER_IDS";
+export const SET_UPCOMING_IDS = "SET_UPCOMING_IDS";
+export const SET_COMPLETED_IDS = "SET_COMPLETED_IDS";

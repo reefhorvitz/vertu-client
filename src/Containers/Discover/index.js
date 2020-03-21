@@ -1,17 +1,17 @@
 import {connect} from 'react-redux';
 import Discover from "../../Components/Discover";
 import {createStructuredSelector} from "reselect";
-import {getApartmentsIds} from "../ApartmentsContainer/selectors";
+import {getDiscoverIds} from "../ApartmentsContainer/selectors";
 import {loadAllApartments} from "../ApartmentsContainer/actions";
 
 const mapStateToProps = createStructuredSelector({
-   apartmentsIds: getApartmentsIds
+   apartmentsIds: getDiscoverIds
 });
 
 const mapDispatchToProps = (dispatch) => {
    return {
-      loadApartments : () => dispatch(loadAllApartments())
+      loadData : () => dispatch(loadAllApartments())
    }
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Discover);

@@ -19,26 +19,35 @@ import {
     COOLING_DATA,
     APARTMENTS,
     TAGS,
-    TOUR_STATUS, UPCOMING, COMPLETED, CITY, NAME, COUNTRY, ADDRESS
+    TOUR_STATUS, UPCOMING, COMPLETED, CITY, NAME, COUNTRY, ADDRESS, DISCOVER_IDS, UPCOMING_IDS, COMPLETED_IDS
 } from "./consts";
 import {EMAIL, FIRST_NAME, LAST_NAME, PHONE, PROFILE} from "../AuthContainer/consts";
 
+const _selectDiscoverIds = (state) => state.getIn([APARTMENTS_REDUCER, DISCOVER_IDS]);
+const _selectUpcomingIds = (state) => state.getIn([APARTMENTS_REDUCER, UPCOMING_IDS]);
+const _selectCompletedIds = (state) => state.getIn([APARTMENTS_REDUCER, COMPLETED_IDS]);
 const _selectApartments = (state) => state.getIn([APARTMENTS_REDUCER, APARTMENTS]);
 const _selectApartmentById = (apartmentId) => (state) => state.getIn([APARTMENTS_REDUCER, APARTMENTS, apartmentId.toString()]);
-
-export const getUpcomingApartmentsIds = createSelector(
-    _selectApartments,
-    apartments => apartments.filter(apartment => apartment.get(TOUR_STATUS) === UPCOMING).map((value, key) => key)
-);
-
-export const getCompletedApartmentsIds = createSelector(
-    _selectApartments,
-    apartments => apartments.filter(apartment => apartment.get(TOUR_STATUS) === COMPLETED).map((value, key) => key)
-);
 
 export const getApartmentsIds = createSelector(
     _selectApartments,
     apartments => apartments.map((value, key) => key)
+);
+
+
+export const getUpcomingApartmentsIds = createSelector(
+    _selectUpcomingIds,
+    ids => ids
+);
+
+export const getCompletedApartmentsIds = createSelector(
+    _selectCompletedIds,
+    ids => ids
+);
+
+export const getDiscoverIds = createSelector(
+    _selectDiscoverIds,
+    ids => ids
 );
 
 export const getApartmentById = (apartmentId) => createSelector(

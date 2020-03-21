@@ -1,2 +1,3 @@
 import ApartmentsSags from '../Containers/ApartmentsContainer/sagas';
-export default [ApartmentsSags]
+import PropertyMetadataSags from '../Containers/PropertyMetadata/sagas';
+export default [ApartmentsSags, PropertyMetadataSags]

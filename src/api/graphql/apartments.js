@@ -3,8 +3,8 @@ import getAllApartmentsQuery from '../../graphql/queries/apartments/getAllApartm
 import getApartmentsByIdQuery from '../../graphql/queries/apartments/getApartmentsByIds';
 import {PROPERTY_METADATA_TYPES} from "../../Containers/PropertyMetadata/consts";
 
-export function getAllApartments() {
-    const query = getAllApartmentsQuery;
+export function getAllApartments(filters) {
+    const query = getAllApartmentsQuery(filters);
     return handleGetApartments(query);
 }
 

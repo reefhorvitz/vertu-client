@@ -4,9 +4,9 @@ import ApartmentListMenu from "../ApartmentsList/ApartmentsListMenu";
 import ListApartment from "../ApartmentsList/ListApartment";
 import DiscoverFilters from "../../Containers/Discover/DiscoverFilters";
 
-const Discover = ({loadApartments, apartmentsIds}) => {
+const Discover = ({loadData, apartmentsIds}) => {
     useEffect(() => {
-       loadApartments()
+        loadData()
     }, []);
     return (
         <React.Fragment>
