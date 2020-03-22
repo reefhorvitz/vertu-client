@@ -5,7 +5,7 @@ import {loadApartmentsByIds, setCompletedIds, setUpcomingIds} from "../Apartment
 import {LOAD_ALL_APPOINTMENTS} from "./consts";
 import {ON_LOAD} from "../onLoad/consts";
 
-function* loadAllAppointments({userId}) {
+function* loadAllAppointments({ userId}) {
     const appointments = yield call(getAllAppointments, userId);
     yield put(loadAppointmentsSuccess(appointments));
     const upcomingIds = [];

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SelectFilter = ({containerClass, title, options, onChange, idSelect=true}) => {
+const SelectFilter = ({containerClass, title, options, onChange, idSelect=true, useLabelTitle=false}) => {
     const onSelect = (e) => {
       if(idSelect){
           onChange(options[e.target.selectedIndex-1].id);
@@ -11,7 +11,7 @@ const SelectFilter = ({containerClass, title, options, onChange, idSelect=true})
     };
     return (
         <div className={containerClass}>
-            <h4>{title}</h4>
+            {useLabelTitle ? <label>{title}</label> : <h4>{title}</h4>}
             <select className="clickables" onChange={onSelect}>
                 <option disabled selected value></option>
                 {options.map((option, index) => <option>{idSelect ? option.name : option}</option>)}

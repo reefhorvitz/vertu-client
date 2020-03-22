@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './styles.module.css';
 import MultiSelectOption from "./MultiSelectOption";
 
 const PropertyBuildingDetails = ({
@@ -16,9 +15,7 @@ const PropertyBuildingDetails = ({
                 <div className="Facilities-data-box-bg" id="hide-div" style=" display:none;">
                     <span id="hide">-</span>
                     <div className="Facilities-data-box">
-                        {facilities.map(facility => <MultiSelectOption
-                            optionText={facility}
-                            containerClass={"Facilities-data"}/>)}
+                        <MultiSelectOption options={facilities} addFunc={addFacility} deleteFunc={deleteFacility}/>
                     </div>
                 </div>
             </div>
@@ -27,9 +24,7 @@ const PropertyBuildingDetails = ({
                 <div className="Facilities-data-box-bg" id="hide-div1" style=" display:none;">
                     <span id="hide1">-</span>
                     <div className="Facilities-data-box">
-                        {amenities.map(amenity => <MultiSelectOption
-                            optionText={amenity}
-                            containerClass={"Facilities-data"}/>)}
+                        <MultiSelectOption options={amenities} addFunc={addAmenity} deleteFunc={deleteAmenity}/>
                     </div>
                 </div>
             </div>
@@ -38,9 +33,7 @@ const PropertyBuildingDetails = ({
                 <div className="Facilities-data-box-bg" id="hide-div2" style=" display:none;">
                     <span id="hide2">-</span>
                     <div className="Facilities-data-box">
-                        {tags.map(tag => <MultiSelectOption
-                            optionText={tag}
-                            containerClass={"Facilities-data"}/>)}
+                        <MultiSelectOption options={tags} addFunc={addTag} deleteFunc={deleteTag}/>
                     </div>
                 </div>
             </div>
@@ -49,9 +42,7 @@ const PropertyBuildingDetails = ({
                 <div className="Facilities-data-box-bg" id="hide-div3" style=" display:none;">
                     <span id="hide3">-</span>
                     <div className="Facilities-data-box">
-                        {otherData.map(data => <MultiSelectOption
-                            optionText={data}
-                            containerClass={"Facilities-data"}/>)}
+                        <MultiSelectOption options={otherData} addFunc={addOtherData} deleteFunc={deleteOtherData}/>
                     </div>
                 </div>
             </div>

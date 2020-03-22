@@ -8,6 +8,7 @@ export const HEATINGS = "heating";
 export const COOLING = "cooling";
 export const TAGS = "tags";
 export const CITIES = "cities";
+export const COUNTRIES = "countries";
 
 export const PROPERTY_METADATA_TYPES = [TYPE, TYPES, OTHER_DATA, AMENITIES, FACILITIES, PARKING, HEATINGS, COOLING, TAGS];
 

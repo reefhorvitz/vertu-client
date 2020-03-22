@@ -3,7 +3,7 @@ import SelectFilter from "../../SelectFilter";
 import PriceFilter from "../../PriceFilter";
 import styles from './styles.module.css';
 
-const bedroomOptions = [
+export const bedroomOptions = [
     {id: 0, name: "Studio"},
     {id: 1, name: "1"},
     {id:2, name:"2"},
@@ -11,7 +11,7 @@ const bedroomOptions = [
     {id: 4, name: "4+"}
 ];
 
-const bathroomOptions = [
+export const bathroomOptions = [
     {id:1, name: "1 or more"},
     {id: 1.5, name: "1.5 or more"},
     {id: 2, name: "2 or more"},

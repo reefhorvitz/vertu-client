@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from './styles.module.css';
 
-const MultiSelectOption = ({options, containerClass, addFunc, deleteFunc}) => {
+const MultiSelectOption = ({options, containerClass = "Facilities-data", addFunc, deleteFunc}) => {
     const onClick = (e, option) => {
         if(e.target.checked){
             addFunc(option.id)

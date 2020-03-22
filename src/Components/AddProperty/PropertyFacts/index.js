@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './styles.module.css';
 import SelectFilter from "../../SelectFilter";
 
 const selectContainerClassName = "facts-and-features-form-field";

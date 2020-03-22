@@ -9,11 +9,15 @@ import UpcomingTours from './Containers/UpcomingTours';
 import Login from "./Components/Login";
 import Discover from "./Containers/Discover";
 import CompletedTourApartmentList from "./Containers/CompletedTours";
+import AddProperty from "./Components/AddProperty";
 
 const Routes = () => {
     return (
         <ConnectedRouter history={history}>
             <Switch>
+                <Route path="/new-listing">
+                    <AddProperty/>
+                </Route>
                 <Route path="/my-profile">
                     <Profile/>
                 </Route>

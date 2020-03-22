@@ -13,3 +13,7 @@ a{
 .tours-appointment-rgt{
     z-index: 100;
 }
+
+select {
+    outline: none;
+}
