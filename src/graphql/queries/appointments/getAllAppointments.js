@@ -1,6 +1,6 @@
 export default function getAllAppointments(userId) {
     return  `{
-  allAppointments(customer_Id: ${userId}) {
+  allAppointments {
     edges {
       node {
         time

@@ -1,6 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 const UpcomingAppointmentData = ({appointmentTime}) => {
+    console.log(appointmentTime);
     const time = moment(appointmentTime);
     return (
         <div className="tours-appointment-rgt">
