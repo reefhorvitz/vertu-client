@@ -2,7 +2,7 @@ import {
     ADD_AMENITY_ID,
     ADD_FACILITY_ID,
     ADD_OTHER_DATA_ID,
-    ADD_TAG_ID,
+    ADD_TAG_ID, CREATE_NEW_LISTING,
     DELETE_AMENITY_ID,
     DELETE_FACILITY_ID,
     DELETE_OTHER_DATA_ID,
@@ -182,5 +182,11 @@ export function deleteOtherDataId(id) {
     return {
         type: DELETE_OTHER_DATA_ID,
         id
+    }
+}
+
+export function createNewListing() {
+    return {
+        type: CREATE_NEW_LISTING
     }
 }

@@ -1,6 +1,5 @@
 import {fromJS} from "immutable";
 import {
-    LOCATION,
     ADD_AMENITY_ID,
     ADD_FACILITY_ID,
     ADD_OTHER_DATA_ID,
@@ -57,7 +56,7 @@ function insert(state, key, item) {
 
 function deleteAt(state, key, item) {
     return state.update(key, lst => {
-        const index = lst.findIndex(item);
+        const index = lst.findIndex(val => val == item);
         if(index !== -1){
             return lst.delete(index);
         }
@@ -68,15 +67,15 @@ function deleteAt(state, key, item) {
 export default function PropertyManagerReducer(state = initialState, action) {
     switch (action.type) {
         case SET_ADDRESS_ONE:
-            return state.setIn([LOCATION, ADDRESS_ONE], action.address);
+            return state.set(ADDRESS_ONE, action.address);
         case SET_ADDRESS_TWO:
-            return state.setIn([LOCATION, ADDRESS_TWO], action.address);
+            return state.set(ADDRESS_TWO, action.address);
         case SET_CITY_ID:
-            return state.setIn([LOCATION, CITY], action.id);
+            return state.set(CITY, action.id);
         case SET_COUNTRY_ID:
-            return state.setIn([LOCATION, COUNTRY], action.id);
+            return state.set(COUNTRY, action.id);
         case SET_ZIP_CODE:
-            return state.setIn([LOCATION, ZIP_CODE], action.zipCode);
+            return state.set(ZIP_CODE, action.zipCode);
         case SET_PARKING_ID:
             return state.set(PARKING, action.id);
         case SET_HEATING_ID:

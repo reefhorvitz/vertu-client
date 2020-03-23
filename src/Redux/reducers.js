@@ -6,6 +6,7 @@ import AuthReducer from "../Containers/AuthContainer/reducer";
 import FiltersReducer from "../Containers/Filters/reducer";
 import PropertyMetadataReducer from "../Containers/PropertyMetadata/reducer";
 import PropertyManagerReducer from "../Containers/PropertyManager/reducer";
+import VideoReducer from "../Containers/Video/reducer";
 
 
 export default (history) => combineReducers({
@@ -15,5 +16,6 @@ export default (history) => combineReducers({
     filters: FiltersReducer,
     propertyMetadata: PropertyMetadataReducer,
     propertyManager: PropertyManagerReducer,
+    video: VideoReducer,
     router: connectRouter(history)
 });

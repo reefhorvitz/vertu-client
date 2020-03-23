@@ -1,8 +1,12 @@
 import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "react-responsive-carousel";
+import DefaultHouseImage  from '../../static/images/appartment.jpg';
 
 const ImageSlide = ({images = [], ImageTag}) => {
+    if(images.size === 0){
+        images = [DefaultHouseImage];
+    }
     return (
         <section className="slider">
             <div className="flexslider">

@@ -11,9 +11,24 @@ a{
 }
 
 .tours-appointment-rgt{
-    z-index: 100;
+    z-index: 90;
 }
 
 select {
     outline: none;
+}
+
+.tour-video > div {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.tour-video > div >div {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.tour-video > div >div > div{
+    width: 100% !important;
+    height: 100% !important;
 }
