@@ -12,9 +12,9 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-    const {propertyId} = ownProps;
+    const {appointmentId} = ownProps;
     return {
-        onLoad: () => dispatch(fetchVideoTokens(propertyId))
+        onLoad: () => dispatch(fetchVideoTokens(appointmentId))
     }
 };
 

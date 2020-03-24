@@ -3,9 +3,9 @@ import PropertyDetails from "../../Components/PropertyDetails";
 import {loadApartmentsByIds} from "../ApartmentsContainer/actions";
 
 const mapStateToProps = (state, ownProps) => {
+    const propertyId = ownProps.propertyId || ownProps.match.params.propertyId;
     return {
-        propertyId: ownProps.match.params.propertyId,
-
+        propertyId
     };
 };
 

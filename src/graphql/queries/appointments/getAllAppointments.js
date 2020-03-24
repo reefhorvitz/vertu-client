@@ -3,6 +3,7 @@ export default function getAllAppointments(userId) {
   allAppointments {
     edges {
       node {
+        id
         time
         isCompleted
         property {

@@ -10,15 +10,13 @@ import Login from "./Components/Login";
 import Discover from "./Containers/Discover";
 import CompletedTourApartmentList from "./Containers/CompletedTours";
 import AddProperty from "./Containers/PropertyMangerComponents/AddProperty";
-import LiveTour from "./Components/LiveTour";
+import LiveTour from "./Containers/LiveTour";
 
 const Routes = () => {
     return (
         <ConnectedRouter history={history}>
             <Switch>
-                <Route path="/live-tour">
-                    <LiveTour/>
-                </Route>
+                <Route path="/live-tour/:appointmentId" component={LiveTour}/>
                 <Route path="/new-listing">
                     <AddProperty/>
                 </Route>
