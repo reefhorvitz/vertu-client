@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Logo from "../Logo";
 import {Link} from "react-router-dom";
+import FacebookLogin from "../Auth/FacebookLogin";
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -21,10 +22,7 @@ const Login = () => {
                     <h3>Login in with</h3>
                     <div className="social-login">
                         <span className="facebook-login">
-                            <a href="#">
-                                <i className="fa fa-facebook-official" aria-hidden="true"/>
-                                Login in with Facebook
-                            </a>
+                            <FacebookLogin/>
                         </span>
                         <span className="google-login">
                             <a href="#">

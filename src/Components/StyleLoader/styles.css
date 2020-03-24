@@ -32,3 +32,23 @@ select {
     width: 100% !important;
     height: 100% !important;
 }
+
+.home-full-view .location-filter .container {
+    padding-bottom: 0 !important;
+}
+
+.find-src{
+    display: flex;
+    align-items: center;
+}
+
+.copyright a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.grt-menu-right a{
+    color: white;
+    text-decoration: none;
+}

@@ -21,7 +21,7 @@ import {
     TAGS,
     TOUR_STATUS, UPCOMING, COMPLETED, CITY, NAME, COUNTRY, ADDRESS, DISCOVER_IDS, UPCOMING_IDS, COMPLETED_IDS
 } from "./consts";
-import {EMAIL, FIRST_NAME, LAST_NAME, PHONE, PROFILE} from "../AuthContainer/consts";
+import {EMAIL, PHONE, PROFILE} from "../AuthContainer/consts";
 
 const _selectDiscoverIds = (state) => state.getIn([APARTMENTS_REDUCER, DISCOVER_IDS]);
 const _selectUpcomingIds = (state) => state.getIn([APARTMENTS_REDUCER, UPCOMING_IDS]);
@@ -61,7 +61,7 @@ export const getApartmentSellerById = (apartmentId) => createSelector(
         if(apartment){
             let seller = apartment.get(SELLER);
             return {
-                name: `${seller.get(FIRST_NAME)} ${seller.get(LAST_NAME)}`,
+                name: `${seller.get(NAME)}`,
                 email: seller.get(EMAIL),
                 phone: seller.get(PHONE),
                 image: seller.get(PROFILE)

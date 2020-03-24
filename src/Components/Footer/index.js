@@ -1,10 +1,17 @@
 import React from 'react';
+import {Link, useHistory} from "react-router-dom";
 
-const Footer = ({}) => {
+const Footer = () => {
+    const history = useHistory();
+    const shouldShowAgentLoginOption = history.location.pathname === "/";
     return (
         <footer>
             <div className="container">
-                <span className="copyright">&copy; Virtuhouse All Right Reserved 2020</span>
+                <span className="copyright">
+                    {shouldShowAgentLoginOption ?
+                        <Link to={'/agent-registration'}>Are you an agent?</Link> :
+                    <span>&copy; Virtuhouse All Right Reserved 2020</span>}
+                </span>
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About Us</a></li>

@@ -1,6 +1,9 @@
 import React from 'react';
 import moment from 'moment';
+import ConfirmImage from '../../../static/images/go.png';
 import {Link} from "react-router-dom";
+import DayPicker from "react-day-picker";
+
 const UpcomingAppointmentData = ({appointmentId, appointmentTime}) => {
     console.log(appointmentTime);
     const time = moment(appointmentTime);
@@ -17,7 +20,6 @@ const UpcomingAppointmentData = ({appointmentId, appointmentTime}) => {
                     </Link>
             </div>
         </div>
-
 );
 };
 

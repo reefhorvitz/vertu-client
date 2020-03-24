@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from './Containers/Header';
-import Footer from "./Components/Footer";
 import StyleLoader from "./Components/StyleLoader";
 import OnLoad from './Containers/onLoad';
 import {Provider} from "react-redux";
@@ -12,9 +10,7 @@ function App() {
       <Provider store={store}>
           <StyleLoader/>
           <OnLoad/>
-          <Header/>
           <Routes/>
-          <Footer/>
       </Provider>
   );
 }

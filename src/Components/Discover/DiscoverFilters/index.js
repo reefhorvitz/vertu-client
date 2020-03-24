@@ -21,17 +21,19 @@ export const bathroomOptions = [
     {id: 4, name: "4 or more"}
 ];
 
-const DiscoverFilters = ({onPriceChange, onBedroomNumberChange, onBathroomNumberChange, onCityChange, cities = []}) => {
+const DiscoverFilters = ({onPriceChange, onBedroomNumberChange, onBathroomNumberChange, onCityChange, cities = [],
+                         cityFilterTitle="City", children}) => {
     if(cities.toJS){
         cities = cities.toJS();
     }
     return (
         <div className="container location-filter">
             <div className={`container ${styles.container}`}>
-            <SelectFilter onChange={onCityChange} options={cities} title={'City'}/>
+            <SelectFilter onChange={onCityChange} options={cities} title={cityFilterTitle}/>
             <SelectFilter onChange={onBedroomNumberChange} title={"Beds"} options={bedroomOptions}/>
             <SelectFilter onChange={onBathroomNumberChange} title={"Bath"} options={bathroomOptions}/>
             <PriceFilter onChange={onPriceChange}/>
+                {children}
             </div>
         </div>
     );

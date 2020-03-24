@@ -49,7 +49,7 @@ row{display:block;}
 .home-caption h1{font-size:72px; line-height:86px; letter-spacing:-1px; font-weight: bold; margin: 0px 0px 0px -5px; font-family: 'Acumin Pro'; }
 .home-caption .tag-line{margin: 18px 0px 0px; float: left; font-size: 24px; line-height: 29px; font-family: 'Acumin Pro'; }
 .home-full-view .home-filter .container{margin:0px; width: auto;}
-.home-full-view .home-filter {float: left; margin: 34px 0px 0px; clear: both; background-color:#fff; border-radius: 10px; padding: 55px 54px 55px 158px; width: 81.7%;}
+.home-full-view .home-filter {float: left; margin: 34px 0px 0px; clear: both; background-color:#fff; border-radius: 10px; padding: 20px 55px; width: 81.7%;}
 .home-full-view .home-filter .origin, .destination, .bedroom, .bathroom, .price-range{float:left; width: 167px;}
 <!--.home-full-view .location-filter h4{font-family: 'Neue Haas Grotesk Display Pro';}-->
 .home-full-view .home-filter .bathroom select{width: 39px; margin: 0 0px 0px 11%;}
@@ -60,7 +60,7 @@ row{display:block;}
 .home-full-view .location-filter select{width: 143px;}
 .home-full-view .location-filter select option:hover{}
 .home-full-view .feild-sm{font-size:12px; line-height:15px; color:#bebebe; letter-spacing:0.05px; text-transform:uppercase; display: block;}
-.home-full-view .location-filter .find-src input{background-color: #7649a6; float: right; margin: 36px 0px 0px; border-radius: 50%; width: 41px; height: 40px; background-image:url(../images/go.png); background-repeat:no-repeat; border: 0px; background-position: center; cursor: pointer;}
+.home-full-view .location-filter .find-src input{background-color: #7649a6; float: right; border-radius: 50%; width: 41px; height: 40px; background-image:url(../images/go.png); background-repeat:no-repeat; border: 0px; background-position: center; cursor: pointer;}
 /*******Home page**********/
 /********Application page starts******/
 .application-area .card .card-body.mb-4{width:887px; float:left; padding-top: 69px;}

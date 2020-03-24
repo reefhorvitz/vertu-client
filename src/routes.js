@@ -11,10 +11,14 @@ import Discover from "./Containers/Discover";
 import CompletedTourApartmentList from "./Containers/CompletedTours";
 import AddProperty from "./Containers/PropertyMangerComponents/AddProperty";
 import LiveTour from "./Containers/LiveTour";
+import InitialFilteringPage from "./Components/InitialFilteringPage";
+import Header from './Containers/Header';
+import Footer from "./Components/Footer";
 
 const Routes = () => {
     return (
         <ConnectedRouter history={history}>
+            <Header/>
             <Switch>
                 <Route path="/live-tour/:appointmentId" component={LiveTour}/>
                 <Route path="/new-listing">
@@ -36,10 +40,14 @@ const Routes = () => {
                 <Route path="/questions">
                     <Application/>
                 </Route>
-                <Route path="/">
+                <Route path="/login">
                     <Login/>
                 </Route>
+                <Route path="/">
+                    <InitialFilteringPage/>
+                </Route>
             </Switch>
+            <Footer/>
         </ConnectedRouter>
     );
 };
