@@ -20,7 +20,7 @@ import {
     SET_SIZE,
     SET_TYPE_ID,
     SET_YEAR_BUILT,
-    SET_ZIP_CODE
+    SET_ZIP_CODE, UPLOAD_IMAGE, UPLOAD_IMAGE_SUCCESS
 } from "./consts";
 
 export function setCoolingId(id) {
@@ -188,5 +188,19 @@ export function deleteOtherDataId(id) {
 export function createNewListing() {
     return {
         type: CREATE_NEW_LISTING
+    }
+}
+
+export function uploadImage(image) {
+    return {
+        type: UPLOAD_IMAGE,
+        image
+    }
+}
+
+export function uploadImageSuccess(url) {
+    return {
+        type: UPLOAD_IMAGE_SUCCESS,
+        url
     }
 }

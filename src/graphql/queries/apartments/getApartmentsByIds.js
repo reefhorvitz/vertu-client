@@ -11,8 +11,7 @@ export default function getApartmentsByIds(apartmentsIds) {
         yearBuilt
          seller {
           email
-          firstName
-          lastName
+          name
           phone
           image{url}
         }

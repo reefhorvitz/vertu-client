@@ -1,12 +1,18 @@
 import React, {useState} from 'react';
 import Logo from "../Logo";
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import FacebookLogin from "../Auth/FacebookLogin";
 
-const Login = () => {
+const Login = ({isConnected, onLoginSuccess, email: reducerEmail, token}) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-
+    const history = useHistory();
+    if(isConnected){
+        history.push('/discover');
+    }
+    if(reducerEmail && token){
+        onLoginSuccess(reducerEmail, token)
+    }
     return (
         <div className="login-sec">
             <div className="login-lft-sec">
@@ -22,7 +28,7 @@ const Login = () => {
                     <h3>Login in with</h3>
                     <div className="social-login">
                         <span className="facebook-login">
-                            <FacebookLogin/>
+                            <FacebookLogin onLoginSuccess={onLoginSuccess}/>
                         </span>
                         <span className="google-login">
                             <a href="#">

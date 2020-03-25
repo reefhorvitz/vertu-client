@@ -8,8 +8,8 @@ export default class Request {
         return axios.get(this.serviceUrl + path).then(Request.getResData)
     }
 
-    post(path, body){
-        return axios.post(this.serviceUrl + path, body).then(Request.getResData)
+    post(path, body, headers){
+        return axios.post(this.serviceUrl + path, body, {headers}).then(Request.getResData)
     }
 
     put(path, body){

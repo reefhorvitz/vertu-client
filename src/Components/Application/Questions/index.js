@@ -1,6 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {fromJS} from "immutable";
+import {useHistory} from "react-router-dom";
 
 const Questions = ({questions, activeStep, setActiveStep}) => {
+    const history = useHistory();
+    const [answers, setAnswers] = useState(fromJS([]));
+    const onAnswerClick = (index, answer) => {
+      setAnswers(answers.set(activeStep, answer));
+      setActiveStep(activeStep+1);
+      if (activeStep>answer.length){
+          //
+      }
+    };
     return (
         <form role="form" action="" method="post">
             {questions.map((question, index) => activeStep == index && (
@@ -11,7 +22,7 @@ const Questions = ({questions, activeStep, setActiveStep}) => {
                             {question.answers.map((answer, answerIndex) => (
                                 <button key={answerIndex} className="btn btn-indigo btn-rounded nextBtn float-right waves-effect waves-light"
                                         type="button"
-                                        onClick={() => setActiveStep(index+1)}>
+                                        onClick={() => onAnswerClick(index, answer)}>
                                     {answer}
                                 </button>
                             ))}

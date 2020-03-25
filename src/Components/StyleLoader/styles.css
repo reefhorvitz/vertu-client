@@ -52,3 +52,18 @@ select {
     color: white;
     text-decoration: none;
 }
+
+.images-section-bg label{
+    cursor: pointer;
+}
+
+.images-section-bg .disabled{
+    cursor: not-allowed;
+}
+
+.new-listing-image-li{
+    max-width: 300px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+}

@@ -7,7 +7,7 @@ import {
     DELETE_AMENITY_ID,
     DELETE_FACILITY_ID,
     DELETE_OTHER_DATA_ID,
-    DELETE_TAG_ID, FACILITIES, HEATING, OTHER_DATA, PARKING, PRICE,
+    DELETE_TAG_ID, FACILITIES, HEATING, IMAGES, OTHER_DATA, PARKING, PRICE,
     SET_ADDRESS_ONE,
     SET_ADDRESS_TWO,
     SET_BATHROOM_NUMBER,
@@ -21,7 +21,7 @@ import {
     SET_SIZE,
     SET_TYPE_ID,
     SET_YEAR_BUILT,
-    SET_ZIP_CODE, TAGS, TYPE, YEAR_BUILT, ZIP_CODE
+    SET_ZIP_CODE, TAGS, TYPE, UPLOAD_IMAGE_SUCCESS, YEAR_BUILT, ZIP_CODE
 } from './consts';
 import {SIZE} from "../ApartmentsContainer/consts";
 const apartment = {
@@ -110,6 +110,8 @@ export default function PropertyManagerReducer(state = initialState, action) {
             return deleteAt(state, OTHER_DATA, action.id);
         case DELETE_TAG_ID:
             return deleteAt(state, TAGS, action.id);
+        case UPLOAD_IMAGE_SUCCESS:
+            return insert(state, IMAGES, action.url);
         default:
             return state;
     }

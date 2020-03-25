@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import {Carousel} from "react-responsive-carousel";
 import DefaultHouseImage  from '../../static/images/appartment.jpg';
 
-const ImageSlide = ({images = [], ImageTag}) => {
+const ImageSlide = ({images = [], ImageTag, imageLIClass}) => {
     if(images.size === 0){
         images = [DefaultHouseImage];
     }
@@ -13,7 +13,7 @@ const ImageSlide = ({images = [], ImageTag}) => {
                 <ul className="slides">
                     <Carousel showThumbs={false} showIndicators={false} showStatus={false} autoPlay={true} infiniteLoop={true}>
                     {images.map((image, index) => (
-                    <li key={index}>
+                    <li className={imageLIClass}  key={index}>
                         <img src={image}/>
                     </li>
                     ))}

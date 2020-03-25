@@ -1,6 +1,6 @@
 import {PROPERTY_MANAGER_REDUCER} from "../../Redux/consts";
 import {createSelector} from "reselect";
-import {ADDRESS_ONE, ADDRESS_TWO, CITY, COUNTRY, LOCATION, PRICE, YEAR_BUILT, ZIP_CODE} from "./consts";
+import {ADDRESS_ONE, ADDRESS_TWO, CITY, COUNTRY, IMAGES, LOCATION, PRICE, YEAR_BUILT, ZIP_CODE} from "./consts";
 import {SIZE} from "../ApartmentsContainer/consts";
 
 const _getPropertyManager = (state) => state.get(PROPERTY_MANAGER_REDUCER);
@@ -55,3 +55,8 @@ export const getYearBuilt = createSelector(
     _getPropertyManager,
     (property) => property.get(YEAR_BUILT)
 );
+
+export const getImages = createSelector(
+    _getPropertyManager,
+    property => property.get(IMAGES)
+)

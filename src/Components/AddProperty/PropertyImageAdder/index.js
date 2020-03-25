@@ -1,7 +1,28 @@
-import React from 'react';
+import React, {useState} from 'react';
+import ImageSlide from "../../ImageSlide/ImageSlide";
 
-const PropertyImageAdder = ({}) => {
-    return ();
+const PropertyImageAdder = ({uploadImage, images}) => {
+    const [isLoading, setIsLoading] = useState(false);
+    const onChange = (e) => {
+        setIsLoading(true);
+        console.log(e.target, e.target.files);
+        const file = e.target.files[0];
+        const formData = new FormData();
+        formData.append('file', file);
+        console.log(formData);
+        uploadImage(formData)
+    };
+    return (
+        <form enctype="multipart/form-data">
+        <div className="images-section-bg">
+            <h2>Images</h2>
+            <a href="#"><label className={`${isLoading && "disabled"}`} for="file-upload">ADD MORE IMAGES</label>
+            <input type="file" id="file-upload" style={{display: "none"}} onChange={onChange}/>
+            <i className="fa fa-plus" aria-hidden="true"/></a>
+            {images.size > 0 ? <ImageSlide imageLIClass={'new-listing-image-li'} images={images}/> : null}
+        </div>
+        </form>
+    );
 }
 
 export default PropertyImageAdder;

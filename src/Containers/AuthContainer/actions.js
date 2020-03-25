@@ -1,11 +1,22 @@
-import {ON_LOGIN_SUCCESS} from "./consts";
+import {FETCH_USER_DATA_SUCCESS, ON_LOGIN_SUCCESS} from "./consts";
 
-export function onLoginSuccess(name, email, image, token) {
+export function onLoginSuccess(email, token) {
     return {
         type: ON_LOGIN_SUCCESS,
-        name,
         email,
-        image,
+        token
+    }
+}
+
+export function fetchUserDataSuccess(id, name, phone, email, profile, userType, token) {
+    return {
+        type: FETCH_USER_DATA_SUCCESS,
+        id,
+        name,
+        phone,
+        email,
+        profile,
+        userType,
         token
     }
 }

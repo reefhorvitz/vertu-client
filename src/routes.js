@@ -6,7 +6,6 @@ import Application from "./Components/Application";
 import PropertyDetails from "./Containers/PropertyDetails";
 import Profile from "./Containers/Profile/Profile";
 import UpcomingTours from './Containers/UpcomingTours';
-import Login from "./Components/Login";
 import Discover from "./Containers/Discover";
 import CompletedTourApartmentList from "./Containers/CompletedTours";
 import AddProperty from "./Containers/PropertyMangerComponents/AddProperty";
@@ -14,29 +13,31 @@ import LiveTour from "./Containers/LiveTour";
 import InitialFilteringPage from "./Components/InitialFilteringPage";
 import Header from './Containers/Header';
 import Footer from "./Components/Footer";
+import Login from "./Containers/Login";
+import PrivateRoute from "./Containers/PrivateRoute";
 
 const Routes = () => {
     return (
         <ConnectedRouter history={history}>
             <Header/>
             <Switch>
-                <Route path="/live-tour/:appointmentId" component={LiveTour}/>
-                <Route path="/new-listing">
+                <PrivateRoute path="/live-tour/:appointmentId" component={LiveTour}/>
+                <PrivateRoute path="/new-listing">
                     <AddProperty/>
-                </Route>
-                <Route path="/my-profile">
+                </PrivateRoute>
+                <PrivateRoute path="/my-profile">
                     <Profile/>
-                </Route>
-                <Route path="/completed-tours">
+                </PrivateRoute>
+                <PrivateRoute path="/completed-tours">
                     <CompletedTourApartmentList/>
-                </Route>
-                <Route path="/upcoming-tours">
+                </PrivateRoute>
+                <PrivateRoute path="/upcoming-tours">
                     <UpcomingTours/>
-                </Route>
-                <Route path="/discover">
+                </PrivateRoute>
+                <PrivateRoute path="/discover">
                     <Discover/>
-                </Route>
-                <Route path={"/properties/:propertyId"} component={PropertyDetails}/>
+                </PrivateRoute>
+                <PrivateRoute path={"/properties/:propertyId"} component={PropertyDetails}/>
                 <Route path="/questions">
                     <Application/>
                 </Route>

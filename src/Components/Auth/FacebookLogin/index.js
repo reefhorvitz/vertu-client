@@ -4,9 +4,8 @@ import FacebookLoginComponent  from 'react-facebook-login/dist/facebook-login-re
 const appId = '3149301188413254';
 const FacebookLogin = ({onLoginSuccess}) => {
     const responseFacebook = (response) => {
-        const {name, email, accessToken} = response;
-        const picture = response.picture.data.url;
-        onLoginSuccess(name, email, picture, accessToken);
+        const {email, accessToken} = response;
+        onLoginSuccess(email, accessToken);
     };
 
     return (

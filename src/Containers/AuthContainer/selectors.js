@@ -1,6 +1,6 @@
 import {createSelector} from 'reselect';
 import {AUTH_REDUCER} from "../../Redux/consts";
-import {AGENT, EMAIL, ID, IS_CONNECTED, NAME, PHONE, PROFILE, TYPE} from "./consts";
+import {AGENT, EMAIL, ID, IS_CONNECTED, NAME, PHONE, PROFILE, TOKEN, TYPE} from "./consts";
 
 const _getUsersName = (state) => state.getIn([AUTH_REDUCER, NAME]);
 const _getUsersEmail = (state) => state.getIn([AUTH_REDUCER, EMAIL]);
@@ -41,4 +41,9 @@ export const getIsAgent = createSelector(
 export const getIsConnected = createSelector(
   _getAuth,
   auth => auth.get(IS_CONNECTED)
+);
+
+export const getUsersToken = createSelector(
+  _getAuth,
+  auth => auth.get(TOKEN)
 );
