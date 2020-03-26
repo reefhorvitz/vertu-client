@@ -1,14 +1,18 @@
 import React, {useState} from 'react';
 import Logo from "../Logo";
-import {Link, useHistory} from "react-router-dom";
+import {Link, useHistory, useLocation} from "react-router-dom";
 import FacebookLogin from "../Auth/FacebookLogin";
 
 const Login = ({isConnected, onLoginSuccess, email: reducerEmail, token}) => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const history = useHistory();
+    const location = useLocation();
+
+    let { from } = location.state || {from: { pathname: "/discover" }};
     if(isConnected){
-        history.push('/discover');
+        history.push(from.pathname);
+        return null;
     }
     if(reducerEmail && token){
         onLoginSuccess(reducerEmail, token)

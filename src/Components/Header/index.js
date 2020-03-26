@@ -19,9 +19,9 @@ const Header = ({isConnected, name, profile}) => {
                                 <ul className="grt-menu">
                                     <li className="active"><a href="#">My Messages</a></li>
                                     <li className="grt-dropdown">
-                                        <a className="profile-img" href={"/my-profile"}>
+                                        <Link className="profile-img" to={"/my-profile"}>
                                             <img className="img-responsive" src={profile}/>
-                                        </a>
+                                        </Link>
                                         <a>{name}<i className="fa fa-angle-down" aria-hidden="true"></i></a>
                                         <ul className="grt-dropdown-list">
                                             <li><a href="#"><img src={MessageImage}/>Messages</a></li>

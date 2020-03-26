@@ -2,7 +2,7 @@ import {handleByUserType} from "../../../helpers/userType";
 
 export default function getAllAppointments(userId) {
     return  `{
-  allAppointments(${handleByUserType('customerId', 'sellerId')}${userId}){
+  allAppointments(${handleByUserType('customerId', 'sellerId')}:${userId}){
     edges {
       node {
         id

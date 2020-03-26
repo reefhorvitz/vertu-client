@@ -5,11 +5,9 @@ const PropertyImageAdder = ({uploadImage, images}) => {
     const [isLoading, setIsLoading] = useState(false);
     const onChange = (e) => {
         setIsLoading(true);
-        console.log(e.target, e.target.files);
         const file = e.target.files[0];
         const formData = new FormData();
         formData.append('file', file);
-        console.log(formData);
         uploadImage(formData)
     };
     return (

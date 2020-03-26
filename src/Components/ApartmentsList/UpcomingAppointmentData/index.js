@@ -5,7 +5,6 @@ import {Link} from "react-router-dom";
 import DayPicker from "react-day-picker";
 
 const UpcomingAppointmentData = ({appointmentId, appointmentTime}) => {
-    console.log(appointmentTime);
     const time = moment(appointmentTime);
     return (
         <div className="tours-appointment-rgt">

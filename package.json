@@ -12,6 +12,7 @@
     "graphql-request": "^1.8.2",
     "history": "latest",
     "immutable": "^4.0.0-rc.12",
+    "jquery": "^3.4.1",
     "moment": "^2.24.0",
     "opentok-react": "^0.10.0",
     "opentok-rvc": "^1.0.9",

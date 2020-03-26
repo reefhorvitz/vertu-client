@@ -5,8 +5,8 @@ import {loadApartmentsByIds, setCompletedIds, setUpcomingIds} from "../Apartment
 import {LOAD_ALL_APPOINTMENTS} from "./consts";
 import {FETCH_USER_DATA_SUCCESS} from "../AuthContainer/consts";
 
-function* loadAllAppointments({userId}) {
-    const appointments = yield call(getAllAppointments, userId);
+function* loadAllAppointments({id}) {
+    const appointments = yield call(getAllAppointments, id);
     yield put(loadAppointmentsSuccess(appointments));
     const upcomingIds = [];
     const completedIds = [];

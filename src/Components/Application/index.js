@@ -23,7 +23,7 @@ const Application = ({steps, questions}) => {
                     </div>
                     <div className="app-img">
                         <img src={HouseImage} className="img-responsive"/>
-                        <span className="list-close"><i className="fa fa-close" aria-hidden="true"></i></span>
+                        <a className="list-close" href="/"><i className="fa fa-close" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
