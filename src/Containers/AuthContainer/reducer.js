@@ -15,7 +15,6 @@ const initialState = fromJS({
 export default function AuthReducer(state = initialState, action) {
     switch (action.type) {
         case FETCH_USER_DATA_SUCCESS:
-            console.log("in reducer");
             localStorage.setItem(EMAIL, action.email);
             localStorage.setItem(TOKEN, action.token);
             return state.set(ID, action.id)

@@ -21,7 +21,7 @@ const Routes = () => {
         <ConnectedRouter history={history}>
             <Header/>
             <Switch>
-                <PrivateRoute path="/live-tour/:appointmentId" component={LiveTour}/>
+                <PrivateRoute path="/live-tour/:appointmentId" Component={LiveTour}/>
                 <PrivateRoute path="/new-listing">
                     <AddProperty/>
                 </PrivateRoute>
@@ -37,7 +37,7 @@ const Routes = () => {
                 <PrivateRoute path="/discover">
                     <Discover/>
                 </PrivateRoute>
-                <PrivateRoute path={"/properties/:propertyId"} component={PropertyDetails}/>
+                <PrivateRoute path={"/properties/:propertyId"} Component={PropertyDetails}/>
                 <Route path="/questions">
                     <Application/>
                 </Route>

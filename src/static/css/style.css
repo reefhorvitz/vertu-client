@@ -267,7 +267,7 @@ margin: 48px auto 184px; clear: both;}
 #mask {position:absolute; left:0; top:0; z-index:9999; background-color: rgba(0,0,0,0.2); display:none;}  
 #boxes .window {position:absolute; left:0; top:0; width:440px; height:200px; display:none; z-index:999999; padding:20px; border-radius: 10px; text-align: center;}
 .window h3{display: inline-block; font-size: 24px; line-height: 29px; margin: 60px 0px 10px 0px; font-weight: normal;}
-#boxes #dialog {position:relative; width:536px; height:auto; padding:0px 0px 61px 0px; background-color:#fff;top: 144.5px; left: 683.5px; display: block; }
+#boxes #dialog {position:relative; width:536px; height:auto; padding:0; background-color:#fff; display: block; }
 .maintext{text-align: center; text-decoration: none;}
 #lorem{width: 61%; margin: 0 auto;}
 #lorem p{margin:0px 0px 32px; font-size: 16px; line-height: 24px; font-weight: 300;}
@@ -276,7 +276,6 @@ margin: 48px auto 184px; clear: both;}
 #popupfoot .share:hover{background-color:#231f20;}
 #popupfoot .next-time{text-decoration:none;color: #231f20;}
 #popupfoot .next-time:hover{color:#7649a6;}
-#boxes .window{left: 551.5px; display: none;}
 #mask{opacity: 0.9;display: block;}
 .window .close{position: absolute; top: 16px; right: 16px; color: #fff; background-color: #7649a6; padding: 3px 6px; font-weight: 100; border-radius: 50px; font-size: 12px; box-shadow: 0px 2px 6px #c2c2c2;}
 .share-info a{font-size: 14px; background-color: #55a242; line-height: 18px;}

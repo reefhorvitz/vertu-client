@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Logo from "../Logo";
 import {Link, useHistory, useLocation} from "react-router-dom";
 import FacebookLogin from "../Auth/FacebookLogin";
+import AppointmentSchedule from "../AppointmentSchedule";
 
 const Login = ({isConnected, onLoginSuccess, email: reducerEmail, token}) => {
     const [email, setEmail] = useState("");
