@@ -76,8 +76,11 @@ export default (filters) =>  `
 }
 `
 
-function filtersToAprtmentFilterQuery({city, bedroomNum, bathroomNum, price}) {
+export function filtersToAprtmentFilterQuery({sellerId, city, bedroomNum, bathroomNum, price}) {
     let filtersQuery = '';
+    if(sellerId){
+        filtersQuery += `sellerId: ${sellerId}, `;
+    }
     if(city){
         filtersQuery += `cityId: ${city}, `;
     }

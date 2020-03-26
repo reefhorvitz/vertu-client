@@ -2,7 +2,9 @@ import store from '../Redux/store';
 import {getIsAgent} from "../Containers/AuthContainer/selectors";
 
 export function handleByUserType(userResponse, agentResponse){
-    return getIsAgent(store.getState()) ?
-        agentResponse :
-        userResponse;
+    const isAgent = getIsAgent(store.getState());
+    if(typeof userResponse === 'function'){
+        return isAgent ? agentResponse() : userResponse()
+    }
+    return isAgent ? agentResponse : userResponse
 }

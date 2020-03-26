@@ -6,10 +6,12 @@ import {loadApartmentsSuccess, setDiscoverIds} from "./actions";
 import {getApartmentsIds} from "./selectors";
 import {getFilters} from "../Filters/selectors";
 import {SET_BATHROOM_FILTER, SET_BEDROOM_FILTER, SET_CITY_FILTER, SET_PRICE_FILTER} from "../Filters/consts";
+import {handleByUserType} from "../../helpers/userType";
 
-function* loadAllApartments() {
-    const filters = yield select(getFilters);
-    let apartments = yield call(getAllApartments, filters.toJS());
+function* loadAllApartments({userId}) {
+    const filters = (yield select(getFilters)).toJS();
+    handleByUserType(() => null, () => filters.sellerId = userId);
+    let apartments = yield call(getAllApartments, filters);
     const ids = yield onFetchApartmentsSuccess(apartments);
     yield put(setDiscoverIds(ids));
 }
