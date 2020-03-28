@@ -6,7 +6,7 @@ const initialState = fromJS([]);
 export default function AppointmentsReducer(state = initialState, action) {
     switch (action.type) {
         case LOAD_APPOINTMENTS_SUCCESS:
-            return state.set(fromJS(action.appointments));
+            return state.merge(fromJS(action.appointments));
         case CREATE_APPOINTMENT_SUCCESS:
             return state.push(fromJS(action.appointment));
         default:

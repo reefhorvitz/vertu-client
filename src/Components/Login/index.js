@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import Logo from "../Logo";
 import {Link, useHistory, useLocation} from "react-router-dom";
 import FacebookLogin from "../Auth/FacebookLogin";
-import AppointmentSchedule from "../AppointmentSchedule";
+import LoginIntroduction from "./LoginIntroduction";
 
 const Login = ({isConnected, onLoginSuccess, email: reducerEmail, token}) => {
     const [email, setEmail] = useState("");
@@ -20,14 +19,11 @@ const Login = ({isConnected, onLoginSuccess, email: reducerEmail, token}) => {
     }
     return (
         <div className="login-sec">
-            <div className="login-lft-sec">
-                <Logo/>
-                <div className="login-txt">
-                    <h2>Go places you've <br/> dreamed of.</h2>
-                    <h5>Wafer dessert danish. Powder toffee cookie jelly beans bear claw jelly-o gingerbread halvah.
-                        and</h5>
-                </div>
-            </div>
+            <LoginIntroduction>
+                <h2>Go places you've <br/> dreamed of.</h2>
+                <h5>Wafer dessert danish. Powder toffee cookie jelly beans bear claw jelly-o gingerbread halvah.
+                    and</h5>
+            </LoginIntroduction>
             <div className="login-rgt-sec">
                 <div className="social-media-login social-login">
                     <h3>Login in with</h3>
@@ -36,10 +32,7 @@ const Login = ({isConnected, onLoginSuccess, email: reducerEmail, token}) => {
                             <FacebookLogin onLoginSuccess={onLoginSuccess}/>
                         </span>
                         <span className="google-login">
-                            <a href="#">
-                                <i className="fa fa-google" aria-hidden="true"/>
-                                Log in with Google
-                            </a>
+
                         </span>
                         <span className="or">OR</span>
                         <form>

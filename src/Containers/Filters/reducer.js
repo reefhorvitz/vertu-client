@@ -4,7 +4,7 @@ import {
     BEDROOM_NUMBER_FILTER, CITY_FILTER, PRICE_FILTER, PRICE_FILTER_MAX,
     SET_BATHROOM_FILTER,
     SET_BEDROOM_FILTER, SET_CITY_FILTER,
-    SET_PRICE_FILTER
+    SET_PRICE_FILTER, SET_TAGS, TAGS_FILTER
 } from "./consts";
 const initialState = fromJS({
     price: {
@@ -12,7 +12,8 @@ const initialState = fromJS({
       max: 5000
     },
     bedroomNum: null,
-    bathroomNum: null
+    bathroomNum: null,
+    tags: []
 });
 
 export default function FiltersReducer(state = initialState, action) {
@@ -28,6 +29,8 @@ export default function FiltersReducer(state = initialState, action) {
             return state.set(BATHROOM_NUMBER_FILTER, action.number);
         case SET_CITY_FILTER:
             return state.set(CITY_FILTER, action.cityId);
+        case SET_TAGS:
+            return state.set(TAGS_FILTER, action.tags);
         default:
             return state
     }

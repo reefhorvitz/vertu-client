@@ -15,6 +15,7 @@ import Header from './Containers/Header';
 import Footer from "./Components/Footer";
 import Login from "./Containers/Login";
 import PrivateRoute from "./Containers/PrivateRoute";
+import ForgotPassword from "./Components/ForgetPassword";
 
 const Routes = () => {
     return (
@@ -43,6 +44,9 @@ const Routes = () => {
                 </Route>
                 <Route path="/login">
                     <Login/>
+                </Route>
+                <Route path="/forgot-password">
+                    <ForgotPassword/>
                 </Route>
                 <Route path="/">
                     <InitialFilteringPage/>

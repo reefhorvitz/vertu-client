@@ -75,3 +75,9 @@ select {
     transform: translate(-50%, -50%) !important;
     z-index: 9999999 !important;
 }
+
+ul .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}

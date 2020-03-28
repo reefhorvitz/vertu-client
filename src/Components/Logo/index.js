@@ -3,7 +3,7 @@ import LogoImage from '../../static/images/logo.png';
 
 const Logo = () => {
     return (<div className="grt-menu-logo">
-        <a href="/" className="grt-logo">
+        <a href="/discover" className="grt-logo">
             <img src={LogoImage}/>
         </a>
     </div>);
