@@ -6,10 +6,10 @@ import {fromJS} from "immutable";
 
 
 const steps = ["Accompany", "Reason", "Habit", "Location"];
-const questions = [{question:"Who are you moving with?", answers:["Bae", "Reef", "Shmul", "House"]},
-    {question:"Why are you moving?", answers:["Internship", "Reef", "Job", "House"]},
-    {question:"Who are you moving with?", answers:["Bae", "Reef", "Shmul", "House"]},
-    {question:"Why are you moving?", answers:["Internship", "Reef", "Job", "House"]}
+const questions = [{question:"Who are you moving with?", answers:["Bae", "Myself", "None", "House"]},
+    {question:"Why are you moving?", answers:["Internship", "None", "Job", "House"]},
+    {question:"Who are you moving with?", answers:["Bae", "Pop", "Roy", "House"]},
+    {question:"Why are you moving?", answers:["Internship", "None", "Job", "House"]}
 ];
 
 const mapAnswersToTags = (answers) => {

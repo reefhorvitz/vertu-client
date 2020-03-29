@@ -19,7 +19,7 @@ export default (filters) =>  `
           }
         }
          seller {
-          email
+          
           name
           phone
           image{url}

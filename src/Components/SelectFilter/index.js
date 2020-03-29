@@ -1,6 +1,7 @@
 import React from 'react';
 
-const SelectFilter = ({containerClass, title, options, onChange, idSelect=true, useLabelTitle=false, selectClass}) => {
+const SelectFilter = ({containerClass, title, options, onChange, idSelect=true, useLabelTitle=false, selectClass,
+                          defaultValue}) => {
     if(options.toJS){
         options = options.toJS();
     }
@@ -12,12 +13,13 @@ const SelectFilter = ({containerClass, title, options, onChange, idSelect=true, 
           onChange(e.target.value);
       }
     };
+    const selectedOption = options.findIndex(option => option.id === defaultValue);
     return (
         <div className={containerClass}>
             {useLabelTitle ? <label>{title}</label> : <h4>{title}</h4>}
-            <select className={`${selectClass} clickable`} onChange={onSelect}>
-                <option disabled selected value></option>
-                {options.map((option, index) => <option>{idSelect ? option.name : option}</option>)}
+            <select className={`${selectClass} clickable`} onChange={onSelect} value={selectedOption}>
+                <option disabled selected value={-1}></option>
+                {options.map((option, index) => <option value={index}>{idSelect ? option.name : option}</option>)}
             </select>
         </div>
     );

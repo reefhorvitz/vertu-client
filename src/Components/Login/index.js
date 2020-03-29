@@ -14,7 +14,7 @@ const Login = ({isConnected, onLoginSuccess, email: reducerEmail, token}) => {
         history.push(from.pathname);
         return null;
     }
-    if(reducerEmail && token){
+    if(reducerEmail && token !== undefined){
         onLoginSuccess(reducerEmail, token)
     }
     return (
@@ -48,7 +48,7 @@ const Login = ({isConnected, onLoginSuccess, email: reducerEmail, token}) => {
                                 <a href="#">Forget Password?</a>
                             </div>
                             <Link to={"/discover"}>
-                            <input type="submit" value="Sign in"/>
+                            <input type="submit" value="Sign in" onClick={() => onLoginSuccess(email, password)}/>
                             </Link>
                         </form>
                     </div>

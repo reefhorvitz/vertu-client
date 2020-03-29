@@ -2,7 +2,7 @@ import {call, put, takeEvery} from 'redux-saga/effects'
 import {getAllAppointments} from "../../api/graphql/appointments";
 import {createAppointmentSuccess, loadAppointmentsSuccess} from "./actions";
 import {loadApartmentsByIds, setCompletedIds, setUpcomingIds} from "../ApartmentsContainer/actions";
-import {CREATE_APPOINTMENT, LOAD_ALL_APPOINTMENTS} from "./consts";
+import {CREATE_APPOINTMENT, CREATE_APPOINTMENT_SUCCESS, LOAD_ALL_APPOINTMENTS} from "./consts";
 import {FETCH_USER_DATA_SUCCESS} from "../AuthContainer/consts";
 import {createAppointment} from "../../api/orm/appointments";
 
@@ -34,5 +34,6 @@ function *createAppointmentSaga({time, propertyId, userId}) {
 export default function* defaultSaga() {
     yield takeEvery(FETCH_USER_DATA_SUCCESS, loadAllAppointments);
     yield takeEvery(LOAD_ALL_APPOINTMENTS, loadAllAppointments);
+    yield takeEvery(CREATE_APPOINTMENT_SUCCESS, loadAllAppointments);
     yield takeEvery(CREATE_APPOINTMENT, createAppointmentSaga);
 }

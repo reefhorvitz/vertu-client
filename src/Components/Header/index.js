@@ -28,7 +28,7 @@ const Header = ({isConnected, name, profile}) => {
                                         </Link>
                                         <ul className="grt-dropdown-list">
                                             <li><a href="#"><img src={MessageImage}/>Messages</a></li>
-                                            <li><a href="#"><img src={ListingImage}/>Create new listing</a></li>
+                                            <li><Link to="new-listing"><img src={ListingImage}/>Create new listing</Link></li>
                                         </ul>
                                     </li>
                                 </ul>
