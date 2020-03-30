@@ -20,6 +20,7 @@ import ForgotPassword from "./Components/ForgetPassword";
 const Routes = () => {
     return (
         <ConnectedRouter history={history}>
+            <div id={'page-content'}>
             <Header/>
             <Switch>
                 <PrivateRoute path="/live-tour/:appointmentId" Component={LiveTour}/>
@@ -52,6 +53,7 @@ const Routes = () => {
                     <InitialFilteringPage/>
                 </Route>
             </Switch>
+            </div>
             <Footer/>
         </ConnectedRouter>
     );

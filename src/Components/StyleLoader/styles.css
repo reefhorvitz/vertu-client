@@ -81,3 +81,25 @@ ul .slide {
     align-items: center;
     justify-content: center;    
 }
+
+
+/*for footer fix*/
+#page-content{
+    min-height: 93vh;
+}
+
+footer{
+    height: 7vh;
+    padding: 0;
+}
+
+footer>div{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+footer .copyright{
+    flex-grow: 1;
+}
+/*end footer fix*/
