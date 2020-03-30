@@ -8,7 +8,7 @@ import {
 } from "./consts";
 const initialState = fromJS({
     price: {
-      min: 1000,
+      min: 0,
       max: 5000
     },
     bedroomNum: null,

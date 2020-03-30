@@ -3,13 +3,21 @@ import DiscoverFilters from "../../../Components/Discover/DiscoverFilters";
 import {setBathroomNumberFilter, setBedroomNumberFilter, setCityFilter, setPriceFilter} from "../../Filters/actions";
 import {createStructuredSelector} from "reselect";
 import {getAllCities} from "../../PropertyMetadata/selectors";
-import {getBathroomFilter, getBedroomFilter, getCityFilter} from "../../Filters/selectors";
+import {
+    getBathroomFilter,
+    getBedroomFilter,
+    getCityFilter,
+    getMaxPriceFilter,
+    getMinPriceFilter
+} from "../../Filters/selectors";
 
 const mapStateToProps = createStructuredSelector({
     cities: getAllCities,
     selectedCity: getCityFilter,
     selectedBedroomNumber: getBedroomFilter,
-    selectedBathroomNumber: getBathroomFilter
+    selectedBathroomNumber: getBathroomFilter,
+    min: getMinPriceFilter,
+    max: getMaxPriceFilter
 });
 
 const mapDispatchToProps = (dispatch) => {

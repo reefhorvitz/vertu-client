@@ -23,7 +23,8 @@ export const bathroomOptions = [
 
 const DiscoverFilters = ({onPriceChange, onBedroomNumberChange, onBathroomNumberChange, onCityChange, cities = [],
                          cityFilterTitle="City", children,
-                         selectedCity, selectedBedroomNumber, selectedBathroomNumber}) => {
+                         selectedCity, selectedBedroomNumber, selectedBathroomNumber,
+                         min, max}) => {
     if(cities.toJS){
         cities = cities.toJS();
     }
@@ -35,7 +36,7 @@ const DiscoverFilters = ({onPriceChange, onBedroomNumberChange, onBathroomNumber
                           options={bedroomOptions}/>
             <SelectFilter defaultValue={selectedBathroomNumber} onChange={onBathroomNumberChange} title={"Bath"}
                           options={bathroomOptions}/>
-            <PriceFilter onChange={onPriceChange}/>
+            <PriceFilter onChange={onPriceChange} defaultMin={min} defaultMax={max}/>
                 {children}
             </div>
         </div>
