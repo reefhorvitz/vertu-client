@@ -13,11 +13,15 @@ const SelectFilter = ({containerClass, title, options, onChange, idSelect=true, 
           onChange(e.target.value);
       }
     };
+    const addedProps = {};
     const selectedOption = options.findIndex(option => option.id === defaultValue);
+    if(selectedOption !== -1){
+        addedProps.value = selectedOption
+    }
     return (
         <div className={containerClass}>
             {useLabelTitle ? <label>{title}</label> : <h4>{title}</h4>}
-            <select className={`${selectClass} clickable`} onChange={onSelect} value={selectedOption}>
+            <select className={`${selectClass} clickable`} onChange={onSelect} {...addedProps}>
                 <option disabled selected value={-1}></option>
                 {options.map((option, index) => <option value={index}>{idSelect ? option.name : option}</option>)}
             </select>
