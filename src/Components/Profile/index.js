@@ -1,11 +1,17 @@
 import React, {useState} from 'react';
 import ProfileBackground from '../../static/images/profile-bg.png';
 
-const Profile = ({name, phone, email, img}) => {
+const Profile = ({name, phone, email, img,
+                     updateDetails}) => {
     const [newName, setNewName] = useState(name);
     const [newPhone, setNewPhone] = useState(phone);
     const [newEmail, setNewEmail] = useState(email);
     const [newImg, setNewImg] = useState(img);
+    const onSave = (e) => {
+        e.preventDefault();
+        updateDetails(newName, newPhone, newEmail)
+    };
+
     return (
         <React.Fragment>
             <div className="profile-img-lft">
@@ -30,7 +36,7 @@ const Profile = ({name, phone, email, img}) => {
                             <input type="email" value={newEmail} onChange={(e) => setNewEmail(e.target.value)}/>
                         </span>
                         <span className="profile-log">
-                            <input type="submit" value="Save"/>
+                            <input onClick={onSave} type="submit" value="Save"/>
                         </span>
                     </form>
                 </div>

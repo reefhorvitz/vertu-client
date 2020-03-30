@@ -1,8 +1,10 @@
 import {call, put, takeEvery} from 'redux-saga/effects'
 import {validateTokenAuth} from "../../api/orm/auth";
-import {fetchUserDataSuccess} from "./actions";
-import {LOGOUT, ON_LOGIN_SUCCESS} from "./consts";
+import {fetchUserDataSuccess, updateUserDetailsSuccess} from "./actions";
+import {LOGOUT, ON_LOGIN_SUCCESS, UPDATE_USER_DETAILS, UPDATE_USER_DETAILS_SUCCESS} from "./consts";
 import {push} from 'connected-react-router';
+import {updateUserDetails} from "../../api/orm/user";
+import {onFailure, onSuccess} from "../Toastr/actions";
 
 function *validateAndFetchUserData({email, token}) {
     const {id, name, email: userEmail, profile, phone, type} = yield call(validateTokenAuth, email, token);
@@ -13,7 +15,20 @@ function *logoutSaga() {
     yield push('/login')
 }
 
+function *updateUserDetailsSaga({userId, name, email, phone}) {
+    try {
+        let user = yield call(updateUserDetails, userId, name, phone, email);
+        yield put(updateUserDetailsSuccess(user.name, user.phone, user.email));
+        yield put(onSuccess('User Information Updated Successfully'));
+        yield push('/discover');
+    }
+    catch (e) {
+        yield put(onFailure('Failed to update user information'));
+    }
+}
+
 export default function* defaultSaga() {
     yield takeEvery(ON_LOGIN_SUCCESS, validateAndFetchUserData);
     yield takeEvery(LOGOUT, logoutSaga);
+    yield takeEvery(UPDATE_USER_DETAILS, updateUserDetailsSaga);
 }

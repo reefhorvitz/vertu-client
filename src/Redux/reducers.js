@@ -7,6 +7,7 @@ import FiltersReducer from "../Containers/Filters/reducer";
 import PropertyMetadataReducer from "../Containers/PropertyMetadata/reducer";
 import PropertyManagerReducer from "../Containers/PropertyManager/reducer";
 import VideoReducer from "../Containers/Video/reducer";
+import {reducer as toastrReducer} from 'react-redux-toastr'
 
 
 export default (history) => combineReducers({
@@ -17,5 +18,6 @@ export default (history) => combineReducers({
     propertyMetadata: PropertyMetadataReducer,
     propertyManager: PropertyManagerReducer,
     video: VideoReducer,
+    toastr: toastrReducer,
     router: connectRouter(history)
 });

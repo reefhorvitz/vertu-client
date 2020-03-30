@@ -4,8 +4,8 @@ import '../../static/css/flexslider.css';
 import '../../static/css/mdb.css';
 import '../../static/css/style.css'
 import '../../static/css/stylesheet.css';
-// import 'bootstrap/dist/css/bootstrap.css';
 import './styles.css';
+import 'react-redux-toastr/lib/css/react-redux-toastr.min.css'
 
 // import '../../static/css/mdb.css';
 // import '../../static/css/animation.css';

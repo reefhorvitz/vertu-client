@@ -2,6 +2,7 @@ import {connect} from 'react-redux';
 import Profile from "../../Components/Profile";
 import {createStructuredSelector} from "reselect";
 import {getUsersEmail, getUsersName, getUsersPhone, getUsersProfile} from "../AuthContainer/selectors";
+import {updateUserDetails} from "../AuthContainer/actions";
 
 const mapStateToProps = createStructuredSelector({
     name: getUsersName,
@@ -10,4 +11,10 @@ const mapStateToProps = createStructuredSelector({
     img: getUsersProfile,
 });
 
-export default connect(mapStateToProps, null)(Profile);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        updateDetails: (name, phone, email) => dispatch(updateUserDetails(name, phone, email))
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Profile);
