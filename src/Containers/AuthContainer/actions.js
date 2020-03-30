@@ -1,4 +1,4 @@
-import {FETCH_USER_DATA_SUCCESS, ON_LOGIN_SUCCESS} from "./consts";
+import {FETCH_USER_DATA_SUCCESS, LOGOUT, ON_LOGIN_SUCCESS} from "./consts";
 
 export function onLoginSuccess(email, token) {
     return {
@@ -18,5 +18,11 @@ export function fetchUserDataSuccess(id, name, phone, email, profile, userType, 
         profile,
         userType,
         token
+    }
+}
+
+export function logout() {
+    return {
+        type: LOGOUT
     }
 }

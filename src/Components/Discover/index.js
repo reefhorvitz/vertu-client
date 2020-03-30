@@ -4,6 +4,7 @@ import ApartmentListMenu from "../ApartmentsList/ApartmentsListMenu";
 import ListApartment from "../ApartmentsList/ListApartment";
 import DiscoverFilters from "../../Containers/Discover/DiscoverFilters";
 import {handleByUserType} from "../../helpers/userType";
+import './styles.css';
 
 const Discover = ({loadData, apartmentsIds}) => {
     useEffect(() => {

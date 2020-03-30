@@ -3,8 +3,10 @@ import MessageImage from '../../static/images/message.png';
 import ListingImage from '../../static/images/listing.png';
 import Logo from "../Logo";
 import {Link} from "react-router-dom";
+import {handleByUserType} from "../../helpers/userType";
 
-const Header = ({isConnected, name, profile}) => {
+const Header = ({isConnected, name, profile,
+                logout}) => {
     return (
         <header className="sticky">
             <div className="menu-container container">
@@ -28,7 +30,13 @@ const Header = ({isConnected, name, profile}) => {
                                         </Link>
                                         <ul className="grt-dropdown-list">
                                             <li><a href="#"><img src={MessageImage}/>Messages</a></li>
-                                            <li><Link to="new-listing"><img src={ListingImage}/>Create new listing</Link></li>
+                                            { handleByUserType(null, (<li>
+                                                    <Link to="new-listing"><img src={ListingImage}/>
+                                                    Create new listing
+                                                    </Link>
+                                                </li>))
+                                            }
+                                            <li onClick={logout}><a href="#"><img src={MessageImage}/>Log Out</a></li>
                                         </ul>
                                     </li>
                                 </ul>

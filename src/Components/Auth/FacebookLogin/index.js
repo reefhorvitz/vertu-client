@@ -5,7 +5,6 @@ const appId = '3149301188413254';
 const FacebookLogin = ({onLoginSuccess}) => {
     const responseFacebook = (response) => {
         const {email, accessToken} = response;
-        console.log(response)
         onLoginSuccess(email, accessToken);
     };
 

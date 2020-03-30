@@ -12,3 +12,4 @@ export const TOKEN = "token";
 
 export const ON_LOGIN_SUCCESS = "ON_LOGIN_SUCCESS";
 export const FETCH_USER_DATA_SUCCESS = "FETCH_USER_DATA_SUCCESS";
+export const LOGOUT = "LOGOUT";

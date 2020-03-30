@@ -7,7 +7,6 @@ import {getIsConnected} from "../AuthContainer/selectors";
 // A wrapper for <Route> that redirects to the login
 // screen if you're not yet authenticated.
 function PrivateRoute({isConnected, children, Component, ...rest }) {
-    console.log(rest);
     return (
         <Route
             {...rest}

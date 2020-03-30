@@ -1,5 +1,5 @@
 import {fromJS} from "immutable";
-import {EMAIL, FETCH_USER_DATA_SUCCESS, ID, IS_CONNECTED, NAME, PROFILE, TOKEN, TYPE} from "./consts";
+import {EMAIL, FETCH_USER_DATA_SUCCESS, ID, IS_CONNECTED, LOGOUT, NAME, PROFILE, TOKEN, TYPE} from "./consts";
 
 const initialState = fromJS({
   isConnected: false,
@@ -14,6 +14,10 @@ const initialState = fromJS({
 
 export default function AuthReducer(state = initialState, action) {
     switch (action.type) {
+        case LOGOUT:
+            localStorage.removeItem(EMAIL);
+            localStorage.removeItem(TOKEN);
+            return initialState.delete(EMAIL).delete(TOKEN);
         case FETCH_USER_DATA_SUCCESS:
             localStorage.setItem(EMAIL, action.email);
             localStorage.setItem(TOKEN, action.token);

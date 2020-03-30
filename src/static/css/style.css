@@ -1089,7 +1089,7 @@ z-index: 9999; top: 141px;}
 .location-filter-sm button:last-child{float:right;}
 .discover-list {margin: 31px auto 16px;}
 .location-filter div h4{margin: 0px 0px 4px 0px;}
-.bg-gray{position: fixed; width: 100%; z-index: 99;}
+.bg-gray{position: relative; width: 100%; z-index: 99; margin-bottom: 10px}
 header .grt-menu-logo{margin:0 auto;}
 .rgt-sm{float:left;}
 .grt-menu-row{position:relative;}
@@ -1098,7 +1098,7 @@ header .grt-mobile-button{left: 0; width: 22px; top: 5px;}
 header nav{position:inherit;}
 .sm-filter{display:block; color: #fff; font-size: 21px; cursor: pointer;}
 .map-sm{display:none; z-index: 999; position: absolute;}
-.events-list-sm a{margin:16px 0px 9px; display: block;}
+.events-list-sm a{margin:12px 0px 9px; display: block;}
 .events-list-sm li:first-child{float:left;}
 .events-list-sm li:last-child{float:right;}
 .location-filter .tags span:nth-child(3n+3) {/*background: green;*/}
