@@ -15,7 +15,7 @@ const UpcomingAppointmentData = ({appointmentId, appointmentTime}) => {
                     <h5>{time.format('MMMM Do YYYY')}</h5>
                     <span className="date">{time.format('hh:mm a')}</span>
                     <Link to={`/live-tour/${appointmentId}`}>
-                        <span className="hide-join">Join</span>
+                        <span>Join</span>
                     </Link>
             </div>
         </div>

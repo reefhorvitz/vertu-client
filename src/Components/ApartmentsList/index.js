@@ -2,6 +2,7 @@ import React from 'react';
 import ApartmentListMenu from "./ApartmentsListMenu";
 import ListApartment from "./ListApartment";
 import ApartmentListTitle from "./ApartmentListTitle";
+import './styles.css'
 
 const ApartmentsList = ({title, appointmentModal, apartmentsIds, containerClass}) => {
     return (
