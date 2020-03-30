@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+}
+
+.mapContainer{
+    height: inherit;
+}
+
+.mapContainer img{
+    height: 100%;
+}
