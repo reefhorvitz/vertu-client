@@ -15,7 +15,7 @@ const LiveTour = ({propertyId=-1, appointmentId}) => {
                 </div>
             </div>
         </div>
-        <PropertyDetails propertyId={propertyId}/>
+        <PropertyDetails propertyId={propertyId} shouldShowScheduleButton={false}/>
         </React.Fragment>
     );
 }
