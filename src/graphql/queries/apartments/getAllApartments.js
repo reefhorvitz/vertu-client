@@ -92,6 +92,7 @@ export function filtersToAprtmentFilterQuery({sellerId, city, bedroomNum, bathro
     }
     if(price){
         filtersQuery += `maxPrice: ${price.max}, `;
+        filtersQuery += `minPrice: ${price.min}, `;
     }
     if(filtersQuery){
         return `(${filtersQuery})`;

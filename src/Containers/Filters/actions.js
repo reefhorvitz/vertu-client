@@ -1,9 +1,9 @@
 import {SET_BATHROOM_FILTER, SET_BEDROOM_FILTER, SET_CITY_FILTER, SET_PRICE_FILTER, SET_TAGS} from "./consts";
 
-export function setPriceFilter(price) {
+export function setPriceFilter(min, max) {
     return {
         type: SET_PRICE_FILTER,
-         price
+         min, max
     }
 }
 

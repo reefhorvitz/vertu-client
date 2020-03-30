@@ -1,7 +1,7 @@
 import {fromJS} from "immutable";
 import {
     BATHROOM_NUMBER_FILTER,
-    BEDROOM_NUMBER_FILTER, CITY_FILTER, PRICE_FILTER, PRICE_FILTER_MAX,
+    BEDROOM_NUMBER_FILTER, CITY_FILTER, PRICE_FILTER, PRICE_FILTER_MAX, PRICE_FILTER_MIN,
     SET_BATHROOM_FILTER,
     SET_BEDROOM_FILTER, SET_CITY_FILTER,
     SET_PRICE_FILTER, SET_TAGS, TAGS_FILTER
@@ -19,7 +19,8 @@ const initialState = fromJS({
 export default function FiltersReducer(state = initialState, action) {
     switch (action.type) {
         case SET_PRICE_FILTER:
-            return state.setIn([PRICE_FILTER, PRICE_FILTER_MAX], action.price);
+            return state.setIn([PRICE_FILTER, PRICE_FILTER_MAX], action.max)
+                .setIn([PRICE_FILTER, PRICE_FILTER_MIN], action.min);
         case SET_BEDROOM_FILTER:
             if(action.number === 4){
                 action.number = null;

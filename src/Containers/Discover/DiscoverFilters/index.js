@@ -14,7 +14,7 @@ const mapStateToProps = createStructuredSelector({
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onPriceChange: (price) => dispatch(setPriceFilter(price)),
+        onPriceChange: ([min, max]) => dispatch(setPriceFilter(min, max)),
         onBedroomNumberChange: (number) => dispatch(setBedroomNumberFilter(number)),
         onBathroomNumberChange: (number) => dispatch(setBathroomNumberFilter(number)),
         onCityChange: (cityId) => dispatch(setCityFilter(cityId))
