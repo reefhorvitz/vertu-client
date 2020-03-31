@@ -84,7 +84,7 @@ export function filtersToAprtmentFilterQuery({sellerId, city, bedroomNum, bathro
     if(city){
         filtersQuery += `cityId: ${city}, `;
     }
-    if(bedroomNum){
+    if(bedroomNum !== null){
         if(bedroomNum === 4){
             filtersQuery += `bedroomNumberGte: 4, `;
         }
