@@ -1,7 +1,7 @@
 import {fromJS} from "immutable";
 import {
-    APARTMENTS, COMPLETED_IDS,
-    DISCOVER_IDS, IS_LOADING, LOAD_ALL_APARTMENTS,
+    APARTMENTS, APARTMENTS_LOADING, COMPLETED_IDS,
+    DISCOVER_IDS, IS_LOADING,
     LOAD_APARTMENTS_SUCCESS, SET_COMPLETED_IDS,
     SET_DISCOVER_IDS,
     SET_UPCOMING_IDS,
@@ -17,7 +17,7 @@ const initialState = fromJS({
 
 export default function ApartmentsReducer(state = initialState, action) {
     switch (action.type) {
-        case LOAD_ALL_APARTMENTS:
+        case APARTMENTS_LOADING:
             return state.set(IS_LOADING, true);
         case SET_DISCOVER_IDS:
             return state.set(DISCOVER_IDS, fromJS(action.ids));

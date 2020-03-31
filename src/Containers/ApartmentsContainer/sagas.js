@@ -2,13 +2,14 @@ import {call, put, takeEvery, select} from 'redux-saga/effects'
 import {getAllApartments, getApartmentsByIds} from "../../api/graphql/apartments";
 import {arrayToObject} from "../../helpers/arrayToObject";
 import {LOAD_ALL_APARTMENTS, LOAD_APARTMENTS_BY_IDS} from "./consts";
-import {loadApartmentsSuccess, setDiscoverIds} from "./actions";
+import {loadApartmentsSuccess, onApartmentsLoading, setDiscoverIds} from "./actions";
 import {getApartmentsIds, getApartmentTagsById} from "./selectors";
 import {getFilters, getUserTagFilter} from "../Filters/selectors";
 import {SET_BATHROOM_FILTER, SET_BEDROOM_FILTER, SET_CITY_FILTER, SET_PRICE_FILTER} from "../Filters/consts";
 import {handleByUserType} from "../../helpers/userType";
 
 function* loadAllApartments({userId}) {
+    yield put(onApartmentsLoading());
     const filters = (yield select(getFilters)).toJS();
     handleByUserType(() => null, () => filters.sellerId = userId);
     let apartments = yield call(getAllApartments, filters);

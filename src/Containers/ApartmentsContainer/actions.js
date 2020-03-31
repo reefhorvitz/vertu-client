@@ -1,4 +1,5 @@
 import {
+    APARTMENTS_LOADING,
     LOAD_ALL_APARTMENTS,
     LOAD_APARTMENTS_BY_IDS,
     LOAD_APARTMENTS_SUCCESS, SET_COMPLETED_IDS,
@@ -44,5 +45,11 @@ export function setCompletedIds(ids) {
     return {
         type: SET_COMPLETED_IDS,
         ids
+    }
+}
+
+export function onApartmentsLoading() {
+    return {
+        type: APARTMENTS_LOADING
     }
 }
