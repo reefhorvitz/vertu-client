@@ -31,7 +31,7 @@ const Header = ({isConnected, name, profile,
                                         <ul className="grt-dropdown-list">
                                             <li><a href="#"><img src={MessageImage}/>Messages</a></li>
                                             { handleByUserType(null, (<li>
-                                                    <Link to="new-listing"><img src={ListingImage}/>
+                                                    <Link to="/new-listing"><img src={ListingImage}/>
                                                     Create new listing
                                                     </Link>
                                                 </li>))
