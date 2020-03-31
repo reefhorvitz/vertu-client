@@ -3,7 +3,6 @@ import {ON_FAILURE, ON_SUCCESS} from "./consts";
 import {toastr} from "react-redux-toastr";
 
 function* onSuccess({message = "Action completed successfully"}) {
-    console.log("in here");
     toastr.success(message)
 }
 

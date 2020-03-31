@@ -12,7 +12,7 @@ function *validateAndFetchUserData({email, token}) {
 }
 
 function *logoutSaga() {
-    yield push('/login')
+    yield put(push('/login'));
 }
 
 function *updateUserDetailsSaga({userId, name, email, phone}) {
@@ -20,7 +20,7 @@ function *updateUserDetailsSaga({userId, name, email, phone}) {
         let user = yield call(updateUserDetails, userId, name, phone, email);
         yield put(updateUserDetailsSuccess(user.name, user.phone, user.email));
         yield put(onSuccess('User Information Updated Successfully'));
-        yield push('/discover');
+        yield put(push('/discover'));
     }
     catch (e) {
         yield put(onFailure('Failed to update user information'));

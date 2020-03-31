@@ -16,7 +16,7 @@ function *createNewListing() {
         yield call(createProperty, apartment);
         yield put(onSuccess('Added new listing successfully'));
         yield put(loadAllApartments());
-        yield push('/discover');
+        yield put(push('/discover'));
     }
     catch (e) {
         yield put(onFailure('Failed to add new listing'))
