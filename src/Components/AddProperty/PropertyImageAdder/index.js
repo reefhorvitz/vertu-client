@@ -22,6 +22,6 @@ const PropertyImageAdder = ({uploadImage, images}) => {
         </div>
         </form>
     );
-}
+};
 
 export default PropertyImageAdder;
