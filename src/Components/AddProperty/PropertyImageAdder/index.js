@@ -1,9 +1,16 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import ImageSlide from "../../ImageSlide/ImageSlide";
 import styles from './styles.module.css';
 
 const PropertyImageAdder = ({uploadImage, images}) => {
     const [isLoading, setIsLoading] = useState(false);
+
+    useEffect(() => {
+        if(isLoading === true){
+            setIsLoading(false);
+        }
+    });
+
     const onChange = (e) => {
         setIsLoading(true);
         const file = e.target.files[0];
