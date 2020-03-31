@@ -22,9 +22,6 @@ export default function FiltersReducer(state = initialState, action) {
             return state.setIn([PRICE_FILTER, PRICE_FILTER_MAX], action.max)
                 .setIn([PRICE_FILTER, PRICE_FILTER_MIN], action.min);
         case SET_BEDROOM_FILTER:
-            if(action.number === 4){
-                action.number = null;
-            }
             return state.set(BEDROOM_NUMBER_FILTER, action.number);
         case SET_BATHROOM_FILTER:
             return state.set(BATHROOM_NUMBER_FILTER, action.number);

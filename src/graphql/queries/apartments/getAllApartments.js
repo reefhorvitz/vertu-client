@@ -85,7 +85,12 @@ export function filtersToAprtmentFilterQuery({sellerId, city, bedroomNum, bathro
         filtersQuery += `cityId: ${city}, `;
     }
     if(bedroomNum){
-        filtersQuery += `bedroomNumber: ${bedroomNum}, `;
+        if(bedroomNum === 4){
+            filtersQuery += `bedroomNumberGte: 4, `;
+        }
+        else {
+            filtersQuery += `bedroomNumber: ${bedroomNum}, `;
+        }
     }
     if(bathroomNum){
         filtersQuery += `bathroomNumber: ${bathroomNum}, `;
