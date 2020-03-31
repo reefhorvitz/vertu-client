@@ -5,8 +5,9 @@ import ListApartment from "../ApartmentsList/ListApartment";
 import DiscoverFilters from "../../Containers/Discover/DiscoverFilters";
 import {handleByUserType} from "../../helpers/userType";
 import './styles.css';
+import Loader from "../Loader";
 
-const Discover = ({loadData, apartmentsIds}) => {
+const Discover = ({loadData, apartmentsIds, isLoading}) => {
     useEffect(() => {
         loadData()
     }, []);
@@ -16,8 +17,10 @@ const Discover = ({loadData, apartmentsIds}) => {
             <ApartmentListMenu/>
             <DiscoverFilters/>
             <div className="container house-list">
-                {apartmentsIds.valueSeq()
+                <Loader isLoading={isLoading}>
+                    {apartmentsIds.valueSeq()
                     .map((apartmentId, index) => <ListApartment propertyId={apartmentId} key={index}/>)}
+                </Loader>
             </div>
         </React.Fragment>
 

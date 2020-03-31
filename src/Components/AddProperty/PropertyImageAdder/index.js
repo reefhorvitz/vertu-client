@@ -1,23 +1,16 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import ImageSlide from "../../ImageSlide/ImageSlide";
 import styles from './styles.module.css';
+import Loader from "../../Loader";
 
-const PropertyImageAdder = ({uploadImage, images}) => {
-    const [isLoading, setIsLoading] = useState(false);
-
-    useEffect(() => {
-        if(isLoading === true){
-            setIsLoading(false);
-        }
-    });
-
+const PropertyImageAdder = ({uploadImage, images, isLoading}) => {
     const onChange = (e) => {
-        setIsLoading(true);
         const file = e.target.files[0];
         const formData = new FormData();
         formData.append('file', file);
         uploadImage(formData)
     };
+
     return (
         <form enctype="multipart/form-data" method="post">
         <div className={`images-section-bg ${styles.imageContainer}`}>
@@ -25,7 +18,9 @@ const PropertyImageAdder = ({uploadImage, images}) => {
             <a href="#"><label className={`${isLoading && "disabled"}`} for="file-upload">ADD MORE IMAGES</label>
             <input type="file" id="file-upload" style={{display: "none"}} onChange={onChange}/>
             <i className="fa fa-plus" aria-hidden="true"/></a>
-            {images.size > 0 ? <ImageSlide imageLIClass={'new-listing-image-li'} images={images}/> : null}
+            <Loader isLoading={isLoading}>
+                {images.size > 0 ? <ImageSlide imageLIClass={'new-listing-image-li'} images={images}/> : null}
+            </Loader>
         </div>
         </form>
     );

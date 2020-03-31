@@ -1,10 +1,25 @@
 import {PROPERTY_MANAGER_REDUCER} from "../../Redux/consts";
 import {createSelector} from "reselect";
-import {ADDRESS_ONE, ADDRESS_TWO, CITY, COUNTRY, IMAGES, LOCATION, PRICE, YEAR_BUILT, ZIP_CODE} from "./consts";
+import {
+    ADDRESS_ONE,
+    ADDRESS_TWO,
+    CITY,
+    COUNTRY,
+    IMAGES,
+    IS_LOADING,
+    LOCATION,
+    PRICE,
+    YEAR_BUILT,
+    ZIP_CODE
+} from "./consts";
 import {SIZE} from "../ApartmentsContainer/consts";
 
 const _getPropertyManager = (state) => state.get(PROPERTY_MANAGER_REDUCER);
 
+export const isPropertyMangerLoading = createSelector(
+    _getPropertyManager,
+    property => property.get(IS_LOADING)
+)
 export const getApartment = createSelector(
     _getPropertyManager,
     apartment => apartment.toJS()

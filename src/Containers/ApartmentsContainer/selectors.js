@@ -19,15 +19,31 @@ import {
     COOLING_DATA,
     APARTMENTS,
     TAGS,
-    TOUR_STATUS, UPCOMING, COMPLETED, CITY, NAME, COUNTRY, ADDRESS, DISCOVER_IDS, UPCOMING_IDS, COMPLETED_IDS
+    TOUR_STATUS,
+    UPCOMING,
+    COMPLETED,
+    CITY,
+    NAME,
+    COUNTRY,
+    ADDRESS,
+    DISCOVER_IDS,
+    UPCOMING_IDS,
+    COMPLETED_IDS,
+    IS_LOADING
 } from "./consts";
 import {EMAIL, PHONE, PROFILE} from "../AuthContainer/consts";
 
 const _selectDiscoverIds = (state) => state.getIn([APARTMENTS_REDUCER, DISCOVER_IDS]);
+const _selectIsLoading = (state) => state.getIn([APARTMENTS_REDUCER, IS_LOADING]);
 const _selectUpcomingIds = (state) => state.getIn([APARTMENTS_REDUCER, UPCOMING_IDS]);
 const _selectCompletedIds = (state) => state.getIn([APARTMENTS_REDUCER, COMPLETED_IDS]);
 const _selectApartments = (state) => state.getIn([APARTMENTS_REDUCER, APARTMENTS]);
 const _selectApartmentById = (apartmentId) => (state) => state.getIn([APARTMENTS_REDUCER, APARTMENTS, apartmentId.toString()]);
+
+export const isApartmentsLoading = createSelector(
+    _selectIsLoading,
+    isLoading => isLoading
+);
 
 export const getApartmentsIds = createSelector(
     _selectApartments,
@@ -162,4 +178,3 @@ export const getApartmentTagsById = (apartmentId) => createSelector(
     getApartmentById(apartmentId),
     apartment => apartment && apartment.get(TAGS)
 );
-

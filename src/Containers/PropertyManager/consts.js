@@ -17,6 +17,7 @@ export const HEATING = "heatingId";
 export const COOLING = "coolingId";
 export const PARKING = "parkingId";
 export const TYPE = "typeId";
+export const IS_LOADING = "isLoading";
 
 
 export const SET_BEDROOM_NUMBER = "SET_BEDROOM_NUMBER";
