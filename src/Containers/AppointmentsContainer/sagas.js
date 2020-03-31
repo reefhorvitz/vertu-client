@@ -5,8 +5,10 @@ import {loadApartmentsByIds, setCompletedIds, setUpcomingIds} from "../Apartment
 import {CREATE_APPOINTMENT, CREATE_APPOINTMENT_SUCCESS, LOAD_ALL_APPOINTMENTS} from "./consts";
 import {FETCH_USER_DATA_SUCCESS} from "../AuthContainer/consts";
 import {createAppointment} from "../../api/orm/appointments";
+import {onFailure, onSuccess} from "../Toastr/actions";
 
-function* loadAllAppointments({id}) {
+function* loadAllAppointments({id, userId}) {
+    if(!id) id = userId;
     const appointments = yield call(getAllAppointments, id);
     yield put(loadAppointmentsSuccess(appointments));
     const upcomingIds = [];
@@ -26,9 +28,14 @@ function* loadAllAppointments({id}) {
 
 
 function *createAppointmentSaga({time, propertyId, userId}) {
-    debugger;
-    const appointment = yield call(createAppointment, time, propertyId, userId);
-    yield put(createAppointmentSuccess(appointment));
+    try {
+        const appointment = yield call(createAppointment, time, propertyId, userId);
+        yield put(createAppointmentSuccess(appointment));
+        yield put(onSuccess('Created appointment successfully'))
+    }
+    catch (e) {
+        yield put(onFailure('Failed to create new appointment'))
+    }
 }
 
 export default function* defaultSaga() {
