@@ -36,7 +36,7 @@ const Header = ({isConnected, name, profile,
                                                     </Link>
                                                 </li>))
                                             }
-                                            <li onClick={logout}><a href="#"><img src={MessageImage}/>Log Out</a></li>
+                                            <li onClick={logout}><a href="#">Log Out</a></li>
                                         </ul>
                                     </li>
                                 </ul>

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import ImageSlide from "../../ImageSlide/ImageSlide";
+import styles from './styles.module.css';
 
 const PropertyImageAdder = ({uploadImage, images}) => {
     const [isLoading, setIsLoading] = useState(false);
@@ -11,8 +12,8 @@ const PropertyImageAdder = ({uploadImage, images}) => {
         uploadImage(formData)
     };
     return (
-        <form enctype="multipart/form-data">
-        <div className="images-section-bg">
+        <form enctype="multipart/form-data" method="post">
+        <div className={`images-section-bg ${styles.imageContainer}`}>
             <h2>Images</h2>
             <a href="#"><label className={`${isLoading && "disabled"}`} for="file-upload">ADD MORE IMAGES</label>
             <input type="file" id="file-upload" style={{display: "none"}} onChange={onChange}/>
