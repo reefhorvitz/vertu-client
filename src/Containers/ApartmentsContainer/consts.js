@@ -25,6 +25,7 @@ export const TOUR_STATUS = "tourStatus";
 export const DISCOVER_IDS = "discoverIds";
 export const UPCOMING_IDS = "upcomingIds";
 export const COMPLETED_IDS = "completedIds";
+export const IS_LOADING = "isLoading";
 
 
 //ACTIONS
